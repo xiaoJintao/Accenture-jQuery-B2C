@@ -1,4 +1,20 @@
 jQuery(function ($) {
+    $(".quick_links_panel li").mouseenter(function () {
+        $(this).children(".mp_tooltip").animate({ left: -92, queue: true });
+        $(this).children(".mp_tooltip").css("visibility", "visible");
+        $(this).children(".ibar_login_box").css("display", "block");
+    });
+    $(".quick_links_panel li").mouseleave(function () {
+        $(this).children(".mp_tooltip").css("visibility", "hidden");
+        $(this).children(".mp_tooltip").animate({ left: -121, queue: true });
+        $(this).children(".ibar_login_box").css("display", "none");
+    });
+    $(".quick_toggle li").mouseover(function () {
+        $(this).children(".mp_qrcode").show();
+    });
+    $(".quick_toggle li").mouseleave(function () {
+        $(this).children(".mp_qrcode").hide();
+    });
     //创建DOM
     var
 	quickHTML = document.querySelector("div.quick_link_mian"),
