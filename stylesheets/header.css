@@ -31,9 +31,9 @@ img {
     background: none !important;
 }
 #header .headerContent {
-    width: 97.11%;
+    width: 90%;
+    margin-left:3%;
     height: 97px;
-    margin: 0 auto;
 }
 #header .siteLogo {
     float: left;

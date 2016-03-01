@@ -318,7 +318,8 @@ a,a:hover {
 /*  氓掳锟矫ヂ憋拷氓陇麓茅茠篓莽禄鈥�?︼拷鸥  */
 
 #content  {
-	width: 100% !important;
+	width: 97% !important;
+    margin-left:0;
 	margin-bottom: 80px; 
 	overflow: hidden;  /*wangkena  12/23*/
 }

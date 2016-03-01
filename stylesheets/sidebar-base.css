@@ -7,7 +7,7 @@
 /* quick_links */
 .quick_links_wrap, .mui-mbar-tabs {
     height: 100%;
-    width: 320px;
+    /*width: 320px;*/
     right: 0;
     position: fixed;
     right: 0;
@@ -43,7 +43,7 @@
     width: 40px;
     height: 100%;
     position: absolute;
-    background: #444851;
+    background: #000000;
     z-index: 2;
     top: 0;
     right: 0;
@@ -59,7 +59,7 @@
         color: #d8d8d8;
         font-size: 12px;
         overflow: hidden;
-        background-color: #444851;
+        /*background-color: #444851;*/
         position: relative;
         overflow: hidden;
         top: 0;
@@ -75,7 +75,7 @@
         bottom: 0;
         left: 0;
         width: 40px;
-        background: #444851;
+        /*background: #444851;*/
         z-index: 1;
     }
 
@@ -87,7 +87,7 @@
         z-index: 2;
         left: -121px;
         top: 0;
-        background: #444851;
+        background: #000000;
         color: #d8d8d8;
         text-align: center;
         display: block;
@@ -146,7 +146,7 @@
     left: 0;
     margin-top: -190px;
     *margin-top: -220px;
-    background: #444851;
+    background: #000000;
     z-index: 2;
     width: 40px;
 }
@@ -176,7 +176,7 @@
 }
 
 .quick_links a:hover, .quick_links a.current, .quick_toggle a:hover {
-    background: #ed145b;
+    background: #fd8d24;
     text-decoration: none;
 }
 
@@ -193,7 +193,7 @@
     height: 21px;
     display: block;
     border-radius: 50%;
-    background: #ed145b;
+    background: #fd8d24;
     text-align: center;
     line-height: 21px;
     margin: 9px 0 0 10px;
@@ -589,7 +589,7 @@
 
 .ibar_cart_group_header a {
     float: right;
-    color: #ed145b;
+    color: #fd8d24;
 }
 
     .ibar_cart_group_header a:hover {
@@ -637,7 +637,7 @@
 }
 
 .cart_price {
-    color: #ed145b;
+    color: #fd8d24;
     font-weight: 700;
     font-family: Arial,Helvetica;
 }
@@ -665,7 +665,7 @@
     font-weight: 700;
     font-size: 16px;
     font-family: Arial;
-    color: #ed145b;
+    color: #fd8d24;
 }
 
 .cart_go_btn {
@@ -677,7 +677,7 @@
     color: #fff;
     text-align: center;
     text-decoration: none;
-    background: #ed145b;
+    background: #fd8d24;
     width: 260px;
     margin: 0 10px;
     float: left;
@@ -760,7 +760,7 @@
 
     .ibar-history-head a {
         float: right;
-        color: #ed145b;
+        color: #fd8d24;
     }
 
         .ibar-history-head a:hover {
@@ -796,12 +796,12 @@
         }
 
             .imp_item .tit a:hover {
-                color: #ed145b;
+                color: #fd8d24;
                 line-height: 18px;
             }
 
     .imp_item .price {
-        color: #ed145b;
+        color: #fd8d24;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -813,7 +813,7 @@
 
     .imp_item .imp-addCart {
         background: #f32166;
-        background: -webkit-linear-gradient(top,#fb2f72,#ed145b);
+        background: -webkit-linear-gradient(top,#fb2f72,#fd8d24);
         color: #fff;
         width: 90px;
         height: 28px;
@@ -933,7 +933,7 @@ i.ibar_recharge-arrow {
         height: 31px;
         font-size: 16px;
         background: #f32166;
-        background: -webkit-linear-gradient(top,#fb2f72,#ed145b);
+        background: -webkit-linear-gradient(top,#fb2f72,#fd8d24);
         cursor: pointer;
     }
 
