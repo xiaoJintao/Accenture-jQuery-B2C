@@ -1,0 +1,43 @@
+#header .left-floor-menu{
+    position: fixed;
+    left: -102px;
+    top: 40%;
+    background-color: #ffa550;
+    /*transition: all 0.5s ease 0s;*/
+}
+#header .left-floor-menu li{
+    font-size: 20px;
+    line-height: 65px;
+}
+
+#header .left-floor-menu li a{
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+#header .left-floor-menu li a:hover{
+    color: #ff0000;
+}
+#header .left-floor-menu .left-floor-menu-content{
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+#header .left-floor-menu .left-floor-menu-open{
+    position: absolute;
+    left:100px;
+    bottom: 0;
+    width: 15px;
+    background-color:#ff0000;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:719px){
+    .left-floor-menu{display: none}
+}
+

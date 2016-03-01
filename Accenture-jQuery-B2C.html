@@ -62,7 +62,8 @@
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/group-buying.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/special-offers.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/digital-market-sec.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/sidebar-base.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/sidebar-base.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/left-right-bar.css">
 
     <link rel="stylesheet" type="text/css" media="all" href="./fonts/icomoon.eot">
     <link rel="stylesheet" type="text/css" media="all" href="./fonts/icomoon.svg">
@@ -154,6 +155,20 @@
                 </li>
             </ul>
         </div>-->
+
+        <div class="left-floor-menu">
+            <!--ping.jiang/2016/2/29-->
+            <div class="left-floor-menu-content">
+                <ul>
+                    <li><a id="hot-recommend-module-control">热门推荐</a></li>
+                    <li><a id="beauty-skin-module-control">美容护肤</a></li>
+                    <li><a id="casual-wear-module-control">服饰休闲</a></li>
+                    <li><a id="digital-technology-module-control">数码科技</a></li>
+                </ul>
+                <div class="left-floor-menu-open">
+                </div>
+            </div>
+        </div>
 
         <div class="headerContent clearfix home">
             <!-- Site Logo -->
@@ -560,6 +575,7 @@
                 <ol id="bannerCtrl" class="flex-control-nav flex-control-paging"><li class=""><a></a></li><li class=""><a></a></li><li class=""><a></a></li><li class="active"><a></a></li></ol>
             </div>
             <!-- homepage hotproduct start -->
+            <a class="hot-recommend-module"></a>
             <div class="index-recommend clearfix">
                 <div class="recommend-top">
                     <h2>热门推荐</h2>
@@ -690,6 +706,7 @@
             <!-- specialoffer hotproduct end -->
             <!-- camera second page start -->
             <!-- camera second page end -->
+            <a class="beauty-skin-module"></a>
             <div class="main-wrap clearfix">
                 <div class="main-menu">
                     <div class="main-header clearfix">
@@ -1113,6 +1130,7 @@
                     </div>
                 </div>
             </div>
+            <a class="casual-wear-module"></a>
             <div class="main-wrap clearfix">
                 <div class="main-menu">
                     <div class="main-header clearfix">
@@ -1540,6 +1558,8 @@
                     </div>
                 </div>
             </div>
+
+            <a class="digital-technology-module"></a>
             <div class="main-wrap clearfix">
                 <div class="main-menu">
                     <div class="main-header clearfix">
@@ -3326,5 +3346,6 @@
     <script type="text/javascript" src="./controllers/requestAnimationFrame.js"></script>
     <script type="text/javascript" src="./controllers/index-scroll.js"></script>
     <script type="text/javascript" src="./controllers/index.js"></script>
+    <script type="text/javascript" src="./controllers/left-right-bar.js"></script>
 </body>
 </html>
