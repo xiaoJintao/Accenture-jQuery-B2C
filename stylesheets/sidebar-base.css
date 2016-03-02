@@ -592,13 +592,14 @@
     color: #fd8d24;
 }
 
-    .ibar_cart_group_header a:hover {
-        text-decoration: underline;
-    }
+.ibar_cart_group_header a:hover {
+    text-decoration: underline;
+}
 
 .cart_item {
     padding: 15px 0;
     border-bottom: 1px dotted #ddd;
+    float: left;
 }
 
 .cart_item_pic {
@@ -608,11 +609,11 @@
     height: 87px;
 }
 
-    .cart_item_pic img {
-        width: 85px;
-        height: 85px;
-        border: 1px solid #f4f4f4;
-    }
+.cart_item_pic img {
+    width: 85px;
+    height: 85px;
+    border: 1px solid #f4f4f4;
+}
 
 .cart_item_desc {
     float: left;
