@@ -60,12 +60,6 @@ jQuery(function ($) {
 	        content: '<div class="ibar_plugin_content"><div class="ia-head-list"><a href="#" target="_blank" class="pl"><div class="num">0</div><div class="text">积分</div></a></div><div class="ga-expiredsoon"><div class="es-head">积分交易历史</div><div class="ia-none">您还没有进行过积分交易哦</div></div><div class="ga-expiredsoon"><div class="es-head">积分购买产品</div><div class="ia-none">您还没有用积分购买过产品哦</div></div></div>',
 	        init: $.noop
 	    },
-	    //给客服留言
-	    leave_message: {
-	        title: '我的关注',
-	        content: $("#ibar_gzcp").html(),
-	        init: $.noop
-	    },
 	    mpbtn_histroy: {
 	        title: '我的足迹',
 	        content: '<div class="ibar_plugin_content"><div class="ibar-history-head">共3件产品<a href="#">清空</a></div><div class="ibar-moudle-product"><div class="imp_item"><a href="#" class="pic"><img src="images/xiez.jpg" width="100" height="100" /></a><p class="tit"><a href="#">夏季透气真皮豆豆鞋反绒男士休闲鞋韩</a></p><p class="price"><em>￥</em>649.00</p><a href="#" class="imp-addCart">加入购物车</a></div><div class="imp_item"><a href="#" class="pic"><img src="images/xiez.jpg" width="100" height="100" /></a><p class="tit"><a href="#">夏季透气真皮豆豆鞋反绒男士休闲鞋韩</a></p><p class="price"><em>￥</em>649.00</p><a href="#" class="imp-addCart">加入购物车</a></div><div class="imp_item"><a href="#" class="pic"><img src="images/xiez.jpg" width="100" height="100" /></a><p class="tit"><a href="#">夏季透气真皮豆豆鞋反绒男士休闲鞋韩</a></p><p class="price"><em>￥</em>649.00</p><a href="#" class="imp-addCart">加入购物车</a></div></div></div>',
@@ -74,6 +68,11 @@ jQuery(function ($) {
 	    mpbtn_wdsc: {
 	        title: '我的收藏',
 	        content: '<div class="ibar_plugin_content"><div class="ibar_cart_group ibar_cart_product"><ul><li class="cart_item"><div class="cart_item_pic"><a href="#"><img src="images/xiez.jpg" /></a></div><div class="cart_item_desc"><a href="#" class="cart_item_name">夏季透气真皮豆豆鞋反绒男士休闲鞋韩版磨砂驾车鞋英伦船鞋男鞋子</a><div class="cart_item_sku"><span>尺码：38码（精工限量版）</span></div><div class="cart_item_price"><span class="cart_price">￥700.00</span><a href="#" class="sc" title="删除"><img src="images/sc.png" alt="删除" /></a></div></div>	</li></ul></div><div class="cart_handler"><a href="#" class="cart_go_btn jiaru" target="_blank">加入购物车</a></div></div>',
+	        init: $.noop
+	    },
+	    mpbtn_recharge: {
+	        title: '我常买',
+	        content: '<div class="ibar_plugin_content"><div class="ibar-history-head">共3件产品<a href="#">清空</a></div><div class="ibar-moudle-product"><div class="imp_item"><a href="#" class="pic"><img src="images/xiez.jpg" width="100" height="100" /></a><p class="tit"><a href="#">夏季透气真皮豆豆鞋反绒男士休闲鞋韩</a></p><p class="price"><em>￥</em>649.00</p><a href="#" class="imp-addCart">加入购物车</a></div><div class="imp_item"><a href="#" class="pic"><img src="images/xiez.jpg" width="100" height="100" /></a><p class="tit"><a href="#">夏季透气真皮豆豆鞋反绒男士休闲鞋韩</a></p><p class="price"><em>￥</em>649.00</p><a href="#" class="imp-addCart">加入购物车</a></div><div class="imp_item"><a href="#" class="pic"><img src="images/xiez.jpg" width="100" height="100" /></a><p class="tit"><a href="#">夏季透气真皮豆豆鞋反绒男士休闲鞋韩</a></p><p class="price"><em>￥</em>649.00</p><a href="#" class="imp-addCart">加入购物车</a></div></div></div>',
 	        init: $.noop
 	    }
 	};
@@ -141,13 +140,11 @@ jQuery(function ($) {
 	},
 	quickHandlers = {
 	    //购物车，最近浏览，商品咨询
-	    my_qlinks: showPopFn,
 	    message_list: showPopFn,
 	    history_list: showPopFn,
-	    leave_message: showPopFn,
 	    mpbtn_histroy: showPopFn,
-	    mpbtn_recharge: showPopFn,
 	    mpbtn_wdsc: showPopFn,
+	    mpbtn_recharge: showPopFn,
 	    //返回顶部
 	    return_top: function () {
 	        ds.scrollTo(0, 0);

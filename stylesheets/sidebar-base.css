@@ -50,86 +50,85 @@
     font-family: 'microsoft yahei',arial;
 }
 
-    .quick_links_panel a {
-        display: block;
-        line-height: 200px;
-        width: 40px;
-        height: 38px;
-        text-decoration: none;
-        color: #d8d8d8;
-        font-size: 12px;
-        overflow: hidden;
-        /*background-color: #444851;*/
-        position: relative;
-        overflow: hidden;
-        top: 0;
-        left: 0px;
-        *left: -15px;
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-    }
+.quick_links_panel a {
+    display: block;
+    line-height: 200px;
+    width: 40px;
+    height: 38px;
+    text-decoration: none;
+    color: #d8d8d8;
+    font-size: 12px;
+    overflow: hidden;
+    /*background-color: #444851;*/
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0px;
+    *left: -15px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
 
-    .quick_links_panel .quick_toggle {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 40px;
-        /*background: #444851;*/
-        z-index: 1;
-    }
+.quick_links_panel .quick_toggle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    /*background: #444851;*/
+    z-index: 1;
+}
 
-    .quick_links_panel .mp_tooltip {
-        height: 38px;
-        line-height: 38px;
-        width: 92px;
-        position: absolute;
-        z-index: 2;
-        left: -121px;
-        top: 0;
-        background: #000000;
-        color: #d8d8d8;
-        text-align: center;
-        display: block;
-        visibility: hidden;
-    }
+.quick_links_panel .mp_tooltip {
+    height: 38px;
+    line-height: 38px;
+    width: 92px;
+    position: absolute;
+    z-index: 2;
+    left: -121px;
+    top: 0;
+    background: #000000;
+    color: #d8d8d8;
+    text-align: center;
+    display: block;
+    visibility: hidden;
+}
 
-    .quick_links_panel .mp_qrcode {
-        padding: 10px;
-        width: 148px;
-        height: 175px;
-        top: -157px;
-        background: #fff;
-        box-shadow: 0 0 5px rgba(0,0,0,.4);
-        border-radius: 5px 0 0 5px;
-        border-left: 1px solid #ccc\0;
-        border-top: 1px solid #ccc\0;
-        border-bottom: 1px solid #ccc\0;
-        z-index: 3;
-        position: absolute;
-        left: -168px;
-        left: -169px\0;
-        display: none;
-    }
+.quick_links_panel .mp_qrcode {
+    padding: 10px;
+    width: 148px;
+    height: 175px;
+    top: -157px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    border-radius: 5px 0 0 5px;
+    border-left: 1px solid #ccc\0;
+    border-top: 1px solid #ccc\0;
+    border-bottom: 1px solid #ccc\0;
+    z-index: 3;
+    position: absolute;
+    left: -168px;
+    display: none;
+}
 
-    .quick_links_panel .icon_arrow_white {
-        position: absolute;
-        right: -5px;
-        top: 172px;
-        width: 5px;
-        height: 9px;
-        background-position: 0 -253px;
-    }
+.quick_links_panel .icon_arrow_white {
+    position: absolute;
+    right: -5px;
+    top: 172px;
+    width: 5px;
+    height: 9px;
+    background-position: 0 -253px;
+}
 
-    .quick_links_panel .icon_arrow_right_black {
-        position: absolute;
-        right: -5px;
-        top: 15px;
-        width: 5px;
-        height: 9px;
-        background-position: 0 -234px;
-        overflow: hidden;
-    }
+.quick_links_panel .icon_arrow_right_black {
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    width: 5px;
+    height: 9px;
+    background-position: 0 -234px;
+    overflow: hidden;
+}
 
 .quick_toggle .return_top {
     display: none;
@@ -138,7 +137,6 @@
 .quick_links_allow_gotop .return_top {
     display: block;
 }
-
 
 .quick_links {
     position: absolute;
@@ -151,14 +149,14 @@
     width: 40px;
 }
 
-    .quick_links a.message_list {
-        background: url(../images/ibar_sprites.png) no-repeat;
-        line-height: 16px;
-        height: 133px;
-        background-position: -23px -225px;
-        color: #fff;
-        margin: 20px 0 10px;
-    }
+.quick_links a.message_list {
+    background: url(../images/ibar_sprites.png) no-repeat;
+    line-height: 16px;
+    height: 133px;
+    background-position: -23px -225px;
+    color: #fff;
+    margin: 20px 0 10px;
+}
 
 .quick_links_min .quick_links_panel {
     right: 280px;
@@ -241,18 +239,6 @@
     background-position: -33px -57px;
 }
 
-.quick_links .qa {
-    width: 18px;
-    height: 15px;
-    background-position: 0 -85px;
-    top: 11px;
-    left: 11px;
-}
-
-.quick_links a:hover i.qa, .quick_links .current i.qa {
-    background-position: -33px -85px;
-}
-
 .quick_links .zuji {
     width: 11px;
     height: 24px;
@@ -279,6 +265,18 @@
     height: 35px;
     top: 2px;
     left: 3px;
+}
+
+.quick_links .qa {
+    width: 18px;
+    height: 15px;
+    background-position: 0 -85px;
+    top: 11px;
+    left: 11px;
+}
+
+.quick_links a:hover i.qa, .quick_links .current i.qa {
+    background-position: -33px -85px;
 }
 
 .quick_toggle .mpbtn_qrcode {
