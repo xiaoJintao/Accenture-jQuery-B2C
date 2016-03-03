@@ -12,6 +12,7 @@
     <meta name="MobileOptimized" content="970">
     <meta name="viewport" content="width=970, target-densitydpi=160, maximum-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" media="all" href="http://10.202.16.217:9001/b2cstorefront/_ui/desktop/theme-blue/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/bootstrap-3.3.6.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/jquery.colorbox-1.3.16.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/jquery.bt-0.9.5.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/screen.css">
@@ -79,7 +80,8 @@
 
     <link type="text/css" rel="stylesheet" href="./stylesheets/hybris.chinaacc.css" media="screen, projection">
     <script type="text/javascript" async="" src="./controllers/ga.js"></script>
-    <script type="text/javascript" src="./controllers/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="./controllers/bootstrap-3.3.6.min.js"></script>
     <script type="text/javascript" src="./controllers/sidebar-common.js"></script>
     <script type="text/javascript" src="./controllers/sidebar-quickLinks.js"></script>
     <script type="text/javascript" src="./controllers/analyticsmediator.js"></script>
@@ -146,8 +148,22 @@
         });
     </script>
 </head>
+
 <body class="page-homepage pageType-ContentPage template-pages-layout-landingLayout2Page pageLabel-homepage language-zh">
-    <div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="padding-bottom: 0px; padding-right: 0px; display: none;"><div id="cboxWrapper"><div id="cboxContent"><div id="cboxLoadedContent" class="" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" class="" style="float: left;"></div><div id="cboxLoadingGraphic" class="" style="float: left;"></div><div id="cboxTitle" class="" style="float: left;"></div><div id="cboxCurrent" class="" style="float: left;"></div><div id="cboxNext" class="" style="float: left;"></div><div id="cboxPrevious" class="" style="float: left;"></div><div id="cboxSlideshow" class="" style="float: left;"></div><a id="cboxClose" href="javascript:void(0);" class="" style="float: left;"></a></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+    <div id="cboxOverlay" style="display: none;"></div>
+    <div id="colorbox" class="" style="padding-bottom: 0px; padding-right: 0px; display: none;">
+        <div id="cboxWrapper">
+            <div id="cboxContent">
+                <div id="cboxLoadedContent" class="" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div>
+                <div id="cboxLoadingOverlay" class="" style="float: left;"></div>
+                <div id="cboxLoadingGraphic" class="" style="float: left;"></div><div id="cboxTitle" class="" style="float: left;"></div>
+                <div id="cboxCurrent" class="" style="float: left;"></div><div id="cboxNext" class="" style="float: left;"></div>
+                <div id="cboxPrevious" class="" style="float: left;"></div><div id="cboxSlideshow" class="" style="float: left;"></div>
+                <a id="cboxClose" href="javascript:void(0);" class="" style="float: left;"></a>
+            </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+    </div>
     <div id="page" data-currency-iso-code="USD">
         <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#skip-to-content" class="skiptocontent" data-role="none">跳转至内容</a>
         <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#skiptonavigation" class="skiptonavigation" data-role="none">跳转至导航菜单</a>
@@ -164,7 +180,8 @@
                         <img title="hybris Accelerator" alt="hybris Accelerator" src="./images/logo-hybris-zh.png">
                     </a>
                 </div>
-            </div><div class="yCmsContentSlot headerContent secondRow">
+            </div>
+            <div class="yCmsContentSlot headerContent secondRow">
                 <div class="siteSearch">
                     <form name="search_form" method="get" onsubmit="confirmSearch()" action="http://10.202.16.217:9001/b2cstorefront/electronics/zh/search/">
                         <div class="control-group left">
@@ -238,7 +255,8 @@
                         </form>
                     </li>
                 </ul>
-            </div><div class="headerContent header-list">
+            </div>
+            <div class="headerContent header-list">
                 <ul class="nav clearfix">
                     <li class="header-change-l">
                         <a class="english" href="http://10.202.16.217:9001/b2cstorefront/electronics/en" style="">English</a><a>/</a>
@@ -603,25 +621,37 @@
                         </ul>
                     </div>
                 </ul>
-            </div><div id="content" class="clearfix">
+            </div>
+            <div id="content" class="clearfix">
                 <a id="skip-to-content"></a>
                 <div id="globalMessages">
                 </div>
 
                 <!-- rotatingImages -->
-                <div class="span-24 section2">
-                    <div id="banner_tabs" class="flexslider">
-                        <ul class="slides">
-                            <li style="position: absolute; left: 0px; top: 0px; display: list-item;"><a href="javascript:;" class="img_1"><img src="./resources/saved_resource" alt="1 slide"></a></li>
-                            <li style="position: absolute; left: 0px; top: 0px; display: none;"><a href="javascript:;" class="img_1"><img src="./resources/saved_resource(1)" alt="1 slide"></a></li>
-                            <li style="position: absolute; left: 0px; top: 0px; display: none;"><a href="javascript:;" class="img_1"><img src="./resources/saved_resource(2)" alt="1 slide"></a></li>
-                            <li style="position: absolute; left: 0px; top: 0px; display: none;"><a href="javascript:;" class="img_1"><img src="./resources/saved_resource(3)" alt="1 slide"></a></li>
-                        </ul>
-                        <ol id="bannerCtrl" class="flex-control-nav flex-control-paging"><li class="active"><a></a></li><li class=""><a></a></li><li class=""><a></a></li><li class=""><a></a></li></ol>
+                <div id="homepageCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- 轮播（Carousel）索引 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homepageCarousel" data-slide-to="1"></li>
+                        <li data-target="#homepageCarousel" data-slide-to="2"></li>
+                        <li data-target="#homepageCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="./resources/saved_resource" alt="First slide">
+                        </div>
+                        <div class="item">
+                            <img src="./resources/saved_resource(1)" alt="Second slide">
+                        </div>
+                        <div class="item">
+                            <img src="./resources/saved_resource(2)" alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="./resources/saved_resource(3)" alt="Fourth slide">
+                        </div>
                     </div>
                 </div>
-
-
 
                 <!-- hotSales -->
                 <div class="yCmsContentSlot span-24 section3 cms_disp-img_slot">
@@ -656,7 +686,6 @@
                                                 <div class="priceContainer">
                                                     $485.57
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal" jcarouselindex="3" style="float: left; list-style: none;">
@@ -670,7 +699,6 @@
                                                 <div class="priceContainer">
                                                     $264.69
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal" jcarouselindex="4" style="float: left; list-style: none;">
@@ -684,7 +712,6 @@
                                                 <div class="priceContainer">
                                                     $260.87
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-5 jcarousel-item-5-horizontal" jcarouselindex="5" style="float: left; list-style: none;">
@@ -698,7 +725,6 @@
                                                 <div class="priceContainer">
                                                     $99.85
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-6 jcarousel-item-6-horizontal" jcarouselindex="6" style="float: left; list-style: none;">
@@ -712,7 +738,6 @@
                                                 <div class="priceContainer">
                                                     $574.88
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-7 jcarousel-item-7-horizontal" jcarouselindex="7" style="float: left; list-style: none;">
@@ -726,7 +751,6 @@
                                                 <div class="priceContainer">
                                                     $212.26
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal" jcarouselindex="8" style="float: left; list-style: none;">
@@ -740,7 +764,6 @@
                                                 <div class="priceContainer">
                                                     $1,086.00
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal" jcarouselindex="9" style="float: left; list-style: none;">
@@ -754,7 +777,6 @@
                                                 <div class="priceContainer">
                                                     $452.88
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-10 jcarousel-item-10-horizontal" jcarouselindex="10" style="float: left; list-style: none;">
@@ -768,7 +790,6 @@
                                                 <div class="priceContainer">
                                                     $1,934.23
                                                 </div>
-
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-11 jcarousel-item-11-horizontal" jcarouselindex="11" style="float: left; list-style: none;">
@@ -782,7 +803,6 @@
                                                 <div class="priceContainer">
                                                     $35.68
                                                 </div>
-
                                             </a>
                                         </li>
                                     </ul>
@@ -792,7 +812,6 @@
                     </div>
                 </div><div class="main-wrap clearfix">
                     <div class="main-menu">
-
                         <div class="main-header clearfix">
                             <div class="main-header-title">
                                 <span class="main-title">数码科技</span> <span class="main-subtitle"> subtitle empty</span>
@@ -1487,15 +1506,15 @@
             </div>
 
             <div class="footer-bottom">
-                <!--  <span>Copyright 2003-2015,  Accenture</span> --><div class="copyright">Copyright 2003-2015,  Accenture</div>
+                <!--  <span>Copyright 2003-2015,  Accenture</span> --><div class="copyright">Copyright 2003-2016,  Accenture</div>
             </div>
         </div>
         <form name="accessiblityForm">
             <input type="hidden" id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField" value="">
         </form>
         <div id="ariaStatusMsg" class="skip" role="status" aria-relevant="text" aria-live="polite"></div>
-        <script type="text/javascript" src="./controllers/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript">
+    </div>
+    <script type="text/javascript">
             /*<![CDATA[*/
 
             var ACC = { config: {} };
@@ -1520,141 +1539,140 @@
 
 
             /*]]>*/
-        </script>
-        <script type="text/javascript" src="./controllers/jquery.query-2.1.7.js"></script>
-        <script type="text/javascript" src="./controllers/jquery-ui-1.8.18.min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.jcarousel-0.2.8-lazyload.min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.tmpl-1.0.0pre.min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.blockUI-2.39.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.colorbox.custom-1.3.16.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.slideviewer.custom.1.2.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.waitforimages.min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.scrollTo-1.4.2-min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.ui.stars-3.0.1.min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.form-3.09.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.bgiframe-2.1.2.min.js"></script>
-        <!--[if IE]><script type="text/javascript" src="/b2cstorefront/_ui/desktop/common/js/excanvas-r3.compiled.js"></script>-->
-        <script type="text/javascript" src="./controllers/jquery.bt-0.9.5-rc1.min.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.pstrength.custom-1.2.0.js"></script>
+    </script>
+    <script type="text/javascript" src="./controllers/jquery.query-2.1.7.js"></script>
+    <script type="text/javascript" src="./controllers/jquery-ui-1.8.18.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.jcarousel-0.2.8-lazyload.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.tmpl-1.0.0pre.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.blockUI-2.39.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.colorbox.custom-1.3.16.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.slideviewer.custom.1.2.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.waitforimages.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.ui.stars-3.0.1.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.form-3.09.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.bgiframe-2.1.2.min.js"></script>
+    <!--[if IE]><script type="text/javascript" src="/b2cstorefront/_ui/desktop/common/js/excanvas-r3.compiled.js"></script>-->
+    <script type="text/javascript" src="./controllers/jquery.bt-0.9.5-rc1.min.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.pstrength.custom-1.2.0.js"></script>
 
 
-        <script type="text/javascript" src="./controllers/acc.userlocation.js"></script>
-        <script type="text/javascript" src="./controllers/acc.track.js"></script>
-        <script type="text/javascript" src="./controllers/acc.common.js"></script>
-        <script type="text/javascript" src="./controllers/acc.cms.js"></script>
-        <script type="text/javascript" src="./controllers/acc.product.js"></script>
-        <script type="text/javascript" src="./controllers/acc.refinements.js"></script>
-        <script type="text/javascript" src="./controllers/acc.carousel.js"></script>
-        <script type="text/javascript" src="./controllers/acc.autocomplete.js"></script>
-        <script type="text/javascript" src="./controllers/acc.pstrength.js"></script>
-        <script type="text/javascript" src="./controllers/acc.password.js"></script>
-        <script type="text/javascript" src="./controllers/acc.minicart.js"></script>
-        <script type="text/javascript" src="./controllers/acc.pickupinstore.js"></script>
-        <script type="text/javascript" src="./controllers/acc.userlocation.js"></script>
-        <script type="text/javascript" src="./controllers/acc.langcurrencyselector.js"></script>
-        <script type="text/javascript" src="./controllers/acc.paginationsort.js"></script>
-        <script type="text/javascript" src="./controllers/acc.checkout.js"></script>
-        <script type="text/javascript" src="./controllers/acc.cartremoveitem.js"></script>
-        <script type="text/javascript" src="./controllers/acc.address.js"></script>
-        <script type="text/javascript" src="./controllers/acc.refresh.js"></script>
-        <script type="text/javascript" src="./controllers/acc.stars.js"></script>
-        <script type="text/javascript" src="./controllers/acc.forgotpassword.js"></script>
-        <script type="text/javascript" src="./controllers/acc.tab.js"></script>
-        <script type="text/javascript" src="./controllers/acc.mapstores_baidu.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.lazyload-1.9.3.min.js"></script>
-        <script type="text/javascript" src="./controllers/acc.lazyload.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.accessible-tabs-1.9.7.min.js"></script>
-        <script type="text/javascript" src="./controllers/acc.productDetail.js"></script>
-        <script type="text/javascript" src="./controllers/acc.producttabs.js"></script>
+    <script type="text/javascript" src="./controllers/acc.userlocation.js"></script>
+    <script type="text/javascript" src="./controllers/acc.track.js"></script>
+    <script type="text/javascript" src="./controllers/acc.common.js"></script>
+    <script type="text/javascript" src="./controllers/acc.cms.js"></script>
+    <script type="text/javascript" src="./controllers/acc.product.js"></script>
+    <script type="text/javascript" src="./controllers/acc.refinements.js"></script>
+    <script type="text/javascript" src="./controllers/acc.carousel.js"></script>
+    <script type="text/javascript" src="./controllers/acc.autocomplete.js"></script>
+    <script type="text/javascript" src="./controllers/acc.pstrength.js"></script>
+    <script type="text/javascript" src="./controllers/acc.password.js"></script>
+    <script type="text/javascript" src="./controllers/acc.minicart.js"></script>
+    <script type="text/javascript" src="./controllers/acc.pickupinstore.js"></script>
+    <script type="text/javascript" src="./controllers/acc.userlocation.js"></script>
+    <script type="text/javascript" src="./controllers/acc.langcurrencyselector.js"></script>
+    <script type="text/javascript" src="./controllers/acc.paginationsort.js"></script>
+    <script type="text/javascript" src="./controllers/acc.checkout.js"></script>
+    <script type="text/javascript" src="./controllers/acc.cartremoveitem.js"></script>
+    <script type="text/javascript" src="./controllers/acc.address.js"></script>
+    <script type="text/javascript" src="./controllers/acc.refresh.js"></script>
+    <script type="text/javascript" src="./controllers/acc.stars.js"></script>
+    <script type="text/javascript" src="./controllers/acc.forgotpassword.js"></script>
+    <script type="text/javascript" src="./controllers/acc.tab.js"></script>
+    <script type="text/javascript" src="./controllers/acc.mapstores_baidu.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.lazyload-1.9.3.min.js"></script>
+    <script type="text/javascript" src="./controllers/acc.lazyload.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.accessible-tabs-1.9.7.min.js"></script>
+    <script type="text/javascript" src="./controllers/acc.productDetail.js"></script>
+    <script type="text/javascript" src="./controllers/acc.producttabs.js"></script>
 
-        <script type="text/javascript" src="./controllers/jiathis.js"></script>
-        <script type="text/javascript" src="./controllers/b2cmultibuypercentagepromotion.js"></script>
-        <script type="text/javascript" src="./controllers/b2cvoucheraddon.js"></script>
-        <script type="text/javascript" src="./controllers/b2cordermakingup.js"></script>
-        <script type="text/javascript" src="./controllers/b2ccustomerreviewaddon.js"></script>
-        <script type="text/javascript" src="./controllers/b2ccard.js"></script>
-        <script type="text/javascript" src="./controllers/preorderaddon.js"></script>
-        <script type="text/javascript" src="./controllers/chinacheckoutaddon.js"></script>
-        <script type="text/javascript" src="./controllers/acc.checkoutcartdetails.js"></script>
-        <script type="text/javascript" src="./controllers/acc.checkoutpickupdetails.js"></script>
-        <script type="text/javascript" src="./controllers/acc.deliverymode.js"></script>
-        <script type="text/javascript" src="./controllers/acc.deliverymodedescription.js"></script>
-        <script type="text/javascript" src="./controllers/acc.hopdebug.js"></script>
-        <script type="text/javascript" src="./controllers/acc.payment.js"></script>
-        <script type="text/javascript" src="./controllers/acc.placeorder.js"></script>
-        <script type="text/javascript" src="./controllers/acc.removepaymentdetails.js"></script>
-        <script type="text/javascript" src="./controllers/acc.silentorderpost.js"></script>
-        <script type="text/javascript" src="./controllers/acc.updatebillingaddress.js"></script>
-        <script type="text/javascript" src="./controllers/acc.termsandconditions.js"></script>
-        <script type="text/javascript" src="./controllers/acc.checkoutaddress.js"></script>
-        <script type="text/javascript" src="./controllers/acc.skiplinks.js"></script>
-        <!-- Stig add -->
-        <script type="text/javascript" src="./controllers/index-scroll.js"></script>
-        <script type="text/javascript" src="./controllers/slider.js"></script>
-        <script type="text/javascript" src="./controllers/acc.o2o.js"></script>
-        <script type="text/javascript" src="./controllers/jquery.qrcode.min.js"></script>
-        <script type="text/javascript" src="./controllers/Integral.js"></script>
+    <script type="text/javascript" src="./controllers/b2cmultibuypercentagepromotion.js"></script>
+    <script type="text/javascript" src="./controllers/b2cvoucheraddon.js"></script>
+    <script type="text/javascript" src="./controllers/b2cordermakingup.js"></script>
+    <script type="text/javascript" src="./controllers/b2ccustomerreviewaddon.js"></script>
+    <script type="text/javascript" src="./controllers/b2ccard.js"></script>
+    <script type="text/javascript" src="./controllers/preorderaddon.js"></script>
+    <script type="text/javascript" src="./controllers/chinacheckoutaddon.js"></script>
+    <script type="text/javascript" src="./controllers/acc.checkoutcartdetails.js"></script>
+    <script type="text/javascript" src="./controllers/acc.checkoutpickupdetails.js"></script>
+    <script type="text/javascript" src="./controllers/acc.deliverymode.js"></script>
+    <script type="text/javascript" src="./controllers/acc.deliverymodedescription.js"></script>
+    <script type="text/javascript" src="./controllers/acc.hopdebug.js"></script>
+    <script type="text/javascript" src="./controllers/acc.payment.js"></script>
+    <script type="text/javascript" src="./controllers/acc.placeorder.js"></script>
+    <script type="text/javascript" src="./controllers/acc.removepaymentdetails.js"></script>
+    <script type="text/javascript" src="./controllers/acc.silentorderpost.js"></script>
+    <script type="text/javascript" src="./controllers/acc.updatebillingaddress.js"></script>
+    <script type="text/javascript" src="./controllers/acc.termsandconditions.js"></script>
+    <script type="text/javascript" src="./controllers/acc.checkoutaddress.js"></script>
+    <script type="text/javascript" src="./controllers/acc.skiplinks.js"></script>
+    <!-- Stig add -->
+    <script type="text/javascript" src="./controllers/index-scroll.js"></script>
+    <script type="text/javascript" src="./controllers/slider.js"></script>
+    <script type="text/javascript" src="./controllers/acc.o2o.js"></script>
+    <script type="text/javascript" src="./controllers/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="./controllers/Integral.js"></script>
 
-        <!-- TODO: Remove From Production
+    <!-- TODO: Remove From Production
 
-        DEBUG INFO
+    DEBUG INFO
 
-        cmsPageName=Homepage
-        cmsSiteUid=electronics
-        secure=false
-        contextPath=/b2cstorefront/electronics/zh
-        siteRootPath=/b2cstorefront/electronics/zh/
+    cmsPageName=Homepage
+    cmsSiteUid=electronics
+    secure=false
+    contextPath=/b2cstorefront/electronics/zh
+    siteRootPath=/b2cstorefront/electronics/zh/
 
-        siteResourcePath=/b2cstorefront/_ui/desktop/site-electronics
-        themeResourcePath=/b2cstorefront/_ui/desktop/theme-blue
-        commonResourcePath=/b2cstorefront/_ui/desktop/common
-        requestURI=/b2cstorefront/electronics/zh/WEB-INF/views/desktop/pages/layout/landingLayout2Page.jsp
-
-
-        Jalo Session details:
-
-        [DefaultInvalidationDataContainer.BTG_INVALIDATION_DATA_CONTAINER] = [de.hybris.platform.btg.result.BTGResultSessionCacheHolder@3f6af02]
-        [DeviceDetectionFacade-Detected-Device] = [de.hybris.platform.acceleratorfacades.device.data.DeviceData@7edf010]
-        [Europe1PriceFactory_UTG] = [UserTaxGroup.jp-taxes(jp-taxes(8796125560923))]
-        [JaloSession ID] = [s1893135343472]
-        [RULE_DATA_STORAGE_CONTAINER_MAP] = [de.hybris.platform.btg.result.BTGResultSessionCacheHolder@718e095]
-        [ResultCachingBTGDaoDecorator.RESULT_MAP_SESSION_ATTRIBUTE_NAME] = [de.hybris.platform.btg.result.BTGResultSessionCacheHolder@13c932ff]
-        [UiExperienceService-Detected-Level] = [UiExperienceLevel.Desktop(Desktop(8796095184987))]
-        [_slsession_] = [de.hybris.platform.servicelayer.session.impl.DefaultSession@febaaefc]
-        [btgCurrentEvaluationContext] = [de.hybris.platform.btg.services.impl.BTGEvaluationContext@49980a12]
-        [cart] = [00007003(8796322496555)]
-        [catalogversions] = [[electronicsProductCatalog/Online(8796093350489), electronicsClassification/1.0 (8796093383257), electronicsContentCatalog/Online(8796093448793)]]
-        [channel] = [desktop]
-        [currency] = [8796093153313->USD]
-        [currentCatalogVersion] = [electronicsProductCatalog/Online(8796093350489)]
-        [currentSite] = [8796093088808]
-        [enable.language.fallback] = [true]
-        [enable.language.fallback.serviceLayer] = [true]
-        [encodingAttributes] = [/electronics/zh]
-        [language] = [8796093382688->zh]
-        [locale] = [zh]
-        [sessionUserBrowseHistory-electronics] = [de.hybris.platform.acceleratorstorefrontcommons.history.impl.DefaultBrowseHistory$InstanceWrapper@658b32f8]
-        [timezone] = [sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=19,lastRule=null]]
-        [urlEncodingData] = [[de.hybris.platform.acceleratorfacades.urlencoder.data.UrlEncoderData@1abe2a6b, de.hybris.platform.acceleratorfacades.urlencoder.data.UrlEncoderData@723b245c]]
-        [user] = [anonymous[8796093087748]]
+    siteResourcePath=/b2cstorefront/_ui/desktop/site-electronics
+    themeResourcePath=/b2cstorefront/_ui/desktop/theme-blue
+    commonResourcePath=/b2cstorefront/_ui/desktop/common
+    requestURI=/b2cstorefront/electronics/zh/WEB-INF/views/desktop/pages/layout/landingLayout2Page.jsp
 
 
+    Jalo Session details:
 
-        UiExperienceLevel:
+    [DefaultInvalidationDataContainer.BTG_INVALIDATION_DATA_CONTAINER] = [de.hybris.platform.btg.result.BTGResultSessionCacheHolder@3f6af02]
+    [DeviceDetectionFacade-Detected-Device] = [de.hybris.platform.acceleratorfacades.device.data.DeviceData@7edf010]
+    [Europe1PriceFactory_UTG] = [UserTaxGroup.jp-taxes(jp-taxes(8796125560923))]
+    [JaloSession ID] = [s1893135343472]
+    [RULE_DATA_STORAGE_CONTAINER_MAP] = [de.hybris.platform.btg.result.BTGResultSessionCacheHolder@718e095]
+    [ResultCachingBTGDaoDecorator.RESULT_MAP_SESSION_ATTRIBUTE_NAME] = [de.hybris.platform.btg.result.BTGResultSessionCacheHolder@13c932ff]
+    [UiExperienceService-Detected-Level] = [UiExperienceLevel.Desktop(Desktop(8796095184987))]
+    [_slsession_] = [de.hybris.platform.servicelayer.session.impl.DefaultSession@febaaefc]
+    [btgCurrentEvaluationContext] = [de.hybris.platform.btg.services.impl.BTGEvaluationContext@49980a12]
+    [cart] = [00007003(8796322496555)]
+    [catalogversions] = [[electronicsProductCatalog/Online(8796093350489), electronicsClassification/1.0 (8796093383257), electronicsContentCatalog/Online(8796093448793)]]
+    [channel] = [desktop]
+    [currency] = [8796093153313->USD]
+    [currentCatalogVersion] = [electronicsProductCatalog/Online(8796093350489)]
+    [currentSite] = [8796093088808]
+    [enable.language.fallback] = [true]
+    [enable.language.fallback.serviceLayer] = [true]
+    [encodingAttributes] = [/electronics/zh]
+    [language] = [8796093382688->zh]
+    [locale] = [zh]
+    [sessionUserBrowseHistory-electronics] = [de.hybris.platform.acceleratorstorefrontcommons.history.impl.DefaultBrowseHistory$InstanceWrapper@658b32f8]
+    [timezone] = [sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=19,lastRule=null]]
+    [urlEncodingData] = [[de.hybris.platform.acceleratorfacades.urlencoder.data.UrlEncoderData@1abe2a6b, de.hybris.platform.acceleratorfacades.urlencoder.data.UrlEncoderData@723b245c]]
+    [user] = [anonymous[8796093087748]]
 
-        uiExperienceLevel=Desktop
-        uiExperienceOverride=false
-        detectedUiExperienceCode=Desktop
-        overrideUiExperienceCode=
 
 
-        Detected Browser:
+    UiExperienceLevel:
 
-        detectedDeviceId=
-        detectedDeviceUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36 QQBrowser/9.3.6581.400
-        detectedDeviceCapabilities=
+    uiExperienceLevel=Desktop
+    uiExperienceOverride=false
+    detectedUiExperienceCode=Desktop
+    overrideUiExperienceCode=
 
-        -->
+
+    Detected Browser:
+
+    detectedDeviceId=
+    detectedDeviceUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36 QQBrowser/9.3.6581.400
+    detectedDeviceCapabilities=
+
+    -->
 </body>
 </html>
