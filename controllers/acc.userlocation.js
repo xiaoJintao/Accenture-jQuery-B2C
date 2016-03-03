@@ -89,7 +89,5 @@ ACC.userlocation = {
 
 $(document).ready(function ()
 {
-
-	$(".flexslider").height($(window).width()*344/1350);
 	ACC.userlocation.bindAll();
 });

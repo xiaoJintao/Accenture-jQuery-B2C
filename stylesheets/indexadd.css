@@ -3,7 +3,7 @@
 	display:block;
 	width: 97%;  /*  y12.15  */
 	margin: 0 auto;   /*  y12.15  */
-	margin-bottom: 25px;  /*  y12.15  */
+	margin-bottom: 25px;  /*  yun 2.2  */  
 	height:80px; /* create */
 }
 .navigationbarcollectioncomponent {
@@ -867,6 +867,7 @@
 		padding-top: 15px;
 		overflow: hidden;
 		display: block;
+		clear: both;
 	}
 	@media screen and (max-width: 719px){
 		.index-footer {
@@ -904,7 +905,7 @@
 		white-space: nowrap;
 	}
 	.wrap ul .yCmsComponent {
-		/*display:none;*/
+		display:none;
 	}
 	.title-image{
 		height: 38px;
@@ -1046,6 +1047,7 @@
 
 .productDetailsPanel {
 	background:#fff;
+	padding:15px 0;
 	border:1px solid #ccc;
 	overflow:hidden;
 	width: 90%;
@@ -1094,7 +1096,7 @@
 	}
 }
 #globalMessages {
-	display:none !important;
+	/* display:none !important; */
 }
 .qr-code {
     width: 200px;
@@ -1229,7 +1231,7 @@ button.negative {
 	padding-top: 5px;
 	color: #fff;
     font-size: 17px;
-    padding: 4px 0 !important; /* miao.c.zhang 1/11 */
+    padding: 5px 0 !important; /* miao.c.zhang 1/11 */
     display: inline-block;
     width: 100%;
     white-space: nowrap;
@@ -1414,4 +1416,35 @@ button.negative {
 } 
 .header-list .miniCart:hover #miniCartLayer .links {
 	display: block;
+}
+#content {
+	margin-bottom: 30px;
+}
+.accountNav ,.customAccount {
+	margin-top: 30px;
+}
+
+/* yun add */
+#content {
+	margin-top: 50px;
+}
+@media screen and (max-width: 719px){
+	#content {
+		margin-top: 0;
+	}
+}
+.flexslider {
+	margin-top: 0 !important;
+}
+.span-4.accountLeftNavigation {
+	display: none;
+}
+.span-24 .span-20.last.accountContentPane {
+	margin-top:0;
+}
+.coupon-header .red {
+	color: red;
+}
+#content .column.accountContentPane {
+	margin-top: 20px;
 }

@@ -1,0 +1,310 @@
+
+
+.facetNavigation.reservationLeft {
+	float:left;
+	width:17%;
+	margin-top:30px;
+}
+.facetNavigation.reservationLeft .yCmsContentSlot {
+	width:100%;
+	background:#fff;
+}
+.facetNavigation.reservationLeft .product_list_box h2 {
+	display:none;
+}
+.facetNavigation.reservationLeft .product_list_box_inner {
+	border:none;
+}
+.facetNavigation.reservationLeft .product_list_box_inner1 ul li {
+	background-position:-190px 15px;
+}
+.facetNavigation.reservationLeft .product_list_box_inner ul li.listTitle {
+	border-bottom:1px solid #e1e1e1;
+	cursor:pointer;
+	padding: 10px 0 10px 18px;
+}
+.facetNavigation.reservationLeft .product_list_box_inner ul li.listTitle:last-child {
+	border:none;
+}
+.facetNavigation.reservationLeft .product_list_box_inner ul li.listTitle a {
+	font-size:14px;
+	font-weight:normal;
+}
+.facetNavigation.reservationLeft .product_list_box_inner ul.listItem {
+	display:none;
+}
+.facetNavigation.reservationLeft .product_list_box_inner ul.listItem li a {
+	font-size:12px;
+	height:32px;
+	line-height:32px;
+}
+.reservationMain{
+	margin-top:30px;
+	float: right;
+	margin-right: 3%;
+	width: 77%;
+}
+.reservationMain .main-right-part-1{
+	width: 100%;
+	overflow: hidden;
+}
+.reservationMain .main-right-part-1 .flexslider {
+	position: relative;
+	width: 100%;
+	height: 355px;
+	overflow: hidden;
+	zoom: 1;
+	background-color: #fff;
+}
+.main-right-part-1 .flexslider .slides li {
+	width: 100%;
+	height: 355px;
+}
+.main-right-part-1 .flexslider .slides li img {
+	width: 100%;
+	height: 100%;
+}
+.main-right-part-1 .flexslider .flex-control-nav {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background: none;
+    text-align: right;
+    width: auto;
+}
+.main-right-part-1 .flexslider .flex-control-nav li {
+	margin: 0 2px;
+	display: inline-block;
+	zoom: 1;
+}
+.main-right-part-1 .flexslider .flex-control-paging li a {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    background: #fff;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.main-right-part-1 .flexslider .flex-control-paging li a.flex-active,
+.main-right-part-1 .flexslider .flex-control-paging li.active a {
+	background: #ff4400;
+}
+.reservationMain .label{
+	width: 100%;
+	line-height: 43px;
+	overflow: hidden;
+	margin-top: 35px;
+	border: 1px solid #dbdbdb;
+	border-top: 2px solid #ff4400;
+	background-color: #fff;
+}
+.reservationMain .label a{
+	float: left;
+	padding: 0 1.5%;
+	color: #353535;
+}
+.reservationMain .label span{
+	float: left;
+	padding: 0 1.5%;
+}
+.reservationMain .hot-label{
+	color: #ff0000;
+	font-size: 1.5rem;
+}
+.reservationMain .main-right-part-2{
+	margin-top: 30px;
+}
+.reservationMain .main-right-part-2 ul{
+	overflow: hidden;
+	width: 100%;
+}
+.reservationMain .main-right-part-2 ul li {
+	float: left;
+	width: 32%;
+	margin-right: 1.5%;
+	border: 1px solid #cecece;
+	margin-bottom: 20px;
+	background-color: white;
+}
+.reservationMain .main-right-part-2 ul li:nth-child(3n) {
+	margin-right: 0;
+}
+@media screen and (max-width:840px) {
+	.reservationMain .main-right-part-2 ul li {
+		width: 31.5%;
+	}	
+}
+.reservationMain .main-right-part-2 ul li .countdown {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding:10px 0;
+	background-color: rgba(0,0,0,0.8);
+}
+.reservationMain .main-right-part-2 ul li .reserveImg:hover .countdown {
+	display: block;
+}
+.reservationMain .main-right-part-2 ul li .countdown p {
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.reservationMain .main-right-part-2 ul li .countdown p em {
+	font-style: normal;
+	font-size: 15px;
+	color: #ff4400;
+	margin: 0 2px;
+}
+
+.reservationMain .main-right-part-2 ul li .reserveImg {
+	display: block;
+	position: relative;
+}
+.reservationMain .main-right-part-2 ul li img{
+	width: 100%;
+	display:block !important;
+}
+.reservationMain .main-right-part-2 li .big-text{
+	color: #6f6f6f;
+	font-size: 1.3rem;
+	width: 96%;
+	margin: 0 2%;
+	height: 37px;
+	float: left;
+	overflow: hidden;
+}
+.reservationMain .main-right-part-2 li .unitprice {
+	display: inline;
+    float: right;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 10px 5px 0;
+    color: #010101;
+}
+.reservationMain .goods-text{
+	margin: 0 2%;
+	overflow: hidden;
+	height: 55px;
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+.reservationMain .need-integral{
+	float: left;
+	width: 40.6%;
+	line-height: 45px;
+	font-size: 1.2rem;
+	color: #bfbfbf;
+	white-space: nowrap;
+	text-overflow: clip;
+	overflow: hidden;
+}
+.reservationMain .have-bought{
+	float: left;
+	font-size: 1.2rem;
+	color: #bfbfbf;
+	clear: both;
+	margin-top: 5px;
+}
+.reservationMain .integral-num{
+	font-size: 1.6rem;
+	color: #f51d4c;
+	margin-right: 3px; 
+}
+.reservationMain .buyers{
+	font-size: 1.3rem;
+	color: #ff3333;
+}
+.reservationMain .goods-text .reserveBtn{
+	float: right;
+	background-color: #ff3333;
+	line-height: 26px;
+	padding: 0 15px;
+	margin-left: 4px;
+	margin-top: -9px;
+	font-size: 15px;
+	color: #fff;
+}
+.reservationMain .goods-text a button{
+	border: none;
+	background-color: #f51d4c;
+	color: white;
+}
+.reservationMain .add-together{
+	font-size: 1.6rem;
+	color: #6e6e6e;
+	margin: 0 5px;
+}
+
+.reservationMain .goods-text .buyers-progressBar {
+	width: 60%;
+	height: 11px;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid #ff0000;
+	margin-top: 10px;
+	float: left;
+}
+.reservationMain .goods-text .buyers-progressBar .have-bought-progressBar {
+	display: inline-block;
+	height: 11px;
+	width:70%;
+	background-color: #ff0000;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 719px) {
+	.facetNavigation.reservationLeft {
+		display:none;
+	}
+	.reservationMain {
+		width: 100%;
+		margin: 0;
+	}
+	.reservationMain {
+		width: 100%;
+		margin-right: 0;
+	}
+	.reservationMain .main-right-part-1,
+	.reservationMain .main-right-part-1 .flexslider,
+	.main-right-part-1 .flexslider .slides li {
+		height: 400px;
+	}
+	.reservationMain .main-right-part-2 {
+		width: 96%;
+		margin: 30px auto;
+	}
+	.reservationMain .main-right-part-2 ul li {
+		width: 48%;
+	}
+	.reservationMain .main-right-part-2 ul li:nth-child(2n+1) {
+		margin-right: 2%;
+	}
+	.reservationMain .main-right-part-2 ul li:nth-child(2n) {
+		margin-right: 0;
+	}
+	.reservationMain .main-right-part-2 ul li .countdown {
+		padding:5px 0;
+	}
+	.reservationMain .main-right-part-2 ul li .countdown p {
+		font-size:12px;
+		margin-left:5px;
+	}
+	.reservationMain .main-right-part-2 ul li .countdown p em {
+		font-size:13px;
+	}
+	.reservationMain .goods-text .reserveBtn {
+		padding:0 10px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.reservationMain .main-right-part-2 ul li {
+		width: 47.5%;
+	}
+}

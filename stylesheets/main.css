@@ -1,5 +1,421 @@
 
-/* helper */
+html {
+	
+}
+
+body {
+	color: #000;
+	text-align: left;
+	font-size: 12px;
+	position: relative;
+}
+
+
+
+
+#page{
+	width:100%;                             /*hcx-changed*/   /*wangkena 12/11*/
+	/*padding:0 5px;*/     /*wangkena*/
+	margin:0 auto;
+
+}
+
+
+
+button{
+	cursor:pointer;
+}
+
+
+.strong{
+	font-weight:bold;
+	
+}
+
+
+
+
+
+/*
+	Rating Stars
+*****************/
+
+.stars{
+	background:url("../images/stars.png") repeat-x left center  #cccccc;
+	display:block;
+	height:14px;
+	float:left;
+	color: transparent;
+}
+
+
+
+/*
+	required
+*****************/
+
+.required.right{
+	margin: 0 0 0 20px;
+	font-size: 90%;
+	color: #666;
+	max-width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+table.store-openings {
+	padding: 0;	
+	margin: 20px 0;
+
+}
+
+table.store-openings td {
+	padding: 1px 8px !important;
+	border-bottom: 1px solid #EEEEEE !important;
+}
+
+table.store-openings td.weekday_openings_day {
+	padding: 1px 8px 1px 8px !important;
+	font-weight: bold;
+}
+
+table.store-openings td.specialday_openings_date {
+	padding: 1px 8px 1px 0 !important;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+	Cart and Pickup button
+*****************/
+
+button.pickupInStoreButton,
+button.addToCartButton{
+	height:40px;
+	background:#000;
+	color:#fff;
+	border:2px solid #000;
+	padding:0;
+	width:100%;
+	font-size:1em;
+}
+
+
+button.pickupInStoreButton{
+	background:#fff;
+	color:#000;
+	
+}
+
+button.addToCartButton{
+	font-weight:bold;
+	text-transform:uppercase;
+}
+/*
+
+
+	alerts
+*****************/
+
+
+
+.alert{
+	padding:12px;
+	border:1px dotted;
+	margin:0 0 20px 0;
+}
+
+.alert.positive{
+	border-color:#339b01;
+	color:#339b01;
+}
+
+.alert.negative{
+	border-color:#c90400;
+	color:#c90400;
+}
+
+.alert.neutral{
+	display: none;   /*wangkena  12/22*/
+	border-color:#000;
+	color:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	Scroller 
+*****************/
+
+
+
+.span-24 > .scroller{
+	padding:40px 0;
+}
+
+.span-24 > .scroller .title{
+	font-size:3.2rem;  /*wangkena  12/10*/
+	color:rgb(76,76,76);
+	padding:0 0 5px 0;
+	text-transform:uppercase;
+	margin:10px 0 40px 0;                           /*hcx-changed*/
+	text-align:center;
+}
+
+
+
+.span-24 > .scroller ul li{
+	width:220px;
+	margin:0 20px 0 0;
+}
+
+.span-24 > .scroller ul li{
+	width:230px;
+	margin:0 10px 0 0;
+	
+
+}
+
+.scrollerProduct{
+	margin:0 5px;
+	display:block;
+}
+
+
+.scrollerProduct .thumb{
+		margin:0 0 5px 0;
+}
+
+.scrollerProduct .thumb img{ 
+	width:100%;
+}
+
+
+
+
+.scrollerProduct .details{
+	color:#8f8f8f;
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	font-size:14px;
+}
+
+
+.scrollerProduct .priceContainer{
+	text-align:center;
+	margin: 30px 0 20px 0;
+	color:#fd8d24;
+}
+
+
+
+
+
+
+
+
+
+/*
+	Scroller 
+*****************/
+
+.jcarousel-clip {
+	overflow: hidden;
+}
+
+
+.jcarousel-skin .jcarousel-prev,
+.jcarousel-skin .jcarousel-next {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border: 0;
+	padding: 0;
+	background: url("../images/scroller-sprite.png") no-repeat;
+	margin:0;
+}
+
+.jcarousel-skin .jcarousel-prev[disabled],
+.jcarousel-skin .jcarousel-next[disabled] {
+	opacity: 0.1;
+	cursor: default;
+}
+
+
+.jcarousel-skin .jcarousel-prev-horizontal,
+.jcarousel-skin .jcarousel-next-horizontal {
+	top: 40%;
+}
+
+.jcarousel-skin .jcarousel-prev-horizontal {
+	left: 0;   /* y 1.28 */
+	background-position: 0 0;
+}
+
+.jcarousel-skin .jcarousel-next-horizontal {
+	right: 0;  /* y 1.28 */
+	background-position: right 0;
+}
+
+
+.jcarousel-skin .jcarousel-prev-vertical,
+.jcarousel-skin .jcarousel-next-vertical {
+	left: 50%;
+	margin-left: -12.5px;
+}
+
+.jcarousel-skin .jcarousel-prev-vertical {
+	top: -30px;
+	background-position: 0 bottom;
+}
+
+.jcarousel-skin .jcarousel-next-vertical {
+	bottom: -30px;
+	background-position: right bottom;
+}
+
+
+.hotsaleUl{
+	width:403% !important;     /*wangkena  12/23*/ 
+}
+
+.span-24 > .scroller .detail-title {
+	font-size:16px;
+	border-bottom:1px solid #ccc;
+	text-align:left;
+	padding-bottom:5px;	
+	padding-left:16px;
+}
+.detail-carousel  {             
+	width:500% !important;
+}
+.detail-carousel li {          
+	width:2.5% !important;  
+	   
+}
+.detail-carousel li .scrollerProduct .priceContainer{
+	margin:10px 0 10px 0;
+}
+.jcarousel-container-vertical{
+	margin:30px 0;
+}
+
+
+
+.jcarousel-container{
+}
+
+
+
+
+
+ul.jcarousel-skin{
+	background: url("../images/spinner.gif") no-repeat center center ;
+    display: block;
+    height: 100%;
+    width: 100%;
+	min-width:50px;
+	min-height:50px;
+	
+}
+/* hide loading */
+ul.jcarousel-skin li{
+	display:none;
+}
+
+
+
+
+
+/*
+	Banner Sizes
+*****************/
+
+.cms_disp-img_slot .thumb img,
+#content .simple_disp-img img{
+	width:80%;
+	height:auto;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+.doCheckoutBut{
+	margin-right:0;
+}
+
+
+
+
+
+.disp-img{
+	clear:both;
+
+
+}
+
+.disp-img .title{
+	display: block;
+	
+}
+
+.disp-img .thumb{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	
+}
+
+
+
+
+/* help.css */
+
+
+
 
 .clear_fix:after {
 	content: ".";
@@ -39,7 +455,7 @@ ul li {
 
 a{
 	text-decoration:none;
-	color:#000;
+	color:#666666;                           /*hcx-changed*/
 }
 
 .hidden,.notVisible{
@@ -339,7 +755,9 @@ a:active {
 .helpBanner {
 	margin: 20px 0;
 	padding: 5px;
-	border: 1px dotted #000;
+	padding: 10px 0 10px 5px;/*66*/
+	border: 1px solid #a5a5a5;   /*wangkena  12/22*/
+	font-size: 14px;/*66*/
 }
 
 .helpBanner .bannerHeadline {
@@ -353,397 +771,9 @@ a:active {
 }
 
 
-/* main */
-html {
-	
-}
 
-body {
-	color: #000;
-	text-align: left;
-	font-size: 12px;
 
-}
-
-
-
-
-#page{
-
-	overflow: scroll;
-	margin:0 auto;
-
-}
-
-
-
-button{
-	cursor:pointer;
-}
-
-
-.strong{
-	font-weight:bold;
-	
-}
-
-
-
-
-
-/*
-	Rating Stars
-*****************/
-
-.stars{
-	background:url("../images/stars.png") repeat-x left center  #cccccc;
-	display:block;
-	height:14px;
-	float:left;
-	color: transparent;
-}
-
-
-
-/*
-	required
-*****************/
-
-.required.right{
-	margin: 0 0 0 20px;
-	font-size: 90%;
-	color: #666;
-	max-width: 60%;
-}
-
-
-
-
-
-
-
-
-
-
-
-table.store-openings {
-	padding: 0;	
-	margin: 20px 0;
-
-}
-
-table.store-openings td {
-	padding: 1px 8px !important;
-	border-bottom: 1px solid #EEEEEE !important;
-}
-
-table.store-openings td.weekday_openings_day {
-	padding: 1px 8px 1px 8px !important;
-	font-weight: bold;
-}
-
-table.store-openings td.specialday_openings_date {
-	padding: 1px 8px 1px 0 !important;
-	font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-	Cart and Pickup button
-*****************/
-
-button.pickupInStoreButton,
-button.addToCartButton{
-	height:40px;
-	background:#000;
-	color:#fff;
-	border:2px solid #000;
-	padding:0;
-	width:100%;
-	font-size:1em;
-}
-
-button.addToBuyButton{
-	height:40px;
-	background:#000;
-	color:#fff;
-	border:2px solid #000;
-	padding:0;
-	width:100%;
-	font-size:1em;
-}
-
-button.pickupInStoreButton{
-	background:#fff;
-	color:#000;
-	
-}
-
-button.addToCartButton{
-	font-weight:bold;
-	text-transform:uppercase;
-}
-
-button.addToBuyButton{
-	font-weight:bold;
-	text-transform:uppercase;
-}
-/*
-
-
-	alerts
-*****************/
-
-
-
-.alert{
-	padding:12px;
-	border:1px dotted;
-	margin:0 0 20px 0;
-}
-
-.alert.positive{
-	border-color:#339b01;
-	color:#339b01;
-}
-
-.alert.negative{
-	border-color:#c90400;
-	color:#c90400;
-}
-
-.alert.neutral{
-	border-color:#000;
-	color:#000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-	Scroller 
-*****************/
-
-
-
-.span-24 > .scroller{
-	padding:40px 0;
-}
-
-.span-24 > .scroller .title{
-	font-size:1.167em;
-	font-weight:bold;
-	color:#666666;
-	border-bottom:1px solid #979797;
-	padding:0 0 5px 0;
-	text-transform:uppercase;
-	margin:0 0 40px 0;
-}
-
-
-
-.span-24 > .scroller ul li{
-	width:220px;
-	margin:0 20px 0 0;
-}
-
-.span-24 > .scroller ul li{
-	width:230px;
-	margin:0 10px 0 0;
-	
-
-}
-
-.scrollerProduct{
-	margin:0 5px;
-	display:block;
-}
-
-
-.scrollerProduct .thumb{
-	padding:0 0 20px 0;
-		margin:0 0 5px 0;
-		border-bottom:1px dotted #c1c1c1;
-}
-
-.scrollerProduct .thumb img{ 
-	width:100%;
-}
-
-
-
-
-.scrollerProduct .details{
-	color:#8f8f8f;
-	padding:0 40px 0 0;
-
-}
-
-.scrollerProduct .browsedhistory{
-	color:#8f8f8f;
-	padding:0 40px 0 0;
-	height:80px;
-}
-
-
-.scrollerProduct .priceContainer{
-	float:right;
-	margin: 0 0 0 5px;
-}
-
-
-
-
-
-
-
-
-
-/*
-	Scroller 
-*****************/
-
-.jcarousel-clip {
-	overflow: hidden;
-}
-
-
-.jcarousel-skin .jcarousel-prev,
-.jcarousel-skin .jcarousel-next {
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	border: 0;
-	padding: 0;
-	background: url("../images/scroller-sprite.png") no-repeat;
-	margin:0;
-}
-
-.jcarousel-skin .jcarousel-prev[disabled],
-.jcarousel-skin .jcarousel-next[disabled] {
-	opacity: 0.1;
-	cursor: default;
-}
-
-
-.jcarousel-skin .jcarousel-prev-horizontal,
-.jcarousel-skin .jcarousel-next-horizontal {
-	top: 40%;
-}
-
-.jcarousel-skin .jcarousel-prev-horizontal {
-	left: -30px;
-	background-position: 0 0;
-}
-
-.jcarousel-skin .jcarousel-next-horizontal {
-	right: -30px;
-	background-position: right 0;
-}
-
-
-.jcarousel-skin .jcarousel-prev-vertical,
-.jcarousel-skin .jcarousel-next-vertical {
-	left: 50%;
-	margin-left: -12.5px;
-}
-
-.jcarousel-skin .jcarousel-prev-vertical {
-	top: -30px;
-	background-position: 0 bottom;
-}
-
-.jcarousel-skin .jcarousel-next-vertical {
-	bottom: -30px;
-	background-position: right bottom;
-}
-
-
-
-
-
-
-
-.jcarousel-container-vertical{
-	margin:30px 0;
-}
-
-
-
-.jcarousel-container{
-	background:#fff;
-}
-
-
-
-
-
-ul.jcarousel-skin{
-	background: url("../images/spinner.gif") no-repeat center center ;
-    display: block;
-    height: 100%;
-    width: 100%;
-	min-width:50px;
-	min-height:50px;
-	
-}
-/* hide loading */
-ul.jcarousel-skin li{
-	display:none;
-}
-
-
-
-
-
-/*
-	Banner Sizes
-*****************/
-
-.cms_disp-img_slot .thumb img,
-#content .simple_disp-img img{
-	width:100%;
-	height:auto;
-}
-
-
-
-
-
-
-
-
-
-
-.doCheckoutBut{
-	margin-right:0;
-}
-
+/* buttons.css  */
 
 /* -------------------------------------------------------------- 
   
@@ -773,6 +803,7 @@ a.button, button {
 	cursor: pointer;
 	text-align: center;
 	padding: 0 10px;
+	border-radius: 3px;/*66*/
 }
 button {
 	width: auto;
@@ -818,6 +849,9 @@ a.button.negative {
 
 /* Standard */
 button:hover, a.button:hover {
+	background-color: #fd8d24;
+	border-color: #fd8d24;
+	color: #fff;
 }
 a.button:active,
 button:active {
@@ -831,6 +865,9 @@ a.button.positive {
 	font-weight: bold;
 	text-transform: uppercase;
 	border-color:#000;
+	
+	font-size:16px;   /*y*/
+	font-weight:normal;
 }
 a.button.positive:hover, 
 button.positive:hover {
@@ -902,330 +939,94 @@ button.link {
 }
 
 
-/*!
- * Bootstrap v2.3.2
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+
+/*  forms.css */
+
+/* --------------------------------------------------------------
+
+   forms.css
+   * Sets up some default styling for forms
+   * Gives you classes to enhance your forms
+
+   Usage:
+   * For text fields, use class .title or .text
+   * For inline forms, use .inline (even when using columns)
+
+-------------------------------------------------------------- */
+
+/* 
+	A special hack is included for IE8 since it does not apply padding 
+	correctly on fieldsets
+ */ 
+label       { font-weight: bold; }
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend      { font-weight: bold; font-size:1.2em; margin-top:-0.2em; margin-bottom:1em; }
+
+fieldset, #IE8#HACK { padding-top:1.4em; } 
+legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
+
+/* Form fields
+-------------------------------------------------------------- */
+
+/* 
+  Attribute selectors are used to differentiate the different types 
+  of input elements, but to support old browsers, you will have to 
+  add classes for each one. ".title" simply creates a large text  
+  field, this is purely for looks.
  */
+input[type=text], input[type=password],
+input.text, input.title,
+textarea {
+  background-color:#fff;
+  border:1px solid #bbb;
+}
+input[type=text]:focus, input[type=password]:focus,
+input.text:focus, input.title:focus,
+textarea:focus {
+  border-color:#666;
+}
+select { background-color:#fff; border-width:1px; border-style:solid; }
 
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-form {
-  /*margin: 0 0 20px;*/
-}
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 40px;
-  color: #333333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-legend small {
-  font-size: 15px;
-  color: #999999;
-}
-.control-group label,
-.control-group input,
-.control-group button,
-.control-group select,
-.control-group textarea {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
-}
-.control-group input,
-.control-group button,
-.control-group select,
-.control-group textarea {
-  font-family: Arial, sans-serif;
-}
-.control-group label {
-  display: block;
-  margin: 12px 0 2px 0;
-}
-.control-group select,
-.control-group textarea,
-.control-group input[type="text"],
-.control-group input[type="password"],
-.control-group input[type="datetime"],
-.control-group input[type="datetime-local"],
-.control-group input[type="date"],
-.control-group input[type="month"],
-.control-group input[type="time"],
-.control-group input[type="week"],
-.control-group input[type="number"],
-.control-group input[type="email"],
-.control-group input[type="url"],
-.control-group input[type="search"],
-.control-group input[type="tel"],
-.control-group input[type="color"] {
-  height: 20px;
-  padding: 4px 6px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #555555;
-  vertical-align: middle;
-  /*#################################################*/
-
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.control-group textarea {
-  height: auto;
-}
-.control-group textarea,
-.control-group input[type="text"],
-.control-group input[type="password"],
-.control-group input[type="datetime"],
-.control-group input[type="datetime-local"],
-.control-group input[type="date"],
-.control-group input[type="month"],
-.control-group input[type="time"],
-.control-group input[type="week"],
-.control-group input[type="number"],
-.control-group input[type="email"],
-.control-group input[type="url"],
-.control-group input[type="search"],
-.control-group input[type="tel"],
-.control-group input[type="color"],
-.control-group .uneditable-input {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-.control-group textarea:focus,
-.control-group input[type="text"]:focus,
-.control-group input[type="password"]:focus,
-.control-group input[type="datetime"]:focus,
-.control-group input[type="datetime-local"]:focus,
-.control-group input[type="date"]:focus,
-.control-group input[type="month"]:focus,
-.control-group input[type="time"]:focus,
-.control-group input[type="week"]:focus,
-.control-group input[type="number"]:focus,
-.control-group input[type="email"]:focus,
-.control-group input[type="url"]:focus,
-.control-group input[type="search"]:focus,
-.control-group input[type="tel"]:focus,
-.control-group input[type="color"]:focus,
-.control-group .uneditable-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
-}
-.control-group input[type="radio"],
-.control-group input[type="checkbox"] {
-  margin: 4px 4px  0 0;
-  *margin-top: 0;
-  /* IE7 */
-
-  margin-top: 1px \9;
-  /* IE8-9 */
-
-  line-height: normal;
-}
-.control-group input[type="file"],
-.control-group input[type="image"],
-.control-group input[type="submit"],
-.control-group input[type="reset"],
-.control-group input[type="button"],
-.control-group input[type="radio"],
-.control-group input[type="checkbox"] {
-  width: auto;
-}
-.control-group select,
-.control-group input[type="file"] {
-  height: 30px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
-  *margin-top: 4px;
-  /* For IE7, add top margin to align select with labels */
-
-  line-height: 30px;
-}
-.control-group select {
-  border: 1px solid #cccccc;
-  background-color: #ffffff;
-}
-.control-group select[multiple],
-.control-group select[size] {
-  height: auto;
-}
-.control-group select:focus,
-.control-group input[type="file"]:focus,
-.control-group input[type="radio"]:focus,
-.control-group input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.control-group .radio,
-.control-group .checkbox {
-  min-height: 20px;
-  padding-left: 20px;
-}
-.control-group .radio input[type="radio"],
-.control-group .checkbox input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
-.control-group .controls > .radio:first-child,
-.control-group .controls > .checkbox:first-child {
-  padding-top: 5px;
-}
-.control-group .radio.inline,
-.control-group .checkbox.inline {
-  display: inline-block;
-  padding-top: 5px;
-  margin-bottom: 0;
-  vertical-align: middle;
-}
-.control-group .radio.inline + .radio.inline,
-.control-group .checkbox.inline + .checkbox.inline {
-  margin-left: 10px;
-}
-.control-group input[disabled],
-.control-group select[disabled],
-.control-group textarea[disabled],
-.control-group input[readonly],
-.control-group select[readonly],
-.control-group textarea[readonly] {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-}
-.control-group input[type="radio"][disabled],
-.control-group input[type="checkbox"][disabled],
-.control-group input[type="radio"][readonly],
-.control-group input[type="checkbox"][readonly] {
-  background-color: transparent;
-}
-.control-group input:focus:invalid,
-.control-group textarea:focus:invalid,
-.control-group select:focus:invalid {
-  color: #b94a48;
-  border-color: #ee5f5b;
-}
-.control-group input:focus:invalid:focus,
-.control-group textarea:focus:invalid:focus,
-.control-group select:focus:invalid:focus {
-  border-color: #e9322d;
-  -webkit-box-shadow: 0 0 6px #f8b9b7;
-  -moz-box-shadow: 0 0 6px #f8b9b7;
-  box-shadow: 0 0 6px #f8b9b7;
-}
-.control-group .help-block,
-.control-group .help-inline {
-  color: #595959;
-}
-.control-group .help-block {
-  display: block;
-  margin-bottom: 10px;
-}
-.control-group .help-inline {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-
-  *zoom: 1;
-  vertical-align: middle;
-  padding-left: 5px;
+input[type=text], input[type=password],
+input.text, input.title,
+textarea, select {
+  margin:0.5em 0;
 }
 
-.control-group label.add-address-left-label {
-	margin-top: 35px;
+input.text,
+input.title   { width: 300px; padding:5px; }
+input.title   { font-size:1.5em; }
+textarea      { width: 390px; height: 250px; padding:5px; }
+
+/* 
+  This is to be used on forms where a variety of elements are 
+  placed side-by-side. Use the p tag to denote a line. 
+ */
+form.inline { line-height:3; }
+form.inline p { margin-bottom:0; }
+
+
+/* Success, info, notice and error/alert boxes
+-------------------------------------------------------------- */
+
+.error,
+.alert, 
+.notice,
+.success, 
+.info 			{ padding: 0.8em; margin-bottom: 1em; border: 2px solid #ddd; }
+
+.error, .alert { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
+.notice     { background: #fff6bf; color: #514721; border-color: #ffd324; }
+.success    { background: #e6efc2; color: #264409; border-color: #c6d880; }
+.info 			{ background: #d5edf8; color: #205791; border-color: #92cae4; }
+.error a, .alert a { color: #8a1f11; }
+.notice a   { color: #514721; }
+.success a  { color: #264409; }
+.info a			{ color: #205791; }
+
+
+@media screen and (max-width:719px) {
+	.hotsaleUl {
+		width: 495% !important;
+	}
 }
-
-.is-default-address {
-	margin: 15px 10px 0 0;
-	display: inline-block;
-	float: left;
-	color: #999;
-}
-
-button.view-address-book {
-	display: block;
-	text-transform: none;
-	font-weight: normal;
-	float: none;
-	height: 30px;
-}
-
-button.view-saved-payments {
-	display: block;
-	text-transform: none;
-	font-weight: normal;
-	float: none;
-	height: 30px;
-}
-
-.control-group.error{
-  
-}
-
-.control-group.error label{
-	color:#c90400;
-}
-
-.control-group.error select{
-	border-color:#c90400;
-}
-
-
-.control-group.error input{
-	border-color:#c90400;
-}
-
-#countrySelector {
-	float: left;
-}
-
-.form_field_error { color: #c60300; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

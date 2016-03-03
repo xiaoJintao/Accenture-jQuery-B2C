@@ -1,4 +1,5 @@
 $(function() {
+	indexHeaderImgToggle();
   $('.headToggle').click(function() {
     $(".userRegister").toggle();
   });
@@ -25,7 +26,12 @@ $(function() {
   $(window).scroll(function() {
     var headerTop = $("#header").outerHeight();
     var getScrollTop = $(document).scrollTop();
-    if (getScrollTop > headerTop) {
+	if($(".hearer_banner_img").length>0){
+    	 var headerBannerHeight = $(".hearer_banner_img").height();
+    }else {
+    	var headerBannerHeight = 0;
+    }
+    if (getScrollTop >  headerTop + headerBannerHeight) {
       $(".navigationbarcollectioncomponent").css("position", "fixed");
       $(".navigationbarcollectioncomponent").css("top", "0");
       $(".dropmenu").addClass("dropmenu-none");
@@ -240,7 +246,6 @@ function cartSelectedAll(){
 		if($(this).is(':checked')){
 			$("#cartItems .checked").attr("checked",true);
 		}
-
 	});
 	$("#cartItems .checked").bind("click",function(){
 		if(!$(this).is(':checked')){
@@ -275,25 +280,34 @@ function showCart(){
 	var myCartDetail = $("#miniCartLayer");
 	myCart.bind("mouseenter",function(e){
 		myCartDetail.css({
-                     "position": "fixed",
-			"top": "400px",
-			"right": "52px"
+			"position": "fixed",
+			"bottom": "150px",
+			"right": "55px"
 		});
 	});
 	myCart.bind("mouseleave",function(e){
-    myCartDetail.unbind("mouseenter");
-    setTimeout(function(){
-    myCartDetail.css({
-     "position": "",
-     "top": "",
-     "right": ""
-    });
-    },1000)
-		
+		myCartDetail.unbind("mouseenter");
+		myCartDetail.css({
+			"position": "",
+			"bottom": "",
+			"right": ""
+		});
 	});
 }
 
-//add 1.29
-function pdpLoading(){
-	
+// add 2.2
+function indexHeaderImgToggle(){
+	bigImageDown();
+    $(".banner_img_small").mouseover(function() {
+      	$(this).slideUp(1000);
+      	bigImageDown();
+   });
+}
+function bigImageDown() {
+   $(".banner_img").slideDown(1000, function() {
+   setTimeout(function() {
+      $(".banner_img").slideUp(1000);
+     $(".banner_img_small").slideDown(1000);
+    }, 3000);
+   });
 }

@@ -67,6 +67,7 @@
 	color:#808080;
 	font-weight:bold;
 	line-height:3em;
+	margin:10px 0 0 0;
 	padding:0 0 0 10px;
 	background:url("../images/facetMoreLessIcon.png") no-repeat left center ;
 }
@@ -121,7 +122,7 @@ a.change_location-link {
 */
 
 .facetNavigation  .storesFacetSearchForm {
-	margin:10px 0 0 0;	
+	margin:10px 0 0 0;
 }
 
 
@@ -178,15 +179,6 @@ a.change_location-link {
 	
 }
 
-.line-up{
-	display: inline-block;
-	vertical-align: top;
-}
-
-.line-up .findStoreBtn {
-    height: auto;
-    padding: 3px 15px;
-}
 
 
 

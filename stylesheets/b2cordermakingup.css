@@ -1,0 +1,184 @@
+
+
+.OrderMakingUpMain{
+	width: 100%;
+}
+.OrderMakingUpMain .label{
+	width: 100%;
+	line-height: 43px;
+	overflow: hidden;
+	margin-top: 35px;
+	border: 1px solid #dbdbdb;
+	border-top: 2px solid #ff4400;
+	background-color: #fff;
+}
+.OrderMakingUpMain .label a{
+	float: left;
+	padding: 0 1.5%;
+	color: #353535;
+}
+.OrderMakingUpMain .label span{
+	float: left;
+	padding: 0 1.5%;
+}
+.OrderMakingUpMain .hot-label{
+	color: #ff0000;
+	font-size: 15px;
+	margin-right: 10px;
+}
+.OrderMakingUpMain .label .price-filter {
+	color: #6d6d6d;
+	font-size: 12px;
+}
+.OrderMakingUpMain .label .price-filter.current {
+	color:#ff0000;
+}
+/* .OrderMakingUpMain .label .price-filter:hover {
+	color: #ff0000;
+} */
+.OrderMakingUpMain .OrderMakingupUl {
+	margin-top:20px;
+}
+/* .OrderMakingUpMain .OrderMakingupUl li:nth-child(0) {
+	margin-right: 1.5%;
+} */
+
+.OrderMakingUpMain .OrderMakingupUl li {
+	float: left;
+	width: 32%;
+	margin-right: 1.5%;
+	border: 1px solid #cecece;
+	margin-bottom: 20px;
+	background-color: white;
+}
+.OrderMakingUpMain .OrderMakingupUl li:nth-child(3n) {
+	margin-right: 0;
+} 
+
+
+@media screen and (max-width:840px) {
+	.OrderMakingUpMain .OrderMakingupUl li {
+		width: 31.5%;
+	}	
+}
+
+.OrderMakingUpMain .OrderMakingupUl li .reserveImg {
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.OrderMakingUpMain .OrderMakingupUl li img{
+	width: 100%;
+}
+.OrderMakingUpMain .OrderMakingupUl li .big-text{
+	color: #6f6f6f;
+	font-size: 13px;
+	width: 96%;
+	margin: 0 2%;
+	height: 37px;
+	float: left;
+	overflow: hidden;
+	margin-top:5px;
+}
+.OrderMakingUpMain .OrderMakingupUl li .unitprice {
+	display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left:8px;
+    color: #010101;
+}
+.OrderMakingUpMain .goods-text{
+	margin: 0 2%;
+	overflow: hidden;
+	height: 55px;
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+.OrderMakingUpMain .need-integral{
+	float: left;
+	width: 40.6%;
+	line-height: 45px;
+	font-size: 1.2rem;
+	color: #bfbfbf;
+	white-space: nowrap;
+	text-overflow: clip;
+	overflow: hidden;
+}
+.OrderMakingUpMain .have-bought{
+	float: left;
+	font-size: 1.2rem;
+	color: #bfbfbf;
+	clear: both;
+	margin-top: 5px;
+}
+.OrderMakingUpMain .integral-num{
+	font-size: 1.6rem;
+	color: #f51d4c;
+	margin-right: 3px; 
+}
+.OrderMakingUpMain .buyers{
+	font-size: 1.3rem;
+	color: #ff3333;
+}
+.OrderMakingUpMain .OrderMakingupUl li .addToCartButton{
+	float: right;
+	background-color: #ff3333;
+	line-height: 26px;
+	padding: 0 15px;
+	margin-top: -22px;
+    margin-right: 10px;    /*reserveBtn*/
+	font-size: 15px;
+	color: #fff;
+	width: auto;
+    height: auto;
+    border: none;
+}
+.OrderMakingUpMain .goods-text a button{
+	border: none;
+	background-color: #f51d4c;
+	color: white;
+}
+.OrderMakingUpMain .add-together{
+	font-size: 1.6rem;
+	color: #6e6e6e;
+	margin: 0 5px;
+}
+
+@media screen and (max-width: 719px) {
+	.OrderMakingUpMain {
+		width: 100%;
+		margin: 0;
+	}
+	.OrderMakingUpMain {
+		width: 100%;
+		margin-right: 0;
+	}
+	.OrderMakingUpMain .OrderMakingupUl li {
+		width: 48%;
+	}
+	.OrderMakingUpMain .OrderMakingupUl li:nth-child(2n+1) {
+		margin-right: 3%;
+	}
+	.OrderMakingUpMain .OrderMakingupUl li:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.OrderMakingUpMain .OrderMakingupUl li {
+		width: 47.5%;
+	}
+}
+
+
+/*wangkena  1/29*/
+#header .headerContent.secondRow {
+	margin-bottom:10px;
+}
+#header .headerContent.secondRow .languagecurrencycomponent li {
+	width:48%;
+	float:left;
+}
+#header .headerContent.secondRow .languagecurrencycomponent li:first-child {
+	margin-right:4%;
+}

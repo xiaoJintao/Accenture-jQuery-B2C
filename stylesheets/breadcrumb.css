@@ -1,0 +1,49 @@
+/*
+## Breadcrumb
+********************************************************************/
+
+.breadcrumb{
+	background:#f6f6f6;
+	width: 97%;
+    margin: 0 auto 20px;
+}
+
+#content .breadcrumb {
+	display:none;
+}
+
+.breadcrumb ul{
+	/*padding:12px;*/
+	line-height:0.833em;
+	padding-top:30px;   /*wangkena  12/10*/
+	padding-left:12px;  /*wangkena*/ 
+}
+
+.breadcrumb ul li{
+	float:left;
+}
+
+.breadcrumb ul li.separator{
+	padding:0 6px;
+	font-size: 1em;
+	line-height: 0.9em;
+}
+
+.breadcrumb ul li,
+.breadcrumb ul li a{
+	color:#919191;
+	/*font-size:0.9em;*/
+	font-size:14px;     /*wangkena  detail*/
+	text-transform:uppercase;
+}
+
+.breadcrumb ul li a.last{
+	color:#919191;   /*wangkena  12/23*/
+}
+
+/*wangkena  12/10*/
+@media screen and (max-width:719px){
+	.breadcrumb {
+		display: none;
+	}
+}

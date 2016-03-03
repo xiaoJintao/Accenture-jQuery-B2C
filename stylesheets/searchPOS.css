@@ -64,6 +64,12 @@
 .searchPOS .searchPOSForm button{
 	margin: 0 6px;
 	line-height: 12px;
+	padding:0 5px;
+	white-space:nowrap;
+	border:2px solid #c7c7c7;    /*zhangmiao 1/13*/
+}
+.searchPOS .searchPOSForm button:hover {
+	border-color:#fd8d24;      /*zhangmiao 1/13*/
 }
 
 
@@ -151,7 +157,21 @@
 	font-weight:bold;
 }
 
-
+/*zhangmiao 1/13*/
+@media screen and (max-width:719px) {
+	.searchPOS .prod_grid,
+	.searchPOS .searchPOSContent,
+	.searchPOS .searchPOSForm table,
+	.searchPOS .searchPOSForm .control-group {
+		width:100%;
+	}
+	.searchPOS .searchPOSForm table td:first-child {
+		width:78%;
+	}
+	.searchPOS .prod_grid img {
+		margin:0;
+	}
+}
 
 
 

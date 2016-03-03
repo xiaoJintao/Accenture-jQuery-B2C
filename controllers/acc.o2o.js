@@ -129,9 +129,10 @@ ACC.o2oAtg = {
 				//alert("onComplete");
 				
 				var qrValue = document.getElementById("show-qrcode-value").value;
+//				var qrValue = 2015122214082600016;
 				var encodedContextPath = document.getElementById("show-qrcode-fullUrlBefore").value;
 				var qrLink = encodedContextPath + "/qrcode/set?q="+qrValue;
-				//alert(qrLink);
+//				alert(qrLink);
 				//$('#qr-code').qrcode(qrLink);
 				$("#cboxContent .qr-code").qrcode({ 
 				    width: 200, //宽度 

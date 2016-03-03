@@ -1,16 +1,6 @@
 /* CHINAACC:NEWFILE */
 
-$(function(){	
-	$(".tabInner").each(function(){
-		$(this).find("li:not(:first)").hide();
-	});	
-	
-
-	//$(".shareout").find("#addTofavoriteForm").show();
-
-	$(".tabInner").each(function(){
-		$(this).find("li:not(:first)").hide();
-	});	
+$(function(){
 	$('.tab .navi li').mouseover(function(){
 		var selectorName,index;
 		selectorName = $(this).parent().parent().attr('class').split(' tab')[0];
@@ -20,26 +10,6 @@ $(function(){
 		$('.' + selectorName +' .tabInner li').eq(index).find('img.lazy').lazyload();
 	});
 	
-	//phone_menu
-	$(".menulist").click(function(){
-		$(this).next(".yCmsContentSlot").find(".myLa").toggle();		
-	});
-	
-	//register
-	$(".smallHead").find("span:last").hide();
-	$(".smallHead").live("click",function(){		
-		if($(this).siblings(".userRegister").is(":hidden")){
-			$(this).find("span").hide();
-			$(this).find("span:last").show();			
-			$(this).siblings(".userRegister").show();
-		}else{			
-			$(this).siblings(".userRegister").hide();
-			$(this).find("span").hide();
-			$(this).find("span:first").show();
-		}
-	});
-	
-
 	
 	/* add for word limit  begin */
 	var maxLen = 18;

@@ -43,7 +43,6 @@
 	width:810px;
 }
 
-
 .customAccount .tile{
 	border:1px dotted #a5a5a5;
 	padding:0 20px 20px;
@@ -51,6 +50,7 @@
 	margin:0 20px 20px 0;
 	height:100px;
 }
+
 
 
 .customAccount .tile .headline{
@@ -160,4 +160,22 @@
 .accountContentPane  .orderBoxes .orderBox{
 	width:322px;
 	margin:0 20px 20px 0;
+}
+
+/* y 1.28 */
+@media screen and (max-width: 719px){
+	.customAccount {
+		width: 100%;
+	}
+	.customAccount .tile {
+		box-sizing: border-box;
+    	width: 100%;
+	}
+	.accountContentPane {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.accountContentPane .control-group {
+		width: 100%;
+	}
 }

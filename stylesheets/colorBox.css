@@ -19,3 +19,18 @@
 #cboxClose{
 	top:0;
 }
+
+
+/*zhangmiao  1/13*/
+@media screen and (max-width:719px) {
+	#colorbox {
+		left:0 !important;
+		padding-right:0 !important;
+	}
+	#colorbox, #cboxOverlay, #cboxWrapper {
+		width:100% !important;
+	}
+	#cboxLoadedContent {
+		width:100% !important;
+	}
+}

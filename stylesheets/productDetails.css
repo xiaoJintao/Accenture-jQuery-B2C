@@ -1,173 +1,4 @@
 /*
-## productGrid
-********************************************************************/
-
-
-.template-pages-category-productGridPage .section2 .dynamic_disp-img{
-	position:relative;
-}
-
-.template-pages-category-productGridPage .section2 .title{
-	position:absolute;
-	top:0;
-	line-height:29px;
-	padding:0 0 0 20px;
-	color:#fff;
-	font-size: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.template-pages-category-productGridPage .section2 .thumb{
-	
-}
-
-.template-pages-category-productGridPage .section2 .details{
-	position:absolute;
-	top:40px;
-	width:500px;
-	padding: 0 0 0 20px;
-	color:#fff;
-}
-
-.productGrid .productGridItem {
-	margin:40px 5px 40px;
-}
-
-.productGrid .productGridItem .productMainLink{
-	min-height:305px;
-	display: block;
-}
-
-.productGrid .productGridItem .thumb{
-	border-bottom:1px dotted #c1c1c1;
-	margin:0 0 5px 0;
-	padding:0 0 20px 0;
-}
-
-.productGrid .productGridItem .thumb img{ 
-	width:100%;
-}
-
-.productGrid .productGridItem .details{
-	color:#8f8f8f;
-	padding:0 40px 4px 0;
-	line-height: 120%;
-}
-
-.productGrid .productGridItem  button.pickupInStoreButton, .productGrid .productGridItem  button.addToCartButton {
-    font-weight: normal;
-    min-height: 25px;
-    text-transform: none;
-}
-
-.productGrid .productGridItem .priceContainer{
-	float:right;
-}
-
-.productGrid .productGridItem .cart .add_to_cart_form{
-	float:right;
-	width:49%;
-}
-
-.productGrid .productGridItem .cart .collect_from_store{
-	width:49%;
-}
-
-/*
-## productList
-********************************************************************/
-
-.productList .productListItem {
-	margin:25px 5px 40px;
-	border-bottom:1px dotted #c1c1c1;
-}
-
-
-.productList .productListItem .thumb{
-	float:left;
-}
-
-.productList .productListItem .thumb img{ 
-	width:220px;
-}
-
-
-.productList .productListItem .price{
-	float:right;
-	font-size: 1.5em;
-}
-
-
-.productList .productListItem .head{
-	border-bottom: 1px dotted #979797;
-	color: #666666;
-	font-size: 1.5em;
-	font-weight: normal;
-	padding: 0 0 1px;
-	margin:0 0 10px 240px;	
-}
-
-
-.productList .productListItem .stars{
-	float:none;	
-	margin:0 0 10px 240px;	
-}
-
-.productList .productListItem .details{
-	color:#8f8f8f;
-	padding:5px 0;
-	margin:0 0 0 240px;	
-}
-
-
-.productList .productListItem .product-classification{
-	margin:0 0 0 240px;	
-}
-
-.productList .productListItem .lowStock{
-	margin:0 0 0 240px;	
-}
-
-
-.productList .productListItem .product-classification dd{
-	margin:0;	
-}
-
-
-.productList .productListItem .priceContainer{
-	float:right;
-}
-
-.productList .productListItem .cart{
-	padding:5px 0;	
-	margin:0  0 0 240px;	
-}
-
-
-.productList .productListItem .cart .add_to_cart_form{
-	float:right;
-	width:29%;
-}
-
-.productList .productListItem .cart .collect_from_store{
-	width:29%;
-	float: right;
-	margin-right: 10px;
-}
-
-.productListItem button.pickupInStoreButton, .productListItem button.addToCartButton {
-	height: 27px;
-}
-
-
-
-
-
-
-
-
-/*
 ## productDetails
 ********************************************************************/
 
@@ -180,24 +11,28 @@
 
 .productImage{
 	position:relative;
-	
+	width:50%;   /*wangkena*/
 }
 
 .productImage .productImagePrimary{
-	margin:0 0 0 110px;
+	/*margin:0 0 0 110px;*/
+	margin:0 0 0 25%;   /*wangkena*/
+	width: 60%;  /*wangkena*/
 }
 
 
 
 .productImage .productImagePrimary a.productImagePrimaryLink{
 	display:block;
-	width:420px;
-
+	/*width:420px;*/
+	width: 100%;   /*wangkena*/
+	text-align:center;   /*wangkena*/
 }
 
 
 .productImage .productImagePrimary a.productImagePrimaryLink img{
-	width:100%;
+	/*width:100%;*/
+	width:85%;   /*wangkena*/
 }
 
 
@@ -221,39 +56,48 @@
 
 .productImage .productImageGallery{
 	float:left;
-	width:100px;
+	/*width:110px;*/
+	width:17%;   /*wangkena*/
 	position:relative;
-	height:420px;
+	/*height:420px;*/   /*wangkena  12/10*/
 	overflow:hidden;
+	margin-left:12px;   /*wangkena*/
 }
 
 
 
 
 .productImage .productImageGallery .jcarousel-clip{
-	height:360px;
+	/*height:360px;*/
+	max-height: 214px;
 }
 
 .productImage .productImageGallery li{
 
 	height:auto;
-	margin:0 0 30px 0;
+	/*margin:0 0 30px 0;*/
+	margin:0 0 27% 0;    /*wangkena*/
 }
 
 
 .productImage .productImageGallery li .thumb{
 	border:1px solid #d9d9d9;
-	display:block;
+ 	display:block;
 	overflow:hidden;
-	width:96px;
+	/*width:96px;*/
+	/*width:100%;   wangkena  12/10*/
 	margin:1px;
-
+	text-align: center;   /*wangkena*/
 }
+.productImage .productImageGallery li .thumb img {
+	width: 90%;    /*wangkena*/
+}   
 
 
 .productImage .productImageGallery li .thumb.active{
-	border:2px solid #000000;
-	margin:0;
+	/*border:2px solid #000000;*/
+	border: 2px solid #fd8d24;      /*wangkena  detail*/
+	margin:0; 
 	
 
 }
@@ -275,31 +119,76 @@
 
 
 .productDescription{
-	
+	width:38%;   /*wangkena  12/10*/
+	position: relative;
 }
 
 
 .productDescription h1{
-	font-size:2em;
+	font-size:22px;
 	font-weight:normal;
 	color:#000;
-	border-bottom:1px dotted #979797;
-	padding:10px 0;
+	/*border-bottom:1px dotted #979797;*/
+	border-bottom: 1px solid #ccc;    /*wangkena  detail*/
+	/*padding:0 0 5px 0;*/
+	padding: 20px 0 60px;   /*wangkena  detail*/
 }
 
 
 .productDescription .big-price{
-	font-size:20px;
-	color:#f30000;
+	/*font-size:1.417em;*/
+	font-size:20px;    /*wangkena  detail*/
+	font-weight: bold;   /*wangkena  detail*/
+	/*color:#303030;*/
+	color:#f30000;   /*wangkena  detail*/
+	padding:0 0 10px 10px;
+	position: absolute;
+    top: 155px;
+    left: -10px;
+    color: rgb(243,0,0);
+    font-size: 26px;
 }
 
 
 .productDescription .summary{
 	color:#666666;
 	margin:0 0 10px 0;
+	font-size:13px;   /*wangkena*/
+	line-height:22px;   /*wangkena 12/10*/
+	position: relative;
+    top: -102px;
+    height: 46px;
+    overflow: hidden;
+    color:rgb(248,0,7);
 }
 
-
+/*wangkena detail*/
+.productDescription .add-to-cart {
+	width: 100%;     /*wangkena*/
+}
+.productDescription .add-to-cart label {
+	font-weight: normal;
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+}
+.productDescription .qty {
+	/*padding-top:18px;*/
+	margin-bottom: -28px;
+}
+.productDescription .qty .stock_message {
+	margin: 10px 0;
+    position: relative;
+    left: 95px;
+    top: -31px;
+    color:#F7731F;
+    height: 22px;     /*wangkena  12/23*/
+}
+.productDescription .qty #qtyInput {
+	padding:0 10px;
+	text-align:center;
+	margin-left:5px;
+}
+/*wangkena detail*/
 
 
 
@@ -346,39 +235,23 @@
 
 
 
-
-
-.productDescription .add_to_cart_form{
-	width:25%;
-	float:right;
-}
-
-.productDescription .collect_from_store{
-	width:49%;
-	
+.productDescription .productAddToCartPanel .span-5 {
+ /*width: 185px;*/
+ width:37%;    /*wangkena*/
 }
 
 
 
 
-
-
-
-
-
-
-
-
-.productDescription .LoveShare{
-	text-align:center;
-	width:49%;
-	float:right;
+.productDescription .LoveShare {
+	text-align:left;
+	margin-top: 15px;
 }
 
 
 .productDescription .share{
 	color:#666666;
-	float:none !important;
+	/*float:none !important;*/   /*wangkena  detail*/
 	display:inline-block;
 	height:20px;
 	line-height:20px;
@@ -472,7 +345,10 @@
 
 .prodReview{
 	margin:0 0 20px 0;
+	
 }
+
+
 
 
 
@@ -494,9 +370,9 @@
 
 
 #productTabs{
-
-	margin:0 0 20px 0;
 	clear: both;
+	width: 90%;
+    margin: 60px auto 20px;
 }
 
 
@@ -504,36 +380,43 @@
 
 #productTabs ul.tabs-list,
 #productTabs .tabHead{
-	border-bottom:2px solid #0061a3;     /*wangkena*/
+	/*border-bottom:1px solid #979797;*/
+	border-bottom:2px solid #0061a3;    /*wangkena  detail*/
+
 }
 
 #productTabs ul.tabs-list li{
 	float:left;
 }
-#productTabs ul.tabs-list li.first a {
-	margin-left:0;
-}
+
 #productTabs ul.tabs-list li a,
 #productTabs .tabHead{
 	display:block;
-	color: #676a69;   
-	font-size: 14px;
+	color: #666666;
+	font-size: 15px;   /*wangkena  12/10*/
 	text-transform: uppercase;
 	font-weight: bold;
 	padding:10px 20px 10px 20px;
-    border: 1px solid #ccc;
-    margin-left: -1px;
-    border-bottom: none;
+	/*wangkena  detail*/
+	border:1px solid #ccc;
+	border-bottom: none;
+	margin-left:-1px;
+	/*wangkena  detail*/
 }
-/*wangkena*/
-
+/*wangkena  detail*/
+#productTabs ul.tabs-list li:first-child a {
+	margin-left:0;
+}
+/*wangkena  detail*/
 
 #productTabs ul.tabs-list li.current a{
-	color: #fff;
-	background:#00609f;
-	border: 1px solid #00609f;       /*wangkena*/
+	color: #000;
+	/*background:#fff;*/
+	color: #fff;    /*wangkena  detail*/
+	background: #00609f;   /*wangkena  detail*/
+	border:1px solid #00609f;
 	border-bottom:0;
-	margin:0 0 -1px 0;
+	margin:0;
 	padding:9px 19px 11px 19px;
 
 
@@ -550,7 +433,8 @@
 
 #productTabs .content{
 	position:relative;
-	margin:40px 0 0 0;
+	margin:20px 0 0 0;  /*wangkena  12/23*/
+	font-size:13px;   /*wangkena  12/10*/
 }
 
 
@@ -641,10 +525,9 @@
 ### prodReview
 ********************************************************************/
 
-
-.productDescription .prodReview {
-    display: inline-block;
-    float: right;
+.prodReview{
+	/*margin:0 0 20px 0;*/
+	margin:20px 0 10px;    /*wangkena  detail*/
 }
 
 
@@ -655,7 +538,6 @@
 
 .prodReview .write{ 
 	color:#808080;
-	float:right;
 	font-weight:bold;
 	padding:0 0 0 10px;
 	background:url("../images/facetMoreLessIcon.png") no-repeat left center ;
@@ -728,12 +610,13 @@
 
 #write_reviews.reviews .headline{
 	border-bottom: 1px solid #A5A5A5;
-	font-size: 1.2em;
+	font-size: 15px;
 	font-weight: bold;
 	height: 39px;
 	line-height: 39px;
 	text-transform: uppercase;
 	margin:0 0 20px 0;
+	color: #f7731f;
 }
 
 .reviews .description{
@@ -814,271 +697,245 @@
 }
 
 
-/*
-## Order
-********************************************************************/
-
-
-
-.orderBoxes{
-	margin:20px 0;
+/* wangkena  productAddToCartPanel*/
+.productAddToCartPanel .addToCartButton {
+	font-size:14px;
+	width:100px;
 }
-
-.orderBox{
+.productAddToCartPanel .addToCartButton#addToCartButton {
+	outline: none;
+    min-width: 129px;
+    text-transform: none;
+    white-space: nowrap;
+    background-color: #f61e4a !important;
+    background-image: url("../images/icon-cart-put.png");
+    background-repeat: no-repeat;
+    border: 0;
+	width: 164px;
+	font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin: 11px 0 10px;
+    padding: 0 15px 0 45px;
+    background-position: 15px 11px;
+    border-radius: 0px;
+}
+#AddToCart-PickUpInStoreAction,#AddToCart-AddToCartAction {
+	overflow: hidden;
 	float:left;
-	margin:0 20px 0 0;
-	border:1px dotted #a5a5a5;
-	padding:0 20px 20px;
-	width:180px;
-	height:190px;
 }
-
-
-
-
-.orderBox.payment{
-	margin:0;
-	width:424px;
+.productDescription .productAddToCartPanel .pickupInStoreButton{
+	outline: none;
+    text-transform: none;
+    background-color: #fd8d24;
+    border: 0;
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0;
+    width: 100px;    /*zhangmiao 1/13*/
+    margin-top:11px;
+    /* min-width: 100px; */
 }
-
-
-.orderBox.payment .left{
-	width:50%;
-}
-
-
-
-
-.orderBox .headline{
-	border-bottom: 1px dotted #A5A5A5;
-	font-size: 1em;
-	font-weight: bold;
-	height: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	margin:0 0 20px;
-}
-
-
-
-
-
-
-
-
-
-
-.orderList{
-	
-	border:1px dotted #a5a5a5;
-	padding:0 20px 20px;
-	margin:0 0 20px 0;
-
-}
-
-
-.orderList .headline{
-	border-bottom: 1px dotted #A5A5A5;
-	font-size: 1em;
-	font-weight: bold;
-	height: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	margin:0 0 20px;
-}
-
-
-
-.orderList .orderListTable{
-	width:100%;
-}
-
-
-
-
-.orderList .orderListTable thead th{
-	border-bottom:1px dotted #a5a5a5;
-	height:30px;
-	line-height:30px;
-	text-transform:uppercase;
-	font-weight:bold;
-	font-size:1em;
-}
-
-
-
-
-.orderList .orderListTable .item td{
-	vertical-align:top;
-	border-bottom:1px dotted #a5a5a5;
-	padding:20px 0 0 0;
-}
-
-.orderList .orderListTable .item td.thumb{
-	border-bottom:0;
-	padding-right:20px;
-	width: 96px;
-}
-
-.orderList .orderListTable tbody td {
-	vertical-align:top;
-	padding-top: 5px;
-}
-
-.orderList .orderListTable tbody td p {
-	margin-bottom: 5px;
-}
-
-.orderList .orderListTable tbody td a {
-	text-decoration: underline;
-}
-
-
-
-/*
-## orderTotals
-********************************************************************/
-
-
-#orderTotals{
-	width:100%;
-}
-
-#orderTotals td{
-	text-align:right;
-}
-
-#orderTotals td:first-child{
-	text-align:left;
-	vertical-align:top;
-}
-
-
-#orderTotals thead td{
-	border-bottom:1px solid #a5a5a5;
-	height:30px;
-	line-height:30px;
-	text-transform:uppercase;
-	font-weight:bold;
-	font-size:1.2em;
-	white-space:nowrap;
-	padding-left: 5px;
-	background-color: #f6f6f6;
-}
-
-
-#orderTotals tbody td{
-	height:30px;
-	line-height:30px;
-}
-
-
-
-
-#orderTotals tfoot td{
-	border-top:1px dotted #a5a5a5;
-	height:30px;
-	line-height:30px;
-	font-weight:bold;
-	font-size:1.1em;
-}
-
-#orderTotals #countryIso{
-	width:150px;
-}
-
-
-
-#orderTotals .zipInput{
-	
-}
-
-#orderTotals #estimateTaxesButton{
-	margin:8px 0 8px 8px;
-}
-
-/*wangkena*/
-@media screen and (max-width: 719px){
-	.productDetailsDes .prodReview {
-		margin-bottom:0 !important;
+@media screen and (max-width:719px){
+	.productDescription .productAddToCartPanel .span-5.pickupInStoreButton {
+		width: 34%;
+    	margin-top:0;
+    	min-width: 0px;
+    	font-size: 16px;
 	}
-	.productDetailsDes .subtitle {
-		height:auto !important;
-		line-height:17px !important;
-		margin-bottom:0 !important;
+}
+/*.productAddToCartPanel .pickupInStoreButton {
+	font-size: 14px;
+}*/
+.productAddToCartPanel .pickupInStoreButton:hover {
+	color:#fff;
+	/*font-size:14px;*/
+}
+/* wangkena  productAddToCartPanel*/
+
+.productDescription #buyNowForm {
+	width:auto !important;
+}
+.productAddToCartPanel .addToBuyButton#addToBuyButton {
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	padding:0 15px;
+	background-color:#fd8d24;
+	height:40px;
+	line-height:40px;
+	border-radius:0;
+	margin: 11px 0 0 8px;
+}
+/*wangkena  12/10*/
+@media screen and (max-width:719px){
+	.productImage .productImagePrimary a.productImageZoomLink {
+		display:none;     /*wangkena  12/21*/
 	}
-	#productAddToCartPanel {
-		z-index: 100;
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		width: 67%;
-		background: #fff;
+	.productImage {
+		width: 90%;
+		margin: 0 5%;
 	}
-	.shareout #addTofavoriteForm #addToFavoriteButton{
+	.productDescription {
+		width: 94%;
+		margin: 0 3%;
+		padding: 3% 0;
+	}
+	.productDescription h1 {
+		font-size:18px;
+	}
+	.productDescription .summary {
+		width:85%;
+	}
+	.productDescription .big-price {
+		margin-right: 2%;
+	}
+	#content .detail-span24 {
+		display: none;
+	}
+	.payPage{
+	display:block;
+	}
+	#productTabs {
+		width: 100%;
+		margin: 0 auto;
+	}
+	/* .productDescription .LoveShare {
+		position:fixed;
+		b:0;
+		left:0;
+		z-index: 3;
+	    height: 48px;
+	    width: 33%;
+	} */
+	.productDescription .share {
+	    position:fixed;
+	    bottom:0;
+	    left:0;
+	    background-color: #fff;
+	    border-top: 1px solid #ccc;
+	    z-index: 3;
+	    height: 49px;
+	    width: 33%;
+	    text-align: center;
+	    font-size: 15px;
+	    color: #fe7203;
+	    line-height: 50px;
+	    background-position: 24% 54%;   /*  y12.16  */
+	    padding-left: 0;
+	    background-image: none;   /*wangkena  12/23*/
+	}
+	#actions-container-for-AddToCart {
+		z-index: 3;
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background: #fff;
+	    height: 50px;
+	}
+	#actions-container-for-AddToCart #addToCartForm {
+		position:absolute;
+		left:33%;
+		top:0;
 		width: 33%;
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		background: #fff;
-		z-index: 100;
-		outline: none;
+		margin-right: 0;
+	}
+	#actions-container-for-AddToCart #addToCartButton {
+		width:100%;
+		height: 50px;
+		background-color: #f61e4a;
+		font-size: 16px;
+		border: none;
+		margin: 0;
+		border-radius:0;
+		font-weight:normal;   /* y12.16  */
+		padding:0;
+		background-image: none;
+	}
+	/*wangkena  12/11*/
+	#actions-container-for-AddToCart .outOfStock {
+		width:100%;
+		height: 50px;
+		background-color: #f61e4a;
+		font-size: 16px;
+		border: none;
+		margin: 0;
+		border-radius:0;
+	}
+	/*wangkena  12/11*/
+	#actions-container-for-AddToCart .pickupInStoreButton {
+		position:absolute;
+		top:0;
+		right:0;
+		width: 34%;
 		height: 50px;
 		font-size: 16px;
-		text-align: center;
-		opacity: 1;
+		background-color: #fd8d24;
+		color: #fff;
+		margin: 0;
+		border-radius:0;
+		font-weight:normal;  /*  y12.16  */
 	}
-	.productDetailsDes button.addToBuyButton, .productDetailsDes button.addToCartButton {
-		
-		width: 50%;
-		margin-bottom: 0;
-		margin-top: 0;
-		outline: none;
-		font-size: 16px;
-		text-align: center;
-		padding: 0;
-		height: 50px !important;
-		margin: 0 !important;
-		padding: 0 !important;
-		min-width: 0;
+	#actions-container-for-AddToCart .pickupInStoreButton:hover{
+		background-color: #fd8d24;
 	}
-	.productDetailsDes .add_to_cart_form{
-		width:50% !important;
-		min-width:0 !important;
+	.span-10.add-to-cart .productAddToCartPanel {
+		z-index: 100;
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    width: 67%;
+	    background: #fff;
 	}
-	.productDetailsDes .add_to_buy_form {
-		float:left;
+	.productAddToCartPanel #addToCartForm,
+	.productAddToCartPanel #addToBuyForm {
+		width: 50% !important;
+    	min-width: 0 !important;
+	}
+	.productAddToCartPanel #addToCartForm #addToCartButton,
+	.productAddToCartPanel .addToBuyButton#addToBuyButton  {
+		width:100%;
+		height:50px;
+		line-height:50px;
+		text-align:center;
+		font-size:15px;
+		font-weight:normal;
+		margin:0;
+	}
+	.productAddToCartPanel #addToCartForm #addToCartButton {
+		background-image:none;
+		padding:0;
+		min-width:0;
+	}
+	.productAddToCartPanel .addToBuyButton#addToBuyButton  {
+		font-weight:normal;
 		width:50%;
 	}
-	.productDetailsDes button.addToCartButton {
-		height: 50px !important;
-		background-image: none !important;
-		text-align: center;
-		width: 100% !important;
-	}
-	.productDetailsDes button.addToBuyButton {
-		width: 100% !important;
-		margin-left: 0;
+	.productAddToCartPanel #addToCartForm {
+		margin-right:0;
 	}
 }
-/*wangkena*/
+
+/*wangkena  12/23*/
+#read_reviews #write_review_action {
+	color: #f7731f;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 12px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*zhangmiao  1/13*/
+#content .detail-span24 {
+	width:90%;
+	margin:0 5%;
+}
+.span-24 > .scroller .detail-title {
+	font-size:16px;
+	border-bottom:1px solid #ccc;
+	text-align:left;
+	padding-bottom:5px;
+	padding-left:16px;
+}

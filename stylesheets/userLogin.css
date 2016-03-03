@@ -1,0 +1,87 @@
+/*
+## userLogin
+********************************************************************/
+
+.userLogin{
+	border: 1px solid #A5A5A5;
+	padding:0 3%;  /*zhouwang*/     /*wangkena  12/22*/
+	width:94%;  /*wangkena  12/22*/
+  	float:left;
+}
+.checkoutSpan .userLogin {
+	width:94%;
+	padding: 0 10px 20px 10px;
+}
+@media screen and (max-width:719px){
+	.userLogin {
+		width:96%;
+		padding:2%;
+		padding-top:5px;    /*wangkena 12/11*/
+	}
+	.checkoutSpan .userLogin {
+		margin-top:20px;
+	}
+	.span-12 {
+		/*margin-top: 50px;*/    /*wangkena  12/11*/
+	}
+	.yCmsContentSlot{
+		width:100%;
+	}
+}
+.userLogin .headline{
+	border-bottom: 1px solid #A5A5A5;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 33px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin:0 0 20px 0;
+	padding-bottom:5px;    /*wangkena 12/11*/
+}
+
+.userLogin .description{
+	margin:0 0 5px 0;
+}
+
+.userLogin  form{
+	margin:0;
+}
+
+.userLogin  .expressCheckoutLogin {
+	margin:20px 0 0 0;
+}
+
+.userLogin  .expressCheckoutLogin ul li{
+	list-style: disc outside none;
+	margin:0 0 5px 13px;
+}
+
+.forgottenPwd{
+	padding:20px;
+}
+
+.forgottenPwd .headline{
+	border-bottom: 1px solid #A5A5A5;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 39px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin:0 0 20px 0;
+}
+
+.forgottenPwd .description{
+	margin:0 0 20px 0;
+}
+
+.expressCheckoutCheckbox {
+	margin: 0 0 10px 0;
+}
+
+.expressCheckoutCheckbox input{
+	margin: 2px 7px 0 0;
+}
+
+a.password-forgotten {
+	text-decoration:underline;
+}

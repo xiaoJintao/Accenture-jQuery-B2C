@@ -3,10 +3,21 @@
 ********************************************************************/
 
 .userRegister{
-	border: 1px dotted #A5A5A5;
-	padding:0 20px 20px 20px;
+	border: 1px solid #A5A5A5;
+	padding:0 3%;   /*wangkena  12/22*/
+	width:94%;   /*wangkena  12/11*/
+	float:left;
 }
-
+@media screen and (max-width:719px){
+	.userRegister {
+		width:96%;
+		padding:2%;
+		margin: 0 auto;
+	}
+	.span-12 {
+		margin-right:0;
+	}
+}
 .userRegister .headline{
 	border-bottom: 1px solid #A5A5A5;
 	font-size: 1.2em;
@@ -32,96 +43,44 @@
 	margin:20px 0 0 0;
 }
 
-/*
-## userLogin
-********************************************************************/
 
-.userLogin{
-	border: 1px dotted #A5A5A5;
-	padding:0 20px 20px 20px;
+/* zhangmiao  1/12 */
+#registerForm .control-group label .mandatory {
+	display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
 }
-
-.userLogin .headline{
-	border-bottom: 1px solid #A5A5A5;
-	font-size: 1.2em;
-	font-weight: bold;
-	height: 33px;
-	line-height: 39px;
-	text-transform: uppercase;
-	margin:0 0 20px 0;
+#loginForm .control-group label .mandatory {
+	display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
 }
-
-.userLogin .description{
-	margin:0 0 5px 0;
-}
-
-.userLogin  form{
-	margin:0;
-}
-
-.userLogin  .expressCheckoutLogin {
-	margin:20px 0 0 0;
-}
-
-.userLogin  .expressCheckoutLogin ul li{
-	list-style: disc outside none;
-	margin:0 0 5px 13px;
-}
-
-.forgottenPwd{
-	padding:20px;
-}
-
-.forgottenPwd .headline{
-	border-bottom: 1px solid #A5A5A5;
-	font-size: 1.2em;
-	font-weight: bold;
-	height: 39px;
-	line-height: 39px;
-	text-transform: uppercase;
-	margin:0 0 20px 0;
-}
-
-.forgottenPwd .description{
-	margin:0 0 20px 0;
-}
-
-.expressCheckoutCheckbox {
-	margin: 0 0 10px 0;
-}
-
-.expressCheckoutCheckbox input{
-	margin: 2px 7px 0 0;
-}
-
-a.password-forgotten {
-	text-decoration:underline;
-}
-
-/*
-## userGuest
-********************************************************************/
-
-.userGuest{
-	border: 1px dotted #A5A5A5;
-	padding:0 20px 20px 20px;
-}
-
-.userGuest .headline{
-	border-bottom: 1px solid #A5A5A5;
-	font-size: 1.2em;
-	font-weight: bold;
-	height: 33px;
-	line-height: 39px;
-	text-transform: uppercase;
-	margin:0 0 20px 0;
+.userRegister #registerForm .form-actions button.positive {
+	width: 125px;
+    font-size: 15px;
+    font-weight:normal;
 }
 
 
-.userGuest .description{
-	margin:0 0 20px 0;
+.hearer_banner_img {
+				width: 100%;
+   				 overflow: hidden;
 }
-
-.userGuest  form{
-	margin:0;
+.hearer_banner_img .title,
+.hearer_banner_img .details,
+.hearer_banner_img .action,
+.hearer_banner_img .banner_img,
+.hearer_banner_img .banner_img_small {
+				display:none;
+}
+.hearer_banner_img {
+   				 width: 100%;
+}
+.hearer_banner_img img {
+  				  width: 100%;
+  				  display: block;
+}
+.hearer_banner_img .disp-img .thumb {
+	margin: 0;
+	width: 100%;
 }

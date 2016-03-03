@@ -1,0 +1,19 @@
+#captcha_from table tr:first-child td input,
+#captcha_from table tr:nth-child(2) td input {
+	border-color: #ccc;
+    margin-left: -5px;
+    color: #010101;
+}
+#captcha_from table tr:last-child td input {
+	color: #fff;
+    border: none;
+    background-color: #fd8d24;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor:pointer;
+    margin-top:10px;
+}
+#captcha_from table tr:last-child td input:hover {
+	
+}

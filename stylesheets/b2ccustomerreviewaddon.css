@@ -1,0 +1,328 @@
+#picture-wrapper a.add-img-btn {
+	float: left;
+	height: 58px;
+	line-height: 58px;
+	width: 58px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.add-img-btn b {
+	display: inline-block;
+	position: static;
+	width: 20px;
+	height: 20px;
+	background:
+		url(/b2cstorefront/_ui/addons/b2ccustomerreviewaddon/desktop/common/images/arbn-icons.png)
+		no-repeat;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.productReviews .pdp-evaluation ul li {
+	position: relative;
+	list-style: none;
+	outline: 0;
+	padding: 10px;
+	border-bottom: 1px solid #D4D4D4;
+}
+
+.productReviews .pdp-evaluation ul li .review-user-name {
+	float: left;
+	overflow: hidden;
+	width: 100px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.productReviews .pdp-evaluation .review-details {
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-left: 100px;
+	position: relative;
+	zoom: 1;
+}
+
+.productReviews .pdp-evaluation .review-details .tb-rev-item .tb-tbcr-content
+	{
+	font-size: 14px;
+	line-height: 1.4;
+	color: #3F3F3F;
+	word-wrap: break-word;
+}
+
+.productReviews .pdp-evaluation .tb-r-act-bar .tb-r-info .tb-r-date {
+	padding-left: 100px;
+}
+
+.productReviews .pdp-evaluation .review-details .kg-photo-viewer-thumb-bar
+	{
+	list-style: none;
+	padding: 0;
+	margin-top: 10px;
+}
+
+.productReviews .pdp-evaluation .review-details .kg-photo-viewer-thumb-bar li
+	{
+	float: left;
+	border: 2px solid #F0F0F0;
+	padding: 2px;
+	margin-right: 6px;
+	position: relative;
+	background-color: #FFF;
+}
+
+.productReviews .pdp-evaluation .review-details .kg-photo-viewer-thumb-bar li img
+	{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #FCFCFC;
+}
+/* y 1.19 */
+.myCommentHide {
+	display: none;
+	background: #fff;
+}
+
+#reviewForm .control-group .textarea {
+	height: 30px;
+	margin-bottom: 0;
+}
+
+.span-20.last.accountContentPane {
+	width: 98%;
+	box-sizing: border-box;
+	margin: 30px auto;
+	float: initial;
+}
+
+.reviews .description {
+	font-size: 16px;
+}
+
+#write_reviews .write_review .customerReview-tab {
+	font-size: 14px;
+}
+
+.customerReview-tab-content {
+	height: 80px;
+	line-height: 80px;
+}
+
+.table-title-add {
+	font-size: 16px;
+	background-color: #ddd;
+	line-height: 35px;
+}
+
+.customerReview-tab-content .small-width {
+	vertical-align: middle;
+}
+
+.customerReview-tab-content .small-width a img {
+	width: auto !important;
+	height: auto !important;
+}
+
+#reviewForm .write_review_container .control-group {
+	width: 50%;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	margin-right: 0;
+	padding: 0 20px
+}
+
+.write_review_container .control-group.show_image {
+	display: block;
+}
+
+.positiveOfButtom {
+	position: absolute;
+	bottom: -10px;
+	left: 18px;
+}
+
+#reviewForm .write_review_container .show_image #file {
+	color: #fd8d24;
+	border-color: #fd8d24;
+	background: #fff;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+.write_review .required.right {
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.myAccount2 .myOrderDetail {
+	box-sizing: border-box;
+}
+
+.myOrderDetail .myOrderDetail2_order table tr td {
+	font-weight: normal;
+}
+
+.myOrderDetail2_status.detail_status3 {
+	overflow: hidden;
+}
+
+.myOrderDetail2_status.detail_status3 .status4 {
+	right: 0;
+}
+
+#write_reviews .black_overlay_comment {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 1001;
+	-moz-opacity: 0.4;
+	opacity: .40;
+	filter: alpha(opacity = 40);
+}
+#write_reviews .white_content_comment {
+	display: none;
+	position: fixed;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    height: 200px;
+    border: 1px solid #ADAAAA;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+#write_reviews .white_content_comment .comment_failure,
+#write_reviews .white_content_comment .comment_success {
+	font-size: 22px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+#write_reviews .white_content_comment .comment_failure {
+	color: red;
+}
+#write_reviews .white_content_comment .comment_success {
+	color: green;
+}
+#write_reviews .white_content_comment .comment_backbook,
+#write_reviews .white_content_comment .comment_backpage {
+	border: 2px solid #fd8d24;
+	padding: 5px 10px;
+	position: absolute;
+	top: 100px;
+	font-size: 16px;
+	border-radius: 2px;
+}
+#write_reviews .white_content_comment .comment_backbook {
+	left: 55%;
+	color: #fff;
+	background: #fd8d24;
+}
+#write_reviews .white_content_comment .comment_backpage {
+	right: 55%;
+	color: #fd8d24;
+}
+.pdp-evaluation ul li:nth-child(n+6){
+	display:none;
+}
+.pdp-evaluation .pdp_comment_more,
+.pdp-evaluation .pdp_comment_hide {
+    /* border: 2px solid #ddd; */
+    padding: 5px 20px;
+    color: #fd8d24;
+    margin-top: 10px;
+    border-radius: 3px;
+   /*  float: right; */
+    margin-right: 45%;
+    font-size: 18px;
+    margin-bottom: 20px;
+   /*  cursor: pointer; */
+    /* y 1.29 */
+    width: 100%;
+    margin: 11px auto;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.pdp-evaluation .pdp_comment_hide {
+	opacity: 1;
+	background: none;
+	color: #000;
+	text-align: left;
+	font-size: 16px;
+}
+.pdp-evaluation > ul {
+	background: #fff;
+}
+.pdp-evaluation .pdp_comment_hide {
+	display: none;
+}
+.pdp_comment_more img {
+	display: inline-block;
+}
+.pdp_comment_more span {
+	margin-left: 20px;
+}
+@media screen and (max-width: 719px) {
+	.customerReview-tab-content .small-width a img {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.myOrderDetail2_order table tr td {
+		width: 20%;
+	}
+	.myAccount2 .myOrderDetail {
+		width: 100%;
+		padding: 0;
+		background: #f5f5f5;
+	}
+	.myOrderDetail2 .myOrderDetail2_r {
+		width: 100%;
+	}
+	.myOrderDetail2_status.detail_status3 {
+		display: none;
+	}
+	.write_review_container .control-group.show_image {
+		display: none;
+	}
+	.priceTotalHide {
+		display: none;
+	}
+	#reviewForm .write_review_container .control-group {
+		width: 100%;
+	}
+	.myOrderDetail2_order .myOrderDetail2_productPic {
+		width: auto;
+		height: auto;
+		background: #fff;
+	}
+	.myOrderDetail2_productPic img {
+		height: 50px;
+		width: 50px !important;
+	}
+	.myOrderDetail .myOrderDetail2_order table tr td {
+		width: 20%;
+	}
+	#write_reviews .white_content_comment {
+		left:0;
+		width:100%;
+	}
+	/* .pdp-evaluation .pdp_comment_more,
+	.pdp-evaluation .pdp_comment_hide {
+		width:100%;
+		box-sizing: border-box;
+		margin-right: 0;
+    	text-align: center;
+	} */
+}

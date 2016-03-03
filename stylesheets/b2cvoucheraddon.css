@@ -1,0 +1,229 @@
+.info-item.other {
+	clear: both;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.info-item.other .item-title-car-voucher span.cart-voucher-title{
+	display: inline-block;
+    font-size: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #ddd;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 7px;
+    margin-top: 10px;
+}
+.info-item.other .item-title-car-voucher label {
+	margin: 7px 0;
+    display: inline-block;
+}
+#voucherContentDiv-cart label{
+	margin-bottom:5px;
+	display: inline-block;
+}
+.info-item.other #voucherContentDiv-cart {
+	background-color: rgb(252,252,252);
+    border: 1px solid #ddd;
+    padding: 10px 0 10px 15px;
+}
+#voucherContentDiv-cart .check-coupon {
+	margin-top: 10px;
+}
+#voucherContentDiv-cart .check-coupon .btn-confirm#voucherSaveButton {
+	background-color: #fd8d24;
+    display: inline-block;
+    padding: 5px 25px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 15px;
+}
+#voucherContentDiv-cart .check-coupon .confirm-suc#voucherVerifyResult {
+	padding-left: 15px;
+}
+
+/* page-wrap-area */
+.page-wrap-area{float: right;clear: both;}
+.page-wrap-area .btn-previous,.page-wrap-area .btn-next{padding: 0 10px;}
+.page-wrap-area a{float: left;margin-right: -1px;border: 1px solid #f5f5f5;min-height:32px;min-width:32px;line-height:32px;text-align: center;}
+.page-wrap-area a.locked{/* cursor: default; */color: #C6C2C1;}
+.page-wrap-area a.roll-on{background: #e0221c;color: #fff;}
+.page-wrap-area .points{float: left;line-height: 12px;margin: 0 10px;}
+.page-wrap-area .page-num{float: left;margin:0 10px;line-height:34px;}
+.page-wrap-area .page-num input{width:30px;margin:0 5px;text-align: center;border: 1px solid rgb(204, 204, 204); padding: 4px 4px;}
+.page-wrap-area .btn-confirm{float: left;width: 50px;background: #e0221c;color: #fff;}
+.page-wrap-area.simple{width: auto;}
+.page-wrap-area.simple .btn-previous,.page-wrap-area.simple .btn-next{padding:0;border-top:0;border-bottom:0;margin:0 0 0 -1px;}
+.page-wrap-area.simple .icon-arrow-left,.page-wrap-area.simple .icon-arrow-right{margin:11px 11px 0 11px;}
+.page-wrap-area.simple .page-num{float: left;margin-right: 10px;margin-left: 0px;line-height:32px;}
+/* icons */
+.icon_add{float:left;width:15px;height:15px;background:url("../images/icon_all.png") no-repeat;}
+.icon-sales{background:#e0221c;padding:3px 5px;color:#fff;font-weight:normal;line-height:14px;text-align: center; position:absolute; left:10px; top:0;}
+.icon-arrow-left{background-position:-26px -102px;width:5px;height:9px;margin:11px 5px 0 0;}
+.locked .icon-arrow-left{background-position:0 -102px;}
+.icon-arrow-right{background-position:-26px -121px;float:right;width:5px;height:9px;margin:11px 0 0 5px;}
+.locked .icon-arrow-right{background-position:0 -121px;}
+
+/*user-center-activate*/
+.findpassword .stepcontent .ph-numb{float: left;margin-left: 10px;}
+.findpassword.activation .step{width: 660px;}
+
+/* user-center-common author:HQ*/
+.user-center{width: 1190px;margin: 0 auto;}
+.user-center .header{width: 1190px;height: 35px;}
+.user-center .header div{float: left;line-height: 35px;}
+.user-center .usct-main{width: 1190px;float: left;}
+.user-center .menu{width:198px;float: left;background: #fff;border-bottom: none;border: 1px solid #D7D7D7;padding-bottom: 20px;}
+.user-center .menu .menu-title{background: #fff;}
+.user-center .menu .menu-title > div{cursor:pointer; font-weight: bolder;font-size: 14px;color: #000;padding:10px 30px 6px;border-top: 1px solid #D7D7D7;margin-top: -1px;}
+.user-center .menu ul{list-style-type: none;}
+.user-center .menu ul li{position: relative;}
+.user-center .menu .sub-menu li a{display: block;padding:0 0 10px 30px;}
+.user-center .menu .sub-menu li a:hover,.user-center .menu ul li.on a,.user-center .menu .selected a{color: #e40011;}
+.user-center .menu .selected .menu-img{position: absolute;background: url(../images/yonghuiWallet_03.png);width: 11px;height: 11px;top: -11px;right: -11px;}
+.user-center .menu .selected span{margin-right: 26px;}
+.user-center .content{width: 970px;float: right;}
+
+
+/*  user-center-coupon            author:cjf */
+.coupon-content{width: 970px;float: right;}
+.coupon-content .coupon-header{float: left;margin-bottom: 10px;}
+.coupon-content .coupon-header .gray{color: #C6C2C1;}
+.coupon-content .coupon-header a{margin-right: 20px;font-size: 14px;font-weight: bold;}
+.coupon-content .order-search{float: right;}
+.coupon-content .order-search .txt-search{float: left;width: 200px;height: 22px;}
+.coupon-content .order-search .btn-search{color: #7D7D7D;width: 80px;height: 32px;cursor: pointer;border: 1px solid #D7D7D7;background: #f5f5f5;float: left;margin-left: -1px;}
+.coupon-content .coupon-img li{width: 260px;margin: 20px 40px 0 0;padding: 10px;float: left;}
+.coupon-content .coupon-img .coupon-money{float: left;}
+.coupon-content .coupon-img .coupon-money .rmb-sign{font-size: 32px;position: relative;top: -35px;}
+.coupon-content .coupon-img .coupon-money .money-num{font-size: 76px;font-family: impact;line-height: 70px; margin-left: -5px;}
+.coupon-content .coupon-img .rmb-unit{font-size: 15px;}
+.coupon-content .coupon-img .coupon-cname{font-size: 30px;font-family: "微软雅黑";}
+.coupon-content .coupon-img .coupon-describe{float: left;}
+.coupon-content .coupon-img .dashed-line{width: 256px;height: 2px;border-top: 1px dashed;margin: 5px 0;}
+.coupon-content .brown li{ background: url(../images/coupon-brown-bg.png) repeat-y;color: #FFFFFF;}
+.coupon-content .gray li{ background: url(../images/coupon-gray-bg.png) repeat-y;color: #c6c2c1;border-top: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;}
+.coupon-content .orange li{ background: url(../images/coupon-orange-bg.png) repeat-y;color: #FFFFFF;}
+.coupon-content .pink li{ background: url(../images/coupon-pink-bg.png) repeat-y;color: #FFFFFF;}
+.coupon-content .red li{ background: url(../images/coupon-red-bg.png) repeat-y;color: #FFFFFF;}
+.coupon-content .yellow li{ background: url(../images/coupon-yellow-bg.png) repeat-y;color: #c6c2c1;border-top: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;}
+.coupon-content .useful li{ background: url(../images/coupon-red-bg.png) repeat-y;color: #FFFFFF;}
+.coupon-content .used li{ background: url(../images/coupon-gray-bg.png) repeat-y;color: #948F8F;border-top: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;}
+.coupon-content .expire li{ background: url(../images/coupon-yellow-bg.png) repeat-y;color: #666692;border-top: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;}
+
+
+.coupon-content .page-wrap-area{margin-top: 20px;}
+
+.red-line{clear: both;width: 100%;height: 1px;background: #e0221c;}
+
+.integral-content .my-integral .integral-tb .useful{padding-left: 15px;width: 70%;text-align:left;}
+
+.cart-order .use-coupon{width: 100%;clear: both;}
+.cart-order .use-coupon input[type='checkbox'],
+.cart-order .use-coupon input[type='radio']{margin: 12px 0 0 6px;}
+.cart-order .use-coupon label{padding: 6px;}
+.cart-order .use-coupon div{float: none;clear: both;text-align: left;}
+.cart-order .use-coupon .coupon-choose{margin-left: 20px;}
+.cart-order .use-coupon .coupon-choose label{width: 100px;}
+.cart-order .use-coupon .coupon-choose input[type='text']{width: 200px;}
+.cart-order .use-coupon .coupon-choose span{line-height: 34px;}
+.cart-order .use-coupon .btn-confirm, .cart-order .check-coupon .btn-confirm{padding: 8px 25px;color: #fff;background: #E40011;margin: 0 15px;}
+.cart-order .check-coupon .btn-confirm-coe{padding: 8px 25px;color: #fff;background: #E40011;margin: 0 25px;}
+.cart-order .check-coupon {float:left;}
+
+/* welcome */
+.welcome.coupon { max-width: 1280px; margin: 0 auto;}
+
+/*  user-center-coupondetail  author:HQ */
+.usct-coupondetail{width:970px;float: right;}
+.usct-coupondetail .content-header{padding:0 0 10px 0;width: 970px;}
+.usct-coupondetail .content-header .nav-title{font-weight: bolder;font-size: 14px;}
+.usct-coupondetail .rule{color: #7D7D7D;padding: 10px;clear: both;background: #F2F2F2;border-top: 1px solid #D7D7D7;}
+.usct-coupondetail .rule span{margin-right: 50px;}
+.usct-coupondetail .detail{margin-top: 20px;}
+.usct-coupondetail .detail img{width: 970px;}
+/*  y 12.30 */
+.accountContentPane .accountBodyContentSlot {
+	width:100%;
+}
+.accountContentPane .accountBodyContentSlot .user-center {
+	width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.accountContentPane .accountBodyContentSlot .coupon-content {
+	width: 100%;
+    float: right;
+}
+.accountContentPane .accountBodyContentSlot .coupon-img {
+	overflow: hidden;
+    width: 23%;
+    margin:20px 1%;
+    float: left;
+}
+.accountContentPane .accountBodyContentSlot .coupon-img a{
+	display:block;
+	overflow:hidden;
+	background-size:100%;
+	
+}
+.accountContentPane .accountBodyContentSlot .coupon-img.useful a {
+	background: url(../images/coupon-red-bg.png) repeat-y;
+}
+.accountContentPane .accountBodyContentSlot .coupon-img.used a {
+	background: url(../images/coupon-gray-bg.png) repeat-y;
+}
+.accountContentPane .accountBodyContentSlot .coupon-img.expire a {
+	background: url(../images/coupon-yellow-bg.png) repeat-y;
+}
+.coupon-content .coupon-img .coupon-money {
+	position:relative;
+}
+.coupon-content .coupon-img .coupon-money .rmb-sign {
+	top:0;
+}
+.accountContentPane .accountBodyContentSlot .coupon-img li {
+	width:96%;
+	margin:0;
+	padding:2%;
+	background: none;
+}
+.accountContentPane .accountBodyContentSlot .float-left {
+	float:left;
+}
+.coupon-content .coupon-img .coupon-money .money-num {
+	font-size:70px;
+}
+@media screen and (max-width:1000px){
+	.coupon-content .coupon-img .coupon-money .money-num {
+		font-size:45px;
+	}
+}
+.coupon-content .useful li {
+	background-size:100%;
+}
+@media screen and (max-width:719px){
+	.accountContentPane .accountBodyContentSlot .coupon-img {
+		 width: 48%;
+	}
+	.coupon-content .coupon-img .coupon-money .money-num {
+		font-size:45px;
+	}
+	.coupon-content .coupon-img .coupon-money .rmb-sign{
+		font-size:25px;
+	}
+	.coupon-content .coupon-img .coupon-cname {
+		font-size:25px;
+	}
+}
+@media screen and (max-width:400px){
+	.accountContentPane .accountBodyContentSlot .coupon-img {
+		 width: 98%;
+	}
+}
+.page-wrap-area .btn-confirm {
+	float:right;
+}

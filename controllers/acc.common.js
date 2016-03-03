@@ -28,7 +28,6 @@ ACC.common = {
 				ACC.common.refreshScreenReaderBuffer();
 				$.colorbox.resize()
 				ACC.product.initQuickviewLightbox();
-				ACC.o2oAtg.bindAll();
 			},
 
 			onClosed: function ()

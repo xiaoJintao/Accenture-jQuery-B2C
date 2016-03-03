@@ -1,0 +1,78 @@
+/*
+## orderTotals
+********************************************************************/
+
+
+#orderTotals{
+	width:100%;
+}
+
+#orderTotals td{
+	text-align:right;
+}
+
+#orderTotals td:first-child{
+	text-align:left;
+	vertical-align:top;
+	font-size: 14px;/*66*/
+	font-weight: normal;    /*wangkena  12/23*/
+}
+#orderTotals thead td:first-child{
+	height:40px;/*66*/
+	line-height:40px;/*66*/
+	font-size: 19px;/*66*/
+	font-weight: normal;   /*wangkena  12/23*/
+}
+
+#orderTotals thead td{
+	border-bottom:1px solid #a5a5a5;
+	height:30px;
+	line-height:30px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:1.2em;
+	white-space:nowrap;
+	padding-left: 5px;
+	background-color: #f6f6f6;
+}
+
+
+#orderTotals tbody td{
+	height:30px;
+	line-height:30px;
+	font-size: 14px;/*66*/
+	text-align: center;/*66*/
+}
+
+
+
+
+#orderTotals tfoot td{
+	border-top:1px dotted #a5a5a5;
+	height:30px;
+	line-height:30px;
+	font-weight:normal;
+	font-size:1.1em;
+	font-size: 15px;/*66*/
+	text-align: center;/*66*/
+}
+#orderTotals tfoot td:last-child {
+	color: #db0404;
+	font-weight: bold;
+}
+
+#orderTotals #countryIso{
+	width:150px;
+}
+
+
+
+#orderTotals .zipInput{
+	
+}
+
+#orderTotals #estimateTaxesButton{
+	margin:8px 0 8px 8px;
+}
+
+

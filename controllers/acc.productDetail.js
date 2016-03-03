@@ -6,7 +6,7 @@ ACC.productDetail = {
 		
 		
 		$('.productImageGallery .jcarousel-skin').jcarousel({
-			horizontal: true
+			vertical: true
 		});
 		
 		
@@ -34,7 +34,6 @@ ACC.productDetail = {
 		
 		$(".productImageGallery img").click(function(e) {
 			$(".productImagePrimary img").attr("src", $(this).attr("data-primaryimagesrc"));
-			$(".productImagePrimary img").attr("jqimg",$(this).attr("data-primaryimagesrc"));
 			$("#zoomLink, #imageLink").attr("href",$("#zoomLink").attr("data-href")+ "?galleryPosition="+$(this).attr("data-galleryposition"));
 			$(".productImageGallery .thumb").removeClass("active");
 			$(this).parent(".thumb").addClass("active");
@@ -90,21 +89,11 @@ ACC.productDetail = {
 			}
 		});
 		
-		
-		
 
 	}
 
 
 };
-
-$(function(){
-
-	if ($(".jqzoom").length > 0) {
-        $(".jqzoom").jqueryzoom({xzoom:350,yzoom:350});
-		
-    }
-});
 
 $(document).ready(function ()
 {

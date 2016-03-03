@@ -4,19 +4,13 @@ ACC.minicart = {
 
 	bindMiniCart: function ()
 	{
-		
-		if(navigator.userAgent.match(/.*Mobile.*/)) {
-			return;
-		}else{
-            
-			$(document).on('mouseenter', '.miniCart', this.showMiniCart);
-			$(document).on('mouseleave', '.miniCart', this.hideMiniCart);
-		}
-		
+		$(document).on('mouseenter', '.miniCart', this.showMiniCart);
+		$(document).on('mouseleave', '.miniCart', this.hideMiniCart);
 	},
 	
 	showMiniCart: function ()
 	{
+
 		if(ACC.minicart.$layer.data("hover"))
 		{
 			return;
@@ -32,27 +26,15 @@ ACC.minicart = {
 			})
 		}
 		
-		ACC.minicart.$layer.fadeIn(function(){
+		ACC.minicart.$layer.fadeIn(0,function(){
 			$("img.lazy").lazyload();
 			ACC.minicart.$layer.data("hover", true);
-		});
-       
-		$.ajax({
-			dataType: "json",
-			url: ACC.minicart.$layer.attr("data-refreshMiniCartUrl") + Math.floor(Math.random() * 101) * (new Date().getTime()),
-			success: function (data)
-			{
-				$(".miniCart .count").html(data.miniCartCount);
-				$(".miniCart .price").html(data.miniCartPrice);
-				
-				ACC.minicart.$layer.data("needRefresh", true);
-			}
 		});
 	},
 	
 	hideMiniCart: function ()
 	{
-		ACC.minicart.$layer.fadeOut(function(){
+		ACC.minicart.$layer.fadeOut(0,function(){
 			ACC.minicart.$layer.data("hover", false);
 		});
 	},
@@ -71,18 +53,17 @@ ACC.minicart = {
 		});	
 	},
 
-	
-	
-	moveMiniCart : function()
+	refreshMiniCartCount : function()
 	{
-		$(window).bind("scroll",function(event){
-			var fold = $(window).scrollTop();
-			var top = $(".headerNav").offset().top;
-			if(fold > top){
-				$("#end").parent().addClass("move");
-			}
-			if(fold <= top){
-					$("#end").parent().removeClass("move");
+		$.ajax({
+			dataType: "json",
+			url: ACC.minicart.$layer.attr("data-refreshMiniCartUrl") + Math.floor(Math.random() * 101) * (new Date().getTime()),
+			success: function (data)
+			{
+				
+				$(".miniCart .count").html(data.miniCartCount);
+				$(".miniCart .price").html(data.miniCartPrice);
+				ACC.minicart.$layer.data("needRefresh", true);
 			}
 		});
 	}
@@ -91,6 +72,5 @@ ACC.minicart = {
 $(document).ready(function ()
 {
 	ACC.minicart.bindMiniCart();
-	ACC.minicart.moveMiniCart();
 });
 
