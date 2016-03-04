@@ -1,0 +1,120 @@
+.bigBox {
+    margin: 0 auto;
+    border:1px solid blue;
+    display: block;
+}
+.row {
+    margin: 20px 30px 20px 80px;
+    height:252px;
+    overflow:hidden;
+}
+.row .item{
+    width: 200px;
+    height:252px;
+    margin-right:50px;
+    position:relative;
+    float: left;
+    -webkit-transition:all .5s;
+    transition:all .5s;
+    transform-style: preserve-3d;
+    /*-webkit-backface-visibility:hidden;*/
+    -moz-backface-visibility:hidden;
+}
+.positive-flipped {
+    transform: rotateY(180deg);
+}
+/*.lottery{*/
+    /*transform: rotateY(180deg);*/
+/*}*/
+.row .item .positive-side{
+    padding: 10px;
+    background-color:#ffffff;
+    z-index: 20;
+    -webkit-backface-visibility:hidden;
+    /*backface-visibility:hidden;*/
+}
+.row .item .reserve-side {
+    margin: 10px;
+    z-index: -1;
+    transform: rotateY(180deg);
+    position: absolute;
+    left:0;
+    top:0;
+    background-image: url("../images/reverse-side.png");
+    background-size: cover;
+    -webkit-backface-visibility:hidden;
+    /*backface-visibility:hidden;*/
+}
+.row .item .positive-side .img-warpper {
+    display: block;
+    width: 180px;
+    height:180px;
+    /*background-image: url("../images/positive-side.jpg");*/
+    background-size: cover;
+}
+
+
+.row .item .positive-side .title{
+    font-size: 12px;
+    line-height: 28px;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-top:2px;
+    overflow: hidden;
+    color:#666;
+}
+.row .item .positive-side .price {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: arial;
+    font-weight: 700px;
+    color: red;
+}
+.row .item .positive-side .price .ui-yuan{
+    font-size: 14px;
+    vertical-align: 2px;
+}
+.row .ctrl-zone {
+    width: 200px;
+    height:252px;
+    margin-right:50px;
+    position:relative;
+    float: left;
+}
+.row .ctrl-zone .btn-start-game {
+    background: url(../images/btn-start-game.png) no-repeat center center;
+    margin: 9px auto 0;
+    width: 178px;
+    height: 180px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.row .ctrl-zone .masks{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+/*.row .ctrl-zone .btn-no-chance {*/
+    /*background-image: url(../images/btn-no-chance.png);*/
+/*}*/
+.row .ctrl-zone .remain-chance-tips {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+    font-weight: 700;
+    font-family: 'Microsoft YaHei';
+    color: #000000;
+    text-align: center;
+}
+.row .ctrl-zone .remain-chance-tips span {
+    font-size:28px;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 6px;
+    color:#ffffff;
+    background-color: #000000;
+    margin: 0 2px;
+}

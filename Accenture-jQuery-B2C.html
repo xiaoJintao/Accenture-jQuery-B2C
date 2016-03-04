@@ -72,7 +72,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/indexadd.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/reservationPage.css">
-    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/sidebar-base.css">
 
     <style type="text/css" media="print">
         @IMPORT url("/b2cstorefront/_ui/desktop/common/blueprint/print.css");
@@ -80,11 +79,16 @@
 
     <link type="text/css" rel="stylesheet" href="./stylesheets/hybris.chinaacc.css" media="screen, projection">
     <script type="text/javascript" async="" src="./controllers/ga.js"></script>
+    <script type="text/javascript" src="./controllers/analyticsmediator.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/asset-sidebar-base.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./stylesheets/asset-elevator.css">
+
     <script type="text/javascript" src="./controllers/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="./controllers/bootstrap-3.3.6.min.js"></script>
-    <script type="text/javascript" src="./controllers/sidebar-common.js"></script>
-    <script type="text/javascript" src="./controllers/sidebar-quickLinks.js"></script>
-    <script type="text/javascript" src="./controllers/analyticsmediator.js"></script>
+    <script type="text/javascript" src="./controllers/asset-sidebar-common.js"></script>
+    <script type="text/javascript" src="./controllers/asset-sidebar-quickLinks.js"></script>
+    <script type="text/javascript" src="./controllers/asset-elevator.js"></script>
     <script>
         // Site Search with default Place Holder value
         function confirmSearch() {
@@ -148,7 +152,6 @@
         });
     </script>
 </head>
-
 <body class="page-homepage pageType-ContentPage template-pages-layout-landingLayout2Page pageLabel-homepage language-zh">
     <div id="cboxOverlay" style="display: none;"></div>
     <div id="colorbox" class="" style="padding-bottom: 0px; padding-right: 0px; display: none;">
@@ -181,9 +184,24 @@
                     </a>
                 </div>
             </div>
+
+            <!--left-side-bar-->
+            <div class="left-floor-menu">
+                <div class="left-floor-menu-content">
+                    <ul>
+                        <li><a id="hot-recommend-module-control">1F</a></li>
+                        <li><a id="digital-technology-module-control">2F</a></li>
+                        <li><a id="casual-wear-module-control">3F</a></li>
+                        <li><a id="beauty-skin-module-control">4F</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
             <div class="yCmsContentSlot headerContent secondRow">
                 <div class="siteSearch">
-                    <form name="search_form" method="get" onsubmit="confirmSearch()" action="http://10.202.16.217:9001/b2cstorefront/electronics/zh/search/">
+                    <form name="search_form" method="get" action="http://10.202.16.217:9001/b2cstorefront/electronics/zh/search/">
                         <div class="control-group left">
                             <label class="control-label skip" for="search">搜索</label>
                             <div class="controls">
@@ -287,12 +305,14 @@
                         </a>
                         <div id="miniCartLayer" class="miniCartPopup" data-refreshminicarturl="/b2cstorefront/electronics/zh/cart/miniCart/SUBTOTAL/?" data-rolloverpopupurl="/b2cstorefront/electronics/zh/cart/rollover/MiniCart"></div>
                     </li>
+                    <li style="color:#666;border-left:1px solid #e1e1e1;margin-left:10px;cursor:pointer">
+                        <a href="Asset-Lottery.html" style="padding-left:10px;display:inline-block;">抽奖</a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div id="header" class="clearfix">
-            <!--右侧贴边导航quick_links.js控制-->
             <div class="mui-mbar-tabs">
                 <div class="quick_link_mian">
                     <div class="quick_links_panel">
@@ -397,7 +417,7 @@
                 </div>
             </div>
             <div class="header-small">
-                <a href="javascript:;"><img class="header-left" id="header-left" src="./images/01.png"> </a>
+                <a href="javascript:;"><img class="header-left" id="header-left" src="./images/01.png"></a>
                 <div class="search" id="search">
                     <form name="search_form" method="get" action="http://10.202.16.217:9001/b2cstorefront/electronics/zh/search/">
                         <input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" id="search" class="search-input" name="text" value="" maxlength="100" placeholder="我正在寻找" data-options="{&quot;autocompleteUrl&quot; : &quot;/b2cstorefront/electronics/zh/search/autocomplete/SearchBox&quot;,&quot;minCharactersBeforeRequest&quot; : &quot;2&quot;,&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,&quot;displayProductImages&quot; : false}" type="text">
@@ -656,8 +676,8 @@
                 <!-- hotSales -->
                 <div class="yCmsContentSlot span-24 section3 cms_disp-img_slot">
                     <div class="scroller">
-                        <div class="title">畅销产品</div>
-                        <div class=" jcarousel-skin">
+                        <div class="title hot-recommend-module">畅销产品</div>
+                        <div class="jcarousel-skin">
                             <div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
                                 <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
                                     <ul class="carousel hotsaleUl jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 2965.85px;">
@@ -686,6 +706,7 @@
                                                 <div class="priceContainer">
                                                     $485.57
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal" jcarouselindex="3" style="float: left; list-style: none;">
@@ -699,6 +720,7 @@
                                                 <div class="priceContainer">
                                                     $264.69
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal" jcarouselindex="4" style="float: left; list-style: none;">
@@ -712,6 +734,7 @@
                                                 <div class="priceContainer">
                                                     $260.87
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-5 jcarousel-item-5-horizontal" jcarouselindex="5" style="float: left; list-style: none;">
@@ -725,6 +748,7 @@
                                                 <div class="priceContainer">
                                                     $99.85
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-6 jcarousel-item-6-horizontal" jcarouselindex="6" style="float: left; list-style: none;">
@@ -738,6 +762,7 @@
                                                 <div class="priceContainer">
                                                     $574.88
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-7 jcarousel-item-7-horizontal" jcarouselindex="7" style="float: left; list-style: none;">
@@ -751,6 +776,7 @@
                                                 <div class="priceContainer">
                                                     $212.26
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal" jcarouselindex="8" style="float: left; list-style: none;">
@@ -764,6 +790,7 @@
                                                 <div class="priceContainer">
                                                     $1,086.00
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal" jcarouselindex="9" style="float: left; list-style: none;">
@@ -777,6 +804,7 @@
                                                 <div class="priceContainer">
                                                     $452.88
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-10 jcarousel-item-10-horizontal" jcarouselindex="10" style="float: left; list-style: none;">
@@ -790,6 +818,7 @@
                                                 <div class="priceContainer">
                                                     $1,934.23
                                                 </div>
+
                                             </a>
                                         </li>
                                         <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-11 jcarousel-item-11-horizontal" jcarouselindex="11" style="float: left; list-style: none;">
@@ -803,6 +832,7 @@
                                                 <div class="priceContainer">
                                                     $35.68
                                                 </div>
+
                                             </a>
                                         </li>
                                     </ul>
@@ -810,704 +840,701 @@
                             </div>
                         </div>
                     </div>
-                </div><div class="main-wrap clearfix">
-                    <div class="main-menu">
-                        <div class="main-header clearfix">
-                            <div class="main-header-title">
-                                <span class="main-title">数码科技</span> <span class="main-subtitle"> subtitle empty</span>
-                            </div>
-                            <!-- tabs'title  key and moreLink -->
-                            <div class="main-header-tab">
-                                <!-- tabs' title-->
-                                <ul>
-                                    <li class="main-header-on"><a href="">特价商品</a></li>
-                                    <li class=""><a href="">新品上架</a></li>
-                                </ul><!-- keys and moreLink-->
-                                <div class="main-more">
-                                    <!-- keys -->
-                                    <span class="main-header-keyword">
-                                        关键字：<!-- è¥ææ°æ®ï¼è¿éåªåç¬¬ä¸ä¸ªÂ -->
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Brands/Sony/c/502?sort=topRated&amp;q=%3Arelevance#"></a>
-                                    </span>
-                                    <!-- more -->
-                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Cosmetics/c/502?sort=topRated&amp;q=%3Arelevance" class="main-header-more"> 更多 &gt;&gt;</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="main-left" href="" style="height: 561px;">
-                            <img src="./resources/saved_resource(15)">
-                        </a>
-                        <div class="main-middle">
-                            <ul>
-                                <!-- wei.f.zhang modified 11/06/2015 -->
-
-                                <div class="main-middle-show main-middle-on">
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E6%99%BA%E8%83%BD%E5%AE%B6%E5%BA%AD%E5%A5%97%E8%A3%85/p/19940426">
-                                            <img src="./resources/saved_resource(16)" alt="小米智能家庭套装" title="小米智能家庭套装">
-                                            <span class="main-middle-title">小米智能家庭套装</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E6%99%BA%E8%83%BD%E6%8F%92%E5%BA%A7/p/19940427">
-                                            <img src="./resources/saved_resource(17)" alt="小米智能插座" title="小米智能插座">
-                                            <span class="main-middle-title">小米智能插座</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8mini/p/19940428">
-                                            <img src="./resources/saved_resource(18)" alt="小米路由器mini" title="小米路由器mini">
-                                            <span class="main-middle-title">小米路由器mini</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E9%9A%8F%E8%BA%ABWIFI-8GB-U%E7%9B%98%E7%89%88/p/19940429">
-                                            <img src="./resources/saved_resource(19)" alt="小米随身WIFI 8GB U盘版" title="小米随身WIFI 8GB U盘版">
-                                            <span class="main-middle-title">小米随身WIFI 8GB U盘版</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E8%9A%81%E6%99%BA%E8%83%BD%E6%91%84%E5%83%8F%E4%BB%AA/p/19940430">
-                                            <img src="./resources/saved_resource(20)" alt="小蚁智能摄像仪" title="小蚁智能摄像仪">
-                                            <span class="main-middle-title">小蚁智能摄像仪</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-last">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E8%9A%81%E8%BF%90%E5%8A%A8%E7%9B%B8%E6%9C%BA/p/19940431">
-                                            <img src="./resources/saved_resource(21)" alt="小蚁运动相机" title="小蚁运动相机">
-                                            <span class="main-middle-title">小蚁运动相机</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class="main-middle-show">
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/Photosmart-E317-%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/p/300938">
-                                            <img src="./resources/saved_resource(4)" alt="Photosmart E317 数码相机" title="Photosmart E317 数码相机">
-                                            <span class="main-middle-title">Photosmart E317 数码相机</span>
-                                            <span class="main-middle-currentprice">$114.12</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/EASYSHARE-Z730-%E5%8F%98%E7%84%A6%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/p/325414">
-                                            <img src="./resources/saved_resource(22)" alt="EASYSHARE Z730 变焦数码相机" title="EASYSHARE Z730 变焦数码相机">
-                                            <span class="main-middle-title">EASYSHARE Z730 变焦数码相机</span>
-                                            <span class="main-middle-currentprice">$147.04</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/DSC-N1/p/358639">
-                                            <img src="./resources/saved_resource(5)" alt="DSC-N1" title="DSC-N1">
-                                            <span class="main-middle-title">DSC-N1</span>
-                                            <span class="main-middle-currentprice">$485.57</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA-EASYSHARE-C875/p/489702">
-                                            <img src="./resources/saved_resource(23)" alt="数码相机 EASYSHARE C875" title="数码相机 EASYSHARE C875">
-                                            <span class="main-middle-title">数码相机 EASYSHARE C875</span>
-                                            <span class="main-middle-currentprice">$227.24</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/NV3/p/492274">
-                                            <img src="./resources/saved_resource(24)" alt="NV3" title="NV3">
-                                            <span class="main-middle-title">NV3</span>
-                                            <span class="main-middle-currentprice">$249.99</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-last">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/NV10/p/553637">
-                                            <img src="./resources/saved_resource(6)" alt="NV10" title="NV10">
-                                            <span class="main-middle-title">NV10</span>
-                                            <span class="main-middle-currentprice">$264.69</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <!-- for mini???? -->
-                        <div class="main-right">
-                            <div class="main-right-top" style="height: 325.38px; margin-bottom: 11.22px;">
-                                <span class="main-right-top-title"> </span> <span class="main-right-top-subtitle"> </span>
-                                <div class="disp-img">
-                                    <div class="title">
-                                        <h2></h2>
-                                    </div>
-                                    <div class="thumb">
-                                        <img title="" alt="" src="./resources/saved_resource(25)">
-                                    </div>
-                                    <div class="details">
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
-                                    </div>
-                                </div><div class="main-right-top-hover"></div>
-                                <a href="" class="main-right-top-detail" style="height: 129px; line-height: 129px;">detail</a>
-                            </div>
-
-                            <div class="main-right-bottom" style="height: 224.4px;">
-                                <span class="main-right-bottom-title"> </span> <span class="main-right-bottom-subtitle"> </span>
-                                <div class="disp-img">
-                                    <div class="title">
-                                        <h2></h2>
-                                    </div>
-                                    <div class="thumb">
-                                        <img title="" alt="" src="./resources/saved_resource(26)">
-                                    </div>
-                                    <div class="details">
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
-                                    </div>
-                                </div><div class="main-right-bottom-hover"></div>
-                                <a href="" class="main-right-bottom-detail" style="height: 129px; line-height: 129px;">detail</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="main-wrap clearfix">
                     <div class="main-menu">
 
-                        <div class="main-header clearfix">
-                            <div class="main-header-title">
-                                <span class="main-title">服饰休闲</span> <span class="main-subtitle"> subtitle empty</span>
-                            </div>
-                            <!-- tabs'title  key and moreLink -->
-                            <div class="main-header-tab">
-                                <!-- tabs' title-->
-                                <ul>
-                                    <li class="main-header-on"><a href="">特价商品</a></li>
-                                    <li class=""><a href="">新品上架</a></li>
-                                </ul><!-- keys and moreLink-->
-                                <div class="main-more">
-                                    <!-- keys -->
-                                    <span class="main-header-keyword">
-                                        关键字：<!-- è¥ææ°æ®ï¼è¿éåªåç¬¬ä¸ä¸ªÂ -->
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Brands/Sony/c/brand_501?sort=topRated&amp;q=%3Arelevance#">美特斯邦威</a>
-                                    </span>
-                                    <!-- more -->
-                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Clothes/c/501?sort=topRated&amp;q=%3Arelevance" class="main-header-more"> 更多 &gt;&gt;</a>
-                                </div>
-                            </div>
+                        <div class="main-title digital-technology-module">
+                            <!-- <div class="main-header-title digital-technology-module"> -->
+                            <span class="main-title">数码科技</span>
+
+                            <!-- <span class="main-subtitle"> subtitle empty</span> -->
                         </div>
-                        <a class="main-left" href="" style="height: 561px;">
-                            <img src="./resources/saved_resource(27)">
-                        </a>
-                        <div class="main-middle">
+                        <!-- tabs'title  key and moreLink -->
+                        <div class="main-header-tab">
+                            <!-- tabs' title-->
                             <ul>
-                                <!-- wei.f.zhang modified 11/06/2015 -->
-
-                                <div class="main-middle-show main-middle-on">
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%95%99%E5%A3%B0%E6%9C%BA/p/19940432">
-                                            <img src="./resources/saved_resource(28)" alt="小米T恤 留声机" title="小米T恤 留声机">
-                                            <span class="main-middle-title">小米T恤 留声机</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%B1%B3%E7%94%9F%E6%B4%BB/p/19940433">
-                                            <img src="./resources/saved_resource(29)" alt="小米T恤 米生活" title="小米T恤 米生活">
-                                            <span class="main-middle-title">小米T恤 米生活</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E5%9C%86%E9%A2%86%E7%BA%AF%E8%89%B2T%E6%81%A4-%E5%9C%86%E9%A2%86/p/19940434">
-                                            <img src="./resources/saved_resource(30)" alt="小米圆领纯色T恤 圆领" title="小米圆领纯色T恤 圆领">
-                                            <span class="main-middle-title">小米圆领纯色T恤 圆领</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E7%BA%AF%E8%89%B2POLO%E8%A1%AB-%E5%A5%B3%E6%AC%BE/p/19940435">
-                                            <img src="./resources/saved_resource(31)" alt="小米纯色POLO衫 女款" title="小米纯色POLO衫 女款">
-                                            <span class="main-middle-title">小米纯色POLO衫 女款</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-MI%E7%94%B5%E8%B7%AF%E5%9B%BE/p/19940436">
-                                            <img src="./resources/saved_resource(32)" alt="长袖T恤 MI电路图" title="长袖T恤 MI电路图">
-                                            <span class="main-middle-title">长袖T恤 MI电路图</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-last">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-%E6%AD%A3%E8%83%BD%E9%87%8F/p/19940437">
-                                            <img src="./resources/saved_resource(33)" alt="长袖T恤 正能量" title="长袖T恤 正能量">
-                                            <span class="main-middle-title">长袖T恤 正能量</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                </div>
-                                <!-- wei.f.zhang modified 11/06/2015 -->
-
-                                <div class="main-middle-show">
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E7%89%9B%E4%BB%94%E8%A3%A4/p/5010007">
-                                            <img src="./resources/saved_resource(34)" alt="牛仔裤" title="牛仔裤">
-                                            <span class="main-middle-title">牛仔裤</span>
-                                            <span class="main-middle-currentprice">$3,995.00</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E8%BF%90%E5%8A%A8%E8%A1%AB/p/5010008">
-                                            <img src="./resources/saved_resource(35)" alt="运动衫" title="运动衫">
-                                            <span class="main-middle-title">运动衫</span>
-                                            <span class="main-middle-currentprice">$3,995.00</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E8%BF%9E%E5%B8%BD%E8%BF%90%E5%8A%A8%E8%A1%AB/p/5010009">
-                                            <img src="./resources/saved_resource(36)" alt="连帽运动衫" title="连帽运动衫">
-                                            <span class="main-middle-title">连帽运动衫</span>
-                                            <span class="main-middle-currentprice">$3,995.00</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E7%BE%8A%E6%AF%9B%E5%A4%96%E5%A5%97/p/5010010">
-                                            <img src="./resources/saved_resource(37)" alt="羊毛外套" title="羊毛外套">
-                                            <span class="main-middle-title">羊毛外套</span>
-                                            <span class="main-middle-currentprice">$3,995.00</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E8%BF%90%E5%8A%A8%E5%A4%B9%E5%85%8B/p/5010011">
-                                            <img src="./resources/saved_resource(38)" alt="运动夹克" title="运动夹克">
-                                            <span class="main-middle-title">运动夹克</span>
-                                            <span class="main-middle-currentprice">$3,995.00</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-last">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E7%89%9B%E4%BB%94%E8%A3%A4/p/5010012">
-                                            <img src="./resources/saved_resource(39)" alt="牛仔裤" title="牛仔裤">
-                                            <span class="main-middle-title">牛仔裤</span>
-                                            <span class="main-middle-currentprice">$3,995.00</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <!-- for mini???? -->
-                        <div class="main-right">
-                            <div class="main-right-top" style="height: 325.38px; margin-bottom: 11.22px;">
-                                <span class="main-right-top-title"> </span> <span class="main-right-top-subtitle"> </span>
-                                <div class="disp-img">
-                                    <div class="title">
-                                        <h2></h2>
-                                    </div>
-                                    <div class="thumb">
-                                        <img title="" alt="" src="./resources/saved_resource(40)">
-                                    </div>
-                                    <div class="details">
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
-                                    </div>
-                                </div><div class="main-right-top-hover"></div>
-                                <a href="" class="main-right-top-detail" style="height: 129px; line-height: 129px;">detail</a>
-                            </div>
-
-                            <div class="main-right-bottom" style="height: 224.4px;">
-                                <span class="main-right-bottom-title"> </span> <span class="main-right-bottom-subtitle"> </span>
-                                <div class="disp-img">
-                                    <div class="title">
-                                        <h2></h2>
-                                    </div>
-                                    <div class="thumb">
-                                        <img title="" alt="" src="./resources/saved_resource(41)">
-                                    </div>
-                                    <div class="details">
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
-                                    </div>
-                                </div><div class="main-right-bottom-hover"></div>
-                                <a href="" class="main-right-bottom-detail" style="height: 129px; line-height: 129px;">detail</a>
+                                <li class="main-header-on"><a href="">特价商品</a></li>
+                                <li class=""><a href="">新品上架</a></li>
+                            </ul><!-- keys and moreLink-->
+                            <div class="main-more">
+                                <!-- keys -->
+                                <span class="main-header-keyword">
+                                    关键字：<!-- è¥ææ°æ®ï¼è¿éåªåç¬¬ä¸ä¸ªÂ -->
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Brands/Sony/c/502?sort=topRated&amp;q=%3Arelevance#"></a>
+                                </span>
+                                <!-- more -->
+                                <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Cosmetics/c/502?sort=topRated&amp;q=%3Arelevance" class="main-header-more"> 更多 &gt;&gt;</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="main-wrap clearfix">
-                    <div class="main-menu">
+                    <a class="main-left" href="" style="height: 561px;">
+                        <img src="./resources/saved_resource(15)">
+                    </a>
+                    <div class="main-middle">
+                        <ul>
+                            <!-- wei.f.zhang modified 11/06/2015 -->
 
-                        <div class="main-header clearfix">
-                            <div class="main-header-title">
-                                <span class="main-title">美容护肤</span> <span class="main-subtitle"> subtitle empty</span>
+                            <div class="main-middle-show main-middle-on">
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E6%99%BA%E8%83%BD%E5%AE%B6%E5%BA%AD%E5%A5%97%E8%A3%85/p/19940426">
+                                        <img src="./resources/saved_resource(16)" alt="小米智能家庭套装" title="小米智能家庭套装">
+                                        <span class="main-middle-title">小米智能家庭套装</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E6%99%BA%E8%83%BD%E6%8F%92%E5%BA%A7/p/19940427">
+                                        <img src="./resources/saved_resource(17)" alt="小米智能插座" title="小米智能插座">
+                                        <span class="main-middle-title">小米智能插座</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8mini/p/19940428">
+                                        <img src="./resources/saved_resource(18)" alt="小米路由器mini" title="小米路由器mini">
+                                        <span class="main-middle-title">小米路由器mini</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E7%B1%B3%E9%9A%8F%E8%BA%ABWIFI-8GB-U%E7%9B%98%E7%89%88/p/19940429">
+                                        <img src="./resources/saved_resource(19)" alt="小米随身WIFI 8GB U盘版" title="小米随身WIFI 8GB U盘版">
+                                        <span class="main-middle-title">小米随身WIFI 8GB U盘版</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E8%9A%81%E6%99%BA%E8%83%BD%E6%91%84%E5%83%8F%E4%BB%AA/p/19940430">
+                                        <img src="./resources/saved_resource(20)" alt="小蚁智能摄像仪" title="小蚁智能摄像仪">
+                                        <span class="main-middle-title">小蚁智能摄像仪</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-last">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95//%E5%B0%8F%E8%9A%81%E8%BF%90%E5%8A%A8%E7%9B%B8%E6%9C%BA/p/19940431">
+                                        <img src="./resources/saved_resource(21)" alt="小蚁运动相机" title="小蚁运动相机">
+                                        <span class="main-middle-title">小蚁运动相机</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
                             </div>
-                            <!-- tabs'title  key and moreLink -->
-                            <div class="main-header-tab">
-                                <!-- tabs' title-->
-                                <ul>
-                                    <li class="main-header-on"><a href="">特价专区</a></li>
-                                    <li class=""><a href="">新品上架</a></li>
-                                </ul><!-- keys and moreLink-->
-                                <div class="main-more">
-                                    <!-- keys -->
-                                    <span class="main-header-keyword">
-                                        关键字：<!-- è¥ææ°æ®ï¼è¿éåªåç¬¬ä¸ä¸ªÂ -->
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/search/?text=sony">索尼</a>
-                                    </span>
-                                    <!-- more -->
-                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Cameras/c/571?sort=topRated&amp;q=%3Arelevance" class="main-header-more"> 更多 &gt;&gt;</a>
+                            <div class="main-middle-show">
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/Photosmart-E317-%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/p/300938">
+                                        <img src="./resources/saved_resource(4)" alt="Photosmart E317 数码相机" title="Photosmart E317 数码相机">
+                                        <span class="main-middle-title">Photosmart E317 数码相机</span>
+                                        <span class="main-middle-currentprice">$114.12</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/EASYSHARE-Z730-%E5%8F%98%E7%84%A6%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/p/325414">
+                                        <img src="./resources/saved_resource(22)" alt="EASYSHARE Z730 变焦数码相机" title="EASYSHARE Z730 变焦数码相机">
+                                        <span class="main-middle-title">EASYSHARE Z730 变焦数码相机</span>
+                                        <span class="main-middle-currentprice">$147.04</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/DSC-N1/p/358639">
+                                        <img src="./resources/saved_resource(5)" alt="DSC-N1" title="DSC-N1">
+                                        <span class="main-middle-title">DSC-N1</span>
+                                        <span class="main-middle-currentprice">$485.57</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA-EASYSHARE-C875/p/489702">
+                                        <img src="./resources/saved_resource(23)" alt="数码相机 EASYSHARE C875" title="数码相机 EASYSHARE C875">
+                                        <span class="main-middle-title">数码相机 EASYSHARE C875</span>
+                                        <span class="main-middle-currentprice">$227.24</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/NV3/p/492274">
+                                        <img src="./resources/saved_resource(24)" alt="NV3" title="NV3">
+                                        <span class="main-middle-title">NV3</span>
+                                        <span class="main-middle-currentprice">$249.99</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-last">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/%E5%B0%8F%E5%9E%8B%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/NV10/p/553637">
+                                        <img src="./resources/saved_resource(6)" alt="NV10" title="NV10">
+                                        <span class="main-middle-title">NV10</span>
+                                        <span class="main-middle-currentprice">$264.69</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="main-right">
+                        <div class="main-right-top" style="height: 325.38px; margin-bottom: 11.22px;">
+                            <span class="main-right-top-title"> </span> <span class="main-right-top-subtitle"> </span>
+                            <div class="disp-img">
+                                <div class="title">
+                                    <h2></h2>
                                 </div>
-                            </div>
+                                <div class="thumb">
+                                    <img title="" alt="" src="./resources/saved_resource(25)">
+                                </div>
+                                <div class="details">
+                                    <p></p>
+                                </div>
+                                <div class="action">
+                                    <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
+                                </div>
+                            </div><div class="main-right-top-hover"></div>
+                            <a href="" class="main-right-top-detail" style="height: 129px; line-height: 129px;">detail</a>
                         </div>
-                        <a class="main-left" href="" style="height: 561px;">
-                            <img src="./resources/saved_resource(42)">
-                        </a>
-                        <div class="main-middle">
-                            <ul>
-                                <!-- wei.f.zhang modified 11/06/2015 -->
 
-                                <div class="main-middle-show main-middle-on">
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%95%99%E5%A3%B0%E6%9C%BA/p/19940438">
-                                            <img src="./resources/saved_resource(43)" alt="小米T恤 留声机" title="小米T恤 留声机">
-                                            <span class="main-middle-title">小米T恤 留声机</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%B1%B3%E7%94%9F%E6%B4%BB/p/19940439">
-                                            <img src="./resources/saved_resource(44)" alt="小米T恤 米生活" title="小米T恤 米生活">
-                                            <span class="main-middle-title">小米T恤 米生活</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E5%9C%86%E9%A2%86%E7%BA%AF%E8%89%B2T%E6%81%A4-%E5%9C%86%E9%A2%86/p/19940440">
-                                            <img src="./resources/saved_resource(45)" alt="小米圆领纯色T恤 圆领" title="小米圆领纯色T恤 圆领">
-                                            <span class="main-middle-title">小米圆领纯色T恤 圆领</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E7%BA%AF%E8%89%B2POLO%E8%A1%AB-%E5%A5%B3%E6%AC%BE/p/19940441">
-                                            <img src="./resources/saved_resource(46)" alt="小米纯色POLO衫 女款" title="小米纯色POLO衫 女款">
-                                            <span class="main-middle-title">小米纯色POLO衫 女款</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="insmnede">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-MI%E7%94%B5%E8%B7%AF%E5%9B%BE/p/19940442">
-                                            <img src="./resources/saved_resource(47)" alt="长袖T恤 MI电路图" title="长袖T恤 MI电路图">
-                                            <span class="main-middle-title">长袖T恤 MI电路图</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
-                                    <li class="main-middle-last">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-%E6%AD%A3%E8%83%BD%E9%87%8F/p/19940443">
-                                            <img src="./resources/saved_resource(48)" alt="长袖T恤 正能量" title="长袖T恤 正能量">
-                                            <span class="main-middle-title">长袖T恤 正能量</span>
-                                            <span class="main-middle-currentprice"></span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
+                        <div class="main-right-bottom" style="height: 224.4px;">
+                            <span class="main-right-bottom-title"> </span> <span class="main-right-bottom-subtitle"> </span>
+                            <div class="disp-img">
+                                <div class="title">
+                                    <h2></h2>
                                 </div>
-                                <!-- wei.f.zhang modified 11/06/2015 -->
-
-                                <div class="main-middle-show">
-                                    <li class="main-middle-top">
-                                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E7%9B%B8%E6%9C%BA%E9%85%8D%E4%BB%B6%E4%B8%8E%E8%80%97%E6%9D%90/%E5%BD%A9%E8%89%B2%E8%83%B6%E7%89%87/FARBWELT-CN-135-%E5%BD%A9%E8%89%B2%E8%83%B6%E7%89%87%EF%BC%8CISO-200%EF%BC%8C24-%E5%BC%A0%EF%BC%8C1-%E5%8D%B7/p/834954">
-                                            <img src="./resources/saved_resource(49)" alt="FARBWELT CN 135 彩色胶片，ISO 200，24 张，1 卷" title="FARBWELT CN 135 彩色胶片，ISO 200，24 张，1 卷">
-                                            <span class="main-middle-title">FARBWELT CN 135 彩色胶片，ISO 200，24 张，1 卷</span>
-                                            <span class="main-middle-currentprice">$4.50</span>
-                                            <span class="main-middle-comment">2125 mobile.review</span>
-                                        </a>
-                                    </li>
+                                <div class="thumb">
+                                    <img title="" alt="" src="./resources/saved_resource(26)">
                                 </div>
-                            </ul>
-                        </div>
-                        <!-- for mini???? -->
-                        <div class="main-right">
-                            <div class="main-right-top" style="height: 325.38px; margin-bottom: 11.22px;">
-                                <span class="main-right-top-title"> </span> <span class="main-right-top-subtitle"> </span>
-                                <div class="disp-img">
-                                    <div class="title">
-                                        <h2></h2>
-                                    </div>
-                                    <div class="thumb">
-                                        <img title="" alt="" src="./resources/saved_resource(50)">
-                                    </div>
-                                    <div class="details">
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
-                                    </div>
-                                </div><div class="main-right-top-hover"></div>
-                                <a href="" class="main-right-top-detail" style="height: 129px; line-height: 129px;">detail</a>
+                                <div class="details">
+                                    <p></p>
+                                </div>
+                                <div class="action">
+                                    <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
+                                </div>
                             </div>
-
-                            <div class="main-right-bottom" style="height: 224.4px;">
-                                <span class="main-right-bottom-title"> </span> <span class="main-right-bottom-subtitle"> </span>
-                                <div class="disp-img">
-                                    <div class="title">
-                                        <h2></h2>
-                                    </div>
-                                    <div class="thumb">
-                                        <img title="" alt="" src="./resources/saved_resource(51)">
-                                    </div>
-                                    <div class="details">
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
-                                    </div>
-                                </div><div class="main-right-bottom-hover"></div>
-                                <a href="" class="main-right-bottom-detail" style="height: 129px; line-height: 129px;">detail</a>
-                            </div>
+                            <div class="main-right-bottom-hover"></div>
+                            <a href="" class="main-right-bottom-detail" style="height: 129px; line-height: 129px;">detail</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="index-footer">
-                <div class="footer-top">
-                    <div class="index-wechat">
-                        <a><img src="./resources/saved_resource(52)"></a>
-                        <p></p>
+            <div class="main-wrap clearfix">
+                <div class="main-menu">
+                    <div class="main-header clearfix">
+                        <div class="main-title casual-wear-module">
+                            <!-- <div class="main-header-title casual-wear-module"> -->
+                            <span class="main-title">服饰休闲</span>
+                            <!-- <span class="main-subtitle"> subtitle empty</span> -->
+                        </div>
+                        <!-- tabs'title  key and moreLink -->
+                        <div class="main-header-tab">
+                            <!-- tabs' title-->
+                            <ul>
+                                <li class="main-header-on"><a href="">特价商品</a></li>
+                                <li class=""><a href="">新品上架</a></li>
+                            </ul><!-- keys and moreLink-->
+                            <div class="main-more">
+                                <!-- keys -->
+                                <span class="main-header-keyword">
+                                    关键字：<!-- è¥ææ°æ®ï¼è¿éåªåç¬¬ä¸ä¸ªÂ -->
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Brands/Sony/c/brand_501?sort=topRated&amp;q=%3Arelevance#">美特斯邦威</a>
+                                </span>
+                                <!-- more -->
+                                <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Clothes/c/501?sort=topRated&amp;q=%3Arelevance" class="main-header-more"> 更多 &gt;&gt;</a>
+                            </div>
+                        </div>
                     </div>
+                    <a class="main-left" href="" style="height: 561px;">
+                        <img src="./resources/saved_resource(27)">
+                    </a>
+                    <div class="main-middle">
+                        <ul>
+                            <!-- wei.f.zhang modified 11/06/2015 -->
 
-                    <div class="index-title">
-                        <div class="wrap">
-                            <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
-                                <img src="./resources/saved_resource(53)">
+                            <div class="main-middle-show main-middle-on">
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%95%99%E5%A3%B0%E6%9C%BA/p/19940432">
+                                        <img src="./resources/saved_resource(28)" alt="小米T恤 留声机" title="小米T恤 留声机">
+                                        <span class="main-middle-title">小米T恤 留声机</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%B1%B3%E7%94%9F%E6%B4%BB/p/19940433">
+                                        <img src="./resources/saved_resource(29)" alt="小米T恤 米生活" title="小米T恤 米生活">
+                                        <span class="main-middle-title">小米T恤 米生活</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E5%9C%86%E9%A2%86%E7%BA%AF%E8%89%B2T%E6%81%A4-%E5%9C%86%E9%A2%86/p/19940434">
+                                        <img src="./resources/saved_resource(30)" alt="小米圆领纯色T恤 圆领" title="小米圆领纯色T恤 圆领">
+                                        <span class="main-middle-title">小米圆领纯色T恤 圆领</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E7%BA%AF%E8%89%B2POLO%E8%A1%AB-%E5%A5%B3%E6%AC%BE/p/19940435">
+                                        <img src="./resources/saved_resource(31)" alt="小米纯色POLO衫 女款" title="小米纯色POLO衫 女款">
+                                        <span class="main-middle-title">小米纯色POLO衫 女款</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-MI%E7%94%B5%E8%B7%AF%E5%9B%BE/p/19940436">
+                                        <img src="./resources/saved_resource(32)" alt="长袖T恤 MI电路图" title="长袖T恤 MI电路图">
+                                        <span class="main-middle-title">长袖T恤 MI电路图</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-last">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-%E6%AD%A3%E8%83%BD%E9%87%8F/p/19940437">
+                                        <img src="./resources/saved_resource(33)" alt="长袖T恤 正能量" title="长袖T恤 正能量">
+                                        <span class="main-middle-title">长袖T恤 正能量</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
                             </div>
-                            <dl>
-                                <dt>
-                                    <span>购物指南</span>
-                                </dt>
-                                <dd>
-                                    <ul>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">用户注册</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">发票制度</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">会员及积分制度</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">现金卡说明</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">商品优惠工具说明</a></li>
-                                        <li><a href="javascript:;"></a></li>
-                                    </ul>
-                                </dd>
-                            </dl>
+                            <!-- wei.f.zhang modified 11/06/2015 -->
+
+                            <div class="main-middle-show">
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E7%89%9B%E4%BB%94%E8%A3%A4/p/5010007">
+                                        <img src="./resources/saved_resource(34)" alt="牛仔裤" title="牛仔裤">
+                                        <span class="main-middle-title">牛仔裤</span>
+                                        <span class="main-middle-currentprice">$3,995.00</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E8%BF%90%E5%8A%A8%E8%A1%AB/p/5010008">
+                                        <img src="./resources/saved_resource(35)" alt="运动衫" title="运动衫">
+                                        <span class="main-middle-title">运动衫</span>
+                                        <span class="main-middle-currentprice">$3,995.00</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E8%BF%9E%E5%B8%BD%E8%BF%90%E5%8A%A8%E8%A1%AB/p/5010009">
+                                        <img src="./resources/saved_resource(36)" alt="连帽运动衫" title="连帽运动衫">
+                                        <span class="main-middle-title">连帽运动衫</span>
+                                        <span class="main-middle-currentprice">$3,995.00</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E7%BE%8A%E6%AF%9B%E5%A4%96%E5%A5%97/p/5010010">
+                                        <img src="./resources/saved_resource(37)" alt="羊毛外套" title="羊毛外套">
+                                        <span class="main-middle-title">羊毛外套</span>
+                                        <span class="main-middle-currentprice">$3,995.00</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E8%BF%90%E5%8A%A8%E5%A4%B9%E5%85%8B/p/5010011">
+                                        <img src="./resources/saved_resource(38)" alt="运动夹克" title="运动夹克">
+                                        <span class="main-middle-title">运动夹克</span>
+                                        <span class="main-middle-currentprice">$3,995.00</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-last">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E6%9C%8D%E9%A5%B0/%E7%89%9B%E4%BB%94%E8%A3%A4/p/5010012">
+                                        <img src="./resources/saved_resource(39)" alt="牛仔裤" title="牛仔裤">
+                                        <span class="main-middle-title">牛仔裤</span>
+                                        <span class="main-middle-currentprice">$3,995.00</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="main-right">
+                        <div class="main-right-top" style="height: 325.38px; margin-bottom: 11.22px;">
+                            <span class="main-right-top-title"> </span> <span class="main-right-top-subtitle"> </span>
+                            <div class="disp-img">
+                                <div class="title">
+                                    <h2></h2>
+                                </div>
+                                <div class="thumb">
+                                    <img title="" alt="" src="./resources/saved_resource(40)">
+                                </div>
+                                <div class="details">
+                                    <p></p>
+                                </div>
+                                <div class="action">
+                                    <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
+                                </div>
+                            </div><div class="main-right-top-hover"></div>
+                            <a href="" class="main-right-top-detail" style="height: 129px; line-height: 129px;">detail</a>
                         </div>
-                        <div class="wrap">
-                            <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
-                                <img src="./resources/saved_resource(54)">
+
+                        <div class="main-right-bottom" style="height: 224.4px;">
+                            <span class="main-right-bottom-title"> </span> <span class="main-right-bottom-subtitle"> </span>
+                            <div class="disp-img">
+                                <div class="title">
+                                    <h2></h2>
+                                </div>
+                                <div class="thumb">
+                                    <img title="" alt="" src="./resources/saved_resource(41)">
+                                </div>
+                                <div class="details">
+                                    <p></p>
+                                </div>
+                                <div class="action">
+                                    <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
+                                </div>
                             </div>
-                            <dl>
-                                <dt>
-                                    <span>配送与收货</span>
-                                </dt>
-                                <dd>
-                                    <ul>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">配送方式</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">配送范围及时间</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">签收注意事项</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">运费说明</a></li>
-                                        <li><a href="javascript:;"></a></li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="wrap">
-                            <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
-                                <img src="./resources/saved_resource(55)">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <span>支付方式</span>
-                                </dt>
-                                <dd>
-                                    <ul>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">货到付款</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">在线支付</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">公司转账</a></li>
-                                        <li><a href="javascript:;"></a></li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="wrap">
-                            <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
-                                <img src="./resources/saved_resource(56)">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <span>售后服务</span>
-                                </dt>
-                                <dd>
-                                    <ul>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">退换货服务</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">如何退换货</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">价格保护</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">退款说明</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">账户余额提现政策</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">正品保障及赔付承诺</a></li>
-                                        <li><a href="javascript:;"></a></li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="wrap">
-                            <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
-                                <img src="./resources/saved_resource(57)">
-                            </div>
-                            <dl>
-                                <dt>
-                                    <span>常见问题</span>
-                                </dt>
-                                <dd>
-                                    <ul>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">账户类</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">财务类</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">发票类</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">支付类</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">配送类</a></li>
-                                        <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">退换货与退款</a></li>
-                                        <li><a href="javascript:;"></a></li>
-                                    </ul>
-                                </dd>
-                            </dl>
+                            <div class="main-right-bottom-hover"></div>
+                            <a href="" class="main-right-bottom-detail" style="height: 129px; line-height: 129px;">detail</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Stig add -->
-            <!-- for mini -->
-            <div class="small-footer" style="position: fixed;">
-                <div class="classification" id="classification">
-                    <ul class="classi-ul">
-                        <li class="classi-li">
-                            <a href="./Accenture-jQuery-B2C.html">主页</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Digital-Cameras/c/575?sort=topRated&amp;q=%3Arelevance#">数码相机</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Film-Cameras/c/574?sort=topRated&amp;q=%3Arelevance#">胶片相机</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Hand-held-Camcorders/c/584?sort=topRated&amp;q=%3Arelevance#">手持式摄像机</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Components/Power-Supplies/c/816?sort=topRated&amp;q=%3Arelevance#">电源</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Data-storage/Flash-Memory/c/902?sort=topRated&amp;q=%3Arelevance#">闪存</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/c/585?sort=topRated&amp;q=%3Arelevance#">相机配件与耗材</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/productPreOrder/show">商品预定</a>
-                        </li>
-                        <li class="classi-li">
-                            <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/orderMakingUp/show/0/99">凑单</a>
-                        </li>
-                    </ul>
+            <div class="main-wrap clearfix">
+                <div class="main-menu">
+                    <div class="main-header clearfix">
+                        <div class="main-title beauty-skin-module">
+                            <!-- <div class="main-header-title beauty-skin-module"> -->
+                            <span class="main-title">美容护肤</span>
+                            <!-- <span class="main-subtitle"> subtitle empty</span> -->
+                        </div>
+                        <!-- tabs'title  key and moreLink -->
+                        <div class="main-header-tab">
+                            <!-- tabs' title-->
+                            <ul>
+                                <li class="main-header-on"><a href="">特价专区</a></li>
+                                <li class=""><a href="">新品上架</a></li>
+                            </ul><!-- keys and moreLink-->
+                            <div class="main-more">
+                                <!-- keys -->
+                                <span class="main-header-keyword">
+                                    关键字：<!-- è¥ææ°æ®ï¼è¿éåªåç¬¬ä¸ä¸ªÂ -->
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/search/?text=sony">索尼</a>
+                                </span>
+                                <!-- more -->
+                                <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Cameras/c/571?sort=topRated&amp;q=%3Arelevance" class="main-header-more"> 更多 &gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="main-left" href="" style="height: 561px;">
+                        <img src="./resources/saved_resource(42)">
+                    </a>
+                    <div class="main-middle">
+                        <ul>
+                            <div class="main-middle-show main-middle-on">
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%95%99%E5%A3%B0%E6%9C%BA/p/19940438">
+                                        <img src="./resources/saved_resource(43)" alt="小米T恤 留声机" title="小米T恤 留声机">
+                                        <span class="main-middle-title">小米T恤 留声机</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3T%E6%81%A4-%E7%B1%B3%E7%94%9F%E6%B4%BB/p/19940439">
+                                        <img src="./resources/saved_resource(44)" alt="小米T恤 米生活" title="小米T恤 米生活">
+                                        <span class="main-middle-title">小米T恤 米生活</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E5%9C%86%E9%A2%86%E7%BA%AF%E8%89%B2T%E6%81%A4-%E5%9C%86%E9%A2%86/p/19940440">
+                                        <img src="./resources/saved_resource(45)" alt="小米圆领纯色T恤 圆领" title="小米圆领纯色T恤 圆领">
+                                        <span class="main-middle-title">小米圆领纯色T恤 圆领</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E5%B0%8F%E7%B1%B3%E7%BA%AF%E8%89%B2POLO%E8%A1%AB-%E5%A5%B3%E6%AC%BE/p/19940441">
+                                        <img src="./resources/saved_resource(46)" alt="小米纯色POLO衫 女款" title="小米纯色POLO衫 女款">
+                                        <span class="main-middle-title">小米纯色POLO衫 女款</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="insmnede">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-MI%E7%94%B5%E8%B7%AF%E5%9B%BE/p/19940442">
+                                        <img src="./resources/saved_resource(47)" alt="长袖T恤 MI电路图" title="长袖T恤 MI电路图">
+                                        <span class="main-middle-title">长袖T恤 MI电路图</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                                <li class="main-middle-last">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E5%93%81%E7%89%8C//%E9%95%BF%E8%A2%96T%E6%81%A4-%E6%AD%A3%E8%83%BD%E9%87%8F/p/19940443">
+                                        <img src="./resources/saved_resource(48)" alt="长袖T恤 正能量" title="长袖T恤 正能量">
+                                        <span class="main-middle-title">长袖T恤 正能量</span>
+                                        <span class="main-middle-currentprice"></span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="main-middle-show">
+                                <li class="main-middle-top">
+                                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/%E6%89%93%E5%BC%80%E7%9B%AE%E5%BD%95/%E7%9B%B8%E6%9C%BA/%E7%9B%B8%E6%9C%BA%E9%85%8D%E4%BB%B6%E4%B8%8E%E8%80%97%E6%9D%90/%E5%BD%A9%E8%89%B2%E8%83%B6%E7%89%87/FARBWELT-CN-135-%E5%BD%A9%E8%89%B2%E8%83%B6%E7%89%87%EF%BC%8CISO-200%EF%BC%8C24-%E5%BC%A0%EF%BC%8C1-%E5%8D%B7/p/834954">
+                                        <img src="./resources/saved_resource(49)" alt="FARBWELT CN 135 彩色胶片，ISO 200，24 张，1 卷" title="FARBWELT CN 135 彩色胶片，ISO 200，24 张，1 卷">
+                                        <span class="main-middle-title">FARBWELT CN 135 彩色胶片，ISO 200，24 张，1 卷</span>
+                                        <span class="main-middle-currentprice">$4.50</span>
+                                        <span class="main-middle-comment">2125 mobile.review</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="main-right">
+                        <div class="main-right-top" style="height: 325.38px; margin-bottom: 11.22px;">
+                            <span class="main-right-top-title"> </span> <span class="main-right-top-subtitle"> </span>
+                            <div class="disp-img">
+                                <div class="title">
+                                    <h2></h2>
+                                </div>
+                                <div class="thumb">
+                                    <img title="" alt="" src="./resources/saved_resource(50)">
+                                </div>
+                                <div class="details">
+                                    <p></p>
+                                </div>
+                                <div class="action">
+                                    <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
+                                </div>
+                            </div><div class="main-right-top-hover"></div>
+                            <a href="" class="main-right-top-detail" style="height: 129px; line-height: 129px;">detail</a>
+                        </div>
+                        <div class="main-right-bottom" style="height: 224.4px;">
+                            <span class="main-right-bottom-title"> </span> <span class="main-right-bottom-subtitle"> </span>
+                            <div class="disp-img">
+                                <div class="title">
+                                    <h2></h2>
+                                </div>
+                                <div class="thumb">
+                                    <img title="" alt="" src="./resources/saved_resource(51)">
+                                </div>
+                                <div class="details">
+                                    <p></p>
+                                </div>
+                                <div class="action">
+                                    <img src="./resources/icon-arrow-category-tile.png" alt="" title="">
+                                </div>
+                            </div><div class="main-right-bottom-hover"></div>
+                            <a href="" class="main-right-bottom-detail" style="height: 129px; line-height: 129px;">detail</a>
+                        </div>
+                    </div>
                 </div>
-                <ul class="footer-ul">
-                    <li class="footer-li"><a href="./Accenture-jQuery-B2C.html">主页</a></li>
-                    <li class="footer-li" id="classi"><a href="javascript:;">分类</a></li>
-                    <li class="footer-li"><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh//my-account">我的</a></li>
-                    <li class="footer-li">
-                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/cart">
-                            购物车<span class="count">0</span>
-                        </a>
-                        <div id="miniCartLayer" class="miniCartPopup" data-refreshminicarturl="/b2cstorefront/electronics/zh/cart/miniCart/SUBTOTAL/?" data-rolloverpopupurl="/b2cstorefront/electronics/zh/cart/rollover/MiniCart"></div>
+            </div>
+        </div>
+        <div class="index-footer">
+            <div class="footer-top">
+                <div class="index-wechat">
+                    <a><img src="./resources/saved_resource(52)"></a>
+                    <p></p>
+                </div>
+
+                <div class="index-title">
+                    <div class="wrap">
+                        <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
+                            <img src="./resources/saved_resource(53)">
+                        </div>
+                        <dl>
+                            <dt>
+                                <span>购物指南</span>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">用户注册</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">发票制度</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">会员及积分制度</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">现金卡说明</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">商品优惠工具说明</a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="wrap">
+                        <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
+                            <img src="./resources/saved_resource(54)">
+                        </div>
+                        <dl>
+                            <dt>
+                                <span>配送与收货</span>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">配送方式</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">配送范围及时间</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">签收注意事项</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">运费说明</a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="wrap">
+                        <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
+                            <img src="./resources/saved_resource(55)">
+                        </div>
+                        <dl>
+                            <dt>
+                                <span>支付方式</span>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">货到付款</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">在线支付</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">公司转账</a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="wrap">
+                        <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
+                            <img src="./resources/saved_resource(56)">
+                        </div>
+                        <dl>
+                            <dt>
+                                <span>售后服务</span>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">退换货服务</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">如何退换货</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">价格保护</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">退款说明</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">账户余额提现政策</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">正品保障及赔付承诺</a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="wrap">
+                        <div class="title-image" style="width: 20%; float: left; white-space: nowrap">
+                            <img src="./resources/saved_resource(57)">
+                        </div>
+                        <dl>
+                            <dt>
+                                <span>常见问题</span>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">账户类</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">财务类</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">发票类</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">支付类</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">配送类</a></li>
+                                    <li><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/#">退换货与退款</a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small-footer" style="position: fixed;">
+            <div class="classification" id="classification">
+                <ul class="classi-ul">
+                    <li class="classi-li">
+                        <a href="./Accenture-jQuery-B2C.html">主页</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Digital-Cameras/c/575?sort=topRated&amp;q=%3Arelevance#">数码相机</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Film-Cameras/c/574?sort=topRated&amp;q=%3Arelevance#">胶片相机</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Hand-held-Camcorders/c/584?sort=topRated&amp;q=%3Arelevance#">手持式摄像机</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Components/Power-Supplies/c/816?sort=topRated&amp;q=%3Arelevance#">电源</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Data-storage/Flash-Memory/c/902?sort=topRated&amp;q=%3Arelevance#">闪存</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/Open-Catalogue/Cameras/Camera-Accessories-26-Supplies/c/585?sort=topRated&amp;q=%3Arelevance#">相机配件与耗材</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/productPreOrder/show">商品预定</a>
+                    </li>
+                    <li class="classi-li">
+                        <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/orderMakingUp/show/0/99">凑单</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-middle">
-                <div class="accenture-digital-logo">
-                    <a href="javascript:;"><img src="./resources/saved_resource(58)"></a>
-                </div>
-                <div class="service">
-                    <ul>
-                        <li>
-                            <div class="service-content">
-                                <img src="./resources/saved_resource(59)">
-                                <div class="service-content-text">
-                                    <h2>无理由退换</h2>
-                                    <span>7天内</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="service-content">
-                                <img src="./resources/saved_resource(60)">
-
-                                <div class="service-content-text">
-                                    <h2>30天内</h2>
-                                    <span>服务保障</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="service-content">
-                                <img src="./resources/saved_resource(61)">
-                                <div class="service-content-text">
-                                    <h2>正品保障</h2>
-                                    <span>赔付承诺</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="service-content">
-                                <img src="./resources/saved_resource(62)">
-                                <div class="service-content-text">
-                                    <h2>品牌厂家</h2>
-                                    <span>寄语</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <ul class="footer-ul">
+                <li class="footer-li"><a href="./Accenture-jQuery-B2C.html">主页</a></li>
+                <li class="footer-li" id="classi"><a href="javascript:;">分类</a></li>
+                <li class="footer-li"><a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh//my-account">我的</a></li>
+                <li class="footer-li">
+                    <a href="http://10.202.16.217:9001/b2cstorefront/electronics/zh/cart">
+                        购物车<span class="count">0</span>
+                    </a>
+                    <div id="miniCartLayer" class="miniCartPopup" data-refreshminicarturl="/b2cstorefront/electronics/zh/cart/miniCart/SUBTOTAL/?" data-rolloverpopupurl="/b2cstorefront/electronics/zh/cart/rollover/MiniCart"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-middle">
+            <div class="accenture-digital-logo">
+                <a href="javascript:;"><img src="./resources/saved_resource(58)"></a>
             </div>
+            <div class="service">
+                <ul>
+                    <li>
+                        <div class="service-content">
+                            <img src="./resources/saved_resource(59)">
+                            <div class="service-content-text">
+                                <h2>无理由退换</h2>
+                                <span>7天内</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-content">
+                            <img src="./resources/saved_resource(60)">
 
-            <div class="footer-bottom">
-                <!--  <span>Copyright 2003-2015,  Accenture</span> --><div class="copyright">Copyright 2003-2016,  Accenture</div>
+                            <div class="service-content-text">
+                                <h2>30天内</h2>
+                                <span>服务保障</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-content">
+                            <img src="./resources/saved_resource(61)">
+                            <div class="service-content-text">
+                                <h2>正品保障</h2>
+                                <span>赔付承诺</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-content">
+                            <img src="./resources/saved_resource(62)">
+                            <div class="service-content-text">
+                                <h2>品牌厂家</h2>
+                                <span>寄语</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">Copyright 2003-2016,  Accenture</div>
         </div>
         <form name="accessiblityForm">
             <input type="hidden" id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField" value="">
@@ -1515,30 +1542,30 @@
         <div id="ariaStatusMsg" class="skip" role="status" aria-relevant="text" aria-live="polite"></div>
     </div>
     <script type="text/javascript">
-            /*<![CDATA[*/
+        /*<![CDATA[*/
 
-            var ACC = { config: {} };
-            ACC.config.contextPath = "/b2cstorefront";
-            ACC.config.encodedContextPath = "/b2cstorefront/electronics/zh";
-            ACC.config.commonResourcePath = "/b2cstorefront/_ui/desktop/common";
-            ACC.config.themeResourcePath = "/b2cstorefront/_ui/desktop/theme-blue";
-            ACC.config.siteResourcePath = "/b2cstorefront/_ui/desktop/site-electronics";
-            ACC.config.language = "zh";
-            ACC.config.rootPath = "/b2cstorefront/_ui/desktop";
-            ACC.config.CSRFToken = "7de76766-3567-4a23-b782-493e634892a8";
-            ACC.pwdStrengthVeryWeak = '非常弱';
-            ACC.pwdStrengthWeak = '弱';
-            ACC.pwdStrengthMedium = '中等';
-            ACC.pwdStrengthStrong = '强';
-            ACC.pwdStrengthVeryStrong = '很强';
-            ACC.pwdStrengthUnsafePwd = 'password.strength.unsafepwd';
-            ACC.pwdStrengthTooShortPwd = '太短';
-            ACC.pwdStrengthMinCharText = '至少为 %d 个字符';
-            ACC.accessibilityLoading = '正在加载，请稍候...';
-            ACC.accessibilityStoresLoaded = '店铺已加载';
+        var ACC = { config: {} };
+        ACC.config.contextPath = "/b2cstorefront";
+        ACC.config.encodedContextPath = "/b2cstorefront/electronics/zh";
+        ACC.config.commonResourcePath = "/b2cstorefront/_ui/desktop/common";
+        ACC.config.themeResourcePath = "/b2cstorefront/_ui/desktop/theme-blue";
+        ACC.config.siteResourcePath = "/b2cstorefront/_ui/desktop/site-electronics";
+        ACC.config.language = "zh";
+        ACC.config.rootPath = "/b2cstorefront/_ui/desktop";
+        ACC.config.CSRFToken = "7de76766-3567-4a23-b782-493e634892a8";
+        ACC.pwdStrengthVeryWeak = '非常弱';
+        ACC.pwdStrengthWeak = '弱';
+        ACC.pwdStrengthMedium = '中等';
+        ACC.pwdStrengthStrong = '强';
+        ACC.pwdStrengthVeryStrong = '很强';
+        ACC.pwdStrengthUnsafePwd = 'password.strength.unsafepwd';
+        ACC.pwdStrengthTooShortPwd = '太短';
+        ACC.pwdStrengthMinCharText = '至少为 %d 个字符';
+        ACC.accessibilityLoading = '正在加载，请稍候...';
+        ACC.accessibilityStoresLoaded = '店铺已加载';
 
 
-            /*]]>*/
+        /*]]>*/
     </script>
     <script type="text/javascript" src="./controllers/jquery.query-2.1.7.js"></script>
     <script type="text/javascript" src="./controllers/jquery-ui-1.8.18.min.js"></script>
@@ -1587,6 +1614,7 @@
     <script type="text/javascript" src="./controllers/acc.productDetail.js"></script>
     <script type="text/javascript" src="./controllers/acc.producttabs.js"></script>
 
+    <script type="text/javascript" src="./controllers/jiathis.js"></script>
     <script type="text/javascript" src="./controllers/b2cmultibuypercentagepromotion.js"></script>
     <script type="text/javascript" src="./controllers/b2cvoucheraddon.js"></script>
     <script type="text/javascript" src="./controllers/b2cordermakingup.js"></script>
